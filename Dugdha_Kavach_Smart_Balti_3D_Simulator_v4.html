@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dugdha Kavach – Smart Balti 3D Simulator</title>
+<meta name="author" content="HIF">
+<meta name="copyright" content="© 2026 Dugdha Kavach. All rights reserved.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+:root{--logo:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXwAAAElCAMAAADQuKnHAAAAkFBMVEX///////7+///+/v79/v75+vvm6+7K09myvsiQorBzj5M/hz0+hzxaf3tRaoQ0UHAePGIZNl4XNl0WNl0YNV4XNVwWNV0WNVwWNVsVNVwXNF0WNF0WNFsWNFoWM1wVNF0VNFwVNFsVNFoVM1wVM1sVM1kUNFwUM1wUM1sUM1oTM1sWMlsUMloSMVoRMFkOLVbN/jfWAAA2pklEQVR42u1dCWOjNtNO1wdHG06DAIlDIALYIP7/v/tmhJNNYnDsbNv32xptu91uHAc/Gs08c2jm6Wld61rXuta1rnWta13rWte61rWuda1rXeta1++zdvvd5mmj1grGvw6+Yer73fzX1v34p5f+15/Ppq7t9/vd9vXvttsV9n9laX/+9ddff/4JO/BpGbquaUuHYl1/j955Buj/mlt/4pY8G9qK/z+qd+bX6x4sG4V1/era/7mE/tse/Gmu4v/PrI1xHXyF/5/mfrXB/5DJ/fNr+J+N3dMf39vdlbJeMbnm1+Aj/Kb2PfQBe01bYf4F0Uf4n78HIWBv2/sV5l8RfUD/T/1bCmRvDa6+wvxrog+vMjbf2VvPHcwV5YW1NW5GX/8G9ofkMFir0f1VxQPo36f3Nyj3PU2O1nZF+VcVz33og7TvzX44AfjmCv7S+mOj34z+8/422JWpNeyhyqqcDuaqdhaZ+HZn3Iy+eWOoYbc3rPZ4SGhVZdJYUV5Ef/vjZvT/+uua0d3utjtYe003TDuWNEHwT4OzelnXRP/pdvT/3M+JuabrhmGallq243ZyqCqaJAB+P1prYO66jt7dqvf/MnYflfteNxDuSuIaxxF+HwYAnlKC4GfSXgX/a87z/NctMbafcQaMme000yaAdiM6IUSeV/B7XYuToJTyKALFI1b/9qZAgPHndfgxuP+s73evgcrN0/7ZkbIghNC8YmnKKOeclbDSKIoJL+khGIwfK7S3MBTNXIR/SmtNacW3KLFmj4OgJAIRL2gEmDMEP4oZLAKiX4rhYKwK/0bVD/A/n3Pqn4H/09Q1LHHYbt9hPyRVQksQ+ayqeMQ4iD4D8AnhCH/Uj87KMm9lPX8g/MaE/4dk+rOho8xvtrB+vDlR9gBUMqEANysKXtCyLhmcAlLEpGCMl9J5Xm3tnYE2RdPNV7HHMpL9/hX5jSpzm15nSoqLRUHEq0pUVVGmQURIROMYdFFMLH1VOd9S/7v9XsO13ykAt2/I69bZydW9HNgkaHnGaFHkvKjygsH/F5yjCSbEtYy19OFvcMJekQdG746G0jugdIoIkAfZz8GfqnDlBRdVAStC8P3j4NimsV+jar8Qdpty4Ii808lj6GiK7hgStExZEhJSoPcUTkEO2Ldtk+MexIh+HB+l7O219ORXfQD92e5G2VAq7T2Cv7NkWadlVCjUc5q3Dc2LtqqavAH8qe+RAnUSb4fRMdck7vctsG7a7tCENAkpHa3tDyxJcCoBks9B6uEXgt8WSv20TQMbkKPjxdKyFmVB26O9ernflHlAfpSnwHMPB/eQjCbwns2THma8THkB4IOuh39F21RCgPC3jZjAJ2mZ1uB4BZ53XPn+t3xe25WDOGUp8TzPdd0M7C2Y3ydjAKZDUNgR/LwC2JtWdA3IfcWbKieAPwh+XXKO39k4q+zfiTyYWClfOCsFOLEk9AH8Q6+rCn5zOIQkV0JfgLltRI7qHv8CzC1o/ZyDh8tK4KFAe8KQ9Cv6d2kbQH7IQ99HCQYZZgp8N57At6Tvh6DrqcK/QSOLkOeg8yteNYXCnRWxIp0kyOM1snyPnpdDDPoiDIOAAa9JBSMKfP8V/BAEOsyVwUVdg1IP+h71Tl4xRJ5z8HTjOOYkCIB2DtbKeW7UNkMBMu97CDDwloJlJWMBYB+GugrkW2PhK+SbtgDJr1pQOvBblb8UFfi4YInB16rw93jyd2MymCvf/4pWWvZRyXwQRAVlyOFhAwqBwWLRN46lKfDNkcLGAKcvWFGJBvFG0ecEdA0tI7ACqIqQ9OOZKGKSh5W7Up4rcQRUN0d59D1cAeOlKDnINaEUKOWLHF0bA/rK5QW244FvC7Aqzc7KMq6Koi1Bx9OYs8kK4MFQTlceExrmw2p0ryr65kUh77oAPuGd6EQqBPiwtJHSsfS9CvVslJNFPVIpDcMwklmyuChKHsU5BdeWKPOrDHGLZwBFH86JXNGfR94AV2qIA98LvfMC8Luu7+tOVIj8u8txGF6wj4xkfUs5o1kEZhUOAIBPioJRDkA3zUuF1KdRNhi0E4YhCrk6WxfIa8qJffEDUoQUVDxCfziQQvQAfi9HYV9eSzQGBvxfKCcLyQ3nEUtpiGJf0Ig0E/+c1I5aeVhUjfTWtOIncuOO44sfkwBzIzlocs/zPfeQ0KLrh3E8q5tPS3M6WqYCWWZVRAA8gF/wiOTAjUgUobs1gV+dwS9ULGKQzyvjPCOPceJx7EFfgNgHIeoG8FdzJfmHEGwsA6GfDcjvnmUYRwVgL0SLTjCPeBxFhJIYtiDik6VVWgfgRw+grYB4VpW09d3TWryJuRE5Dh1Qmpj4EYYBaIjiihHhg1fJ7hyLn4VKd14I4whtWyH26FaBzgGbCzLeYFwfke/hn7Pa7+AvCk6TwTW1NcGigaIHg1qD7xoDYWEE/FkKZB08VXEcBrCx1zTEzpS+D9YVsBdYNRKBZ4UKv5jiDSD3ba9AB/DVr66FI1JQQiqwuw8fa9Ddpqz7ugzCMAbniFLfB1e0UjbWsb+8+q85Lz6lQEW5EC8lI0B5YswhYqAB2E3bAtyK7ag/dR1sqcCIT0zJIOFMPTr4BbDJOgUGHse8BDYYBIS2wwjQTJT+ujcMok/isqzLouw4I7B7wHVUxAExhz2cJB/+hP8A+ugmp2jVq06OD55e1F1eY8Q9RkObdlUF4Ith/ELdvBd9HhMuujKtO07BD6YFBXWvuCWqmbOq75W1xZ1oQTsBJ4XTJTjA/9DlDcAWy5SxPARNLeqyeymGcwThRq5kDWAqQJpFDSab87wAY3tml2e5V/q+R7LT4+8t7DTHsJtoG9EeR/hxlmovs3tA8NsInVNScA6OLKgbx9TvYeHGGITg23JeAsUHtQXgx83ratuzxlfg9yD/YHB7wUHVqVgEL8K8GeQ4ysB1Hi/crDkNITkNi64rhYog3Fljo8sD2GoKe0c575DpkOKnS/tzE5By9kA0RQvWHM6FYBGQngJ3gJV13YMr93B35jSnonEehmB1y9fymrv6VOjHw8GPQyDvGGAj4GARcQa/fw3qIO6IPxLYQqACgl/gjwHnBH8sJlGKdkc+XIsABJ+EAFxZdo7+DdHTB9f1/ZCAoUVbC/jzboopfBZ9pXcK0PPwByCeEdpnrOrPCWYpRfl497YAfA7g47WG/lsf3pAHEP0wzjnGc7BQgbcqkoyKJn+NaL6CXynwkQWBFwwbFqsFWwAuWv9w91c0R4BvREBsWf+dY78zh+QQhATAL4ooKoDL8DeVj3G17if2HbKdSimfrmrLKMopsM6IxOBUA116RPCxqhUTrKz6Dvh7u08SEvoBAYbJSfPqVL1uQKvYJeDeqtB0JUDjiK5H5c8wCMcZSr+POfZHBD8DXU1iXpBvga85h0NAcgJ8E8AXzRTCac7xNFgv4NYqa9vDf0UrClG1E/hASjvQUrDzsY/oHw+PCH7E8DIPOX0HfEO6AD4AGMa84l3/0vbnIp43S9tNDL/HMM8EPvy3rQoaobMVFah2/ND3Xh7Q4GYB6PuY0m9J/t6uDoeQgL9Kket3ikVOyav8HMHvexXN7KelFD4GmIFk8RSD/kA2Qx/D18MDUs0kAMIHBN1rv/Hh9QITLkA04VfBIxB9jOAr8KvmNYzfTwHlrmr6rqnwIKACauHlPAKtD16Gjyl7+YBOVpZTrCjzvW9I/s5qDkkSAPoFXrmNoqpXZTpYvIZb0J8ZP5YttyrXmzc8B6vblahxOAe6ycNQof/yeGUNAD4BlUNi8h3wjcJNEmQ76NmiHKuEed5MxYMTyX+rXlCWQAhwhGNM9gLPByc3VvUkeRy/tI+XVtccGgBwESFBcTf4mk1dkPwk8ICpxpRh1rZ5UdWymIhs8qJTer9TJKhS1YR5wRlLS0IRdtz0MPbzvBgd4xGjmlUCOBSgc1/uAh8vx1no3SYB3kCh4GAVKZ/s7aRrQL1MufN8kn84D4g/wbuLUeTnIcaxCZD8MGxG6xFLqZSTBWh8A3zl3ILgY/l3ENIIqCafggqT4kHd/k7vq78FGooOXcSwTgLsfBwSUPfyQW9sIfi0LBkJg3vB150Csacxw/pvWHj17SzhU6FU1TZcqZyXIseFBLMIYME3JIGPCUuUfWnrPx6ykATAZ2maMkbulHxQ+BkonUMQczZhj2xfuU9VizlclcYt2snmgicVoxWokFd6AD7AHsaYby+ki2K/eUzwm0Jgneu9kq/ZjcKeAMcBNMHRiguU/K6tGt4ILNkvVCUbKKMSa/Vp8VK1/csg5SDfLQcbBDzouBzN6TNR40Xm+8DfW8eA+AEo7CAirW33lAL+JcYOKuCTomqKBiwrNn8B7FkKjmzEh9F1LOvZNGCZz9gNbGogg9j/8ZiSf8K+UKA67gF/b0k/REPrebAB0jKPQFpoDOCDzgGCif5Ug0UioM/wRkWZph0Wv+na/t1UnK368+ucqP0D8vz+1Je1oHfxfM2SBfjEQRAhTfKkqTmhFxYsFadKiA78WVW5XPCUcyTzZV2P3lyt7WbzNqJLf8QEOoAPaiK4R+1o9kAB/ICBrsGwTGzsrCEkLCpLwL3rqgrwB7KJRSkR1vKUvZzt/fIT+73p2I8IvihLLhhNsls/vW4PhyIKgK3nOdbx+472ZAwhLaKIlxi/bLFo51Rh3SyL85imy0T+DL1hxy8PCL7bp2WZ1iK5Ffyd4TSHBJwjUObgNPkHDy94as4LSjgTPZwkkP22r1qRFkjkYyadqy2P9oblek74kOCXgpV1eavk700yxRRCyjhWxIY+xoK31hhiHRrHPGHX4nWVE09Ljvxf3X1eoJI7TTftgrqumz+i2ql4zYDuUHoL+BswtTTBWhsSRCmjeRjnHXbfedIDDnw1RvDB1LZN33JQZ8iH2qV753inzrJfRpklh4MH4P94PPApZQzwAvC/TOPtDUcGQYAeMaNxxNBt5aO1U813Rl5wMnEdsLadAHLPfD/kS3lx1PZ6dYyB6dIkocODgp/RhMJ/vsyh7k1e4RXFKEqjiGDnxhgs6zA1AzBkC75awau+E1gWiMa2iOOiXbp8qMDvw7jua2wUNjyg2rEb+OAJiF52crUvWQ5ezvUBfNAoMXitNG46FHwEf29Lhu01q145uTHNaUxjsoip4jm6jOO0Ljn8/AcEf283ybRofx18UDkN2EWMSaYl/OIloyQuemx2t5lEX6TAnEDpi0qkmJrEYJuvP10B3wDwyzotYpyq8nDg7ybwQxC960VLmnUM1aX0ICERaHfsbIe15VO/NQQSRB/YDvDWlBdlhE01ie/31wR/82RKlU0gZCKsjwa+dQShpxQOfsX06+R+wp7Av0UripIXEY85CP5rdMaQHBVSnWIXa6aSVJ68ovEV+D7W9pPQB/B3Dwg+JkSwZQJbHq2hWS0NvANG0Qh266UtkBkSURq9Cb5qByAZRzWCPcQ5I1iUsGjEp+8ByQd2yuGI+A/YDWZjDu7hEBY8ZukS+DvdlqGSeY9gGgRruyPsdBHzrn9/WnQJO8PqUiVnCF6x6+1lRKfmkDziWKkb+8MDtmQwgMEcfLwWVI7mAsF0+4OvNI7Kv2JZbYBtRnyCTR4/HCNZqrwYuF/EA2vMpfnjOvgDHBK8l0TjRwRfB13uh8DHWSSf50rG9tbLAck9tsiPsJa8UBlwTH2TzyX9Ou1QK2FP8QhUfinGK4gqG30UdYmkifL4AesXdBehDTFgIOdMnmblLkYuSQxMBhDFeywU9iBAvv9ZUe3MkQL6AUO9A2TzdFWcN6oZc1lzcAf48RHnCWHHohDLOCI+5+Zo9tGdOu+AQMcRVpdhz2Ss8CNkvGCHmjMEEebHGVHVPIV+FXxsWxJx5S885DAnza4QfBDjcuZekHZ2aj2CShyNKJZEAfZxGAbtDF6GDAF6eDcSRARolH4Ne1BTfZ2imoor+YgTc/fWgKYU4OJdoF98cQwOgQKfhF6MtTcF1qNhSx5vlsPvLRmEaJz9KI5YdrwOviEB/BTvB5wecpLWzpSoVLBz44V5BOwZtkEOMVHuYfAe2KMKI4ewH7MmAjVJEAaY3sUuqNen8v0wR6yc4ITzfnzIgbnGABwetAoT/btryKpdvjkI4IGgQKII9ke1icrVBoDS8fr5CDTYXDDJYRBhF+UatvPHNQ9P1nXKMEB3Gh+y85ru5YBsELBW/DSgKrOqu72aPhOBsQ0CWuRn8AF+Gs6HijEfa0vQSiQCvg/gP2+vkp1epBidLngvH7LpoOZUHgZsWEHeomDK9QcPiIE+jtIoQPxp/Ao8Njll4/NunrvDnr3QSiD0aX3djGpOloJLQEjO5WNOrgSMVeUqsv3z5ZApVKO7PmgcFpVwKiKq2vNi3T3olJDzcRnVrTlWOKAPAzzdcqT0j82TwQ8YoUYP9yHJDiwTwI8Idrj3zj7RFCZ7HuBv0FvFpCFj2C65KZDqxKGQKm+7RKDssUfwcUbZsHjR6o/ND/N4UPsO4I8POqZb95I38K3d089+sYkCP0p50XAAP8/bDvBEzSPO44KW3rEesOVayajfXJHovVW5oPFIwC595Ydh+nYVKEZ5OFeJA/SYmBrAuwoJYyUKPbaraIuUxaCg83i8nvjYWaPAi4aEHmJPv6Ly0XkOMUrXP+qwYlT6EUbUPW+C6tXcHnwP+8SWRdVWfdt0PcPZY0A0x68UtOZIijW0NLyWIzEwQ4ANmxmXDzus2JCHc+tkUNE/3pKCVULiqOSspEXVVKLvO9QkJOY9bNHmq7esAtWiM2wXZRrcCBU2ilghHtPFUiraOTeuJgE6+Yj9Vt2OBrlPC4YFCb0Q2NG641hyfC1I/1PxBIEKvhXj0qthe70z+F35sK3FX1HwwMtVs98me5uhuk+xObUCX/XLEQWJxlsy3ZqtSmgJyxbVuX5wp3Ap4Y9KNHHUpykxdImkPpPGO/BTkZWcl4C7qNpTp9at7pDhA5NRTFXOJ2d3Jmo7YFkRpY/XXu1nREB3EHxwZBMqrSkhjuBzrM/hPAXwT9ipqMeWOZ00trcdpxcvADcr5WKe8GDFUAR6CY5HET3wQAPQOwh+mlJaOfrT2eD2XJF1JfltheDjHIPx1vIaPeYMvNy6FvNKxegLFqmBOF7/sFoHRH9rSAQfiDmIvtIAKsNX4oU2QL9o+0bgFYqy62V6KyEHm5vicL667rrZwP9Q8CBQE0Iel2hOvLwBT1PdcKvOfhZWdQCrx4r7puk6dQZi3t2R89DdvsbgWnqZn1SqjlLOlGPtew89RgWQDkiIVTlekBsTPIZsaE4LwQT2yoFDgA2X7/FEt9aI4KecxN0nO4G9A45BWODda89r7MceJGEIRkD2/cA7KA2tLG4bgpvEGMeLnRwnzMf3lZXpEkQ/LYvQO36EF9/dbjBpH4Ef7A7mY88xAA0fYAcczw9U1eBUTZaHgepSjX3vOceKkbtCMHsbRD/FURJRb1yY2/iMvRc7D95GH0h3BNRDZQzP5Zegd3xMnIP/2XdFg90Ao/uKWTfGiLX3DJy1zyYVNvsFSw/hn/Cxze3kkQ5E+VlpKSZHCzVDgG2MIrzNj22JCG/vC/xqYHLLGPysz1UpW3PsugjMO/D8wXn48R0AB9o+lPx0mER/awyHgHgEHS2840P89k6cdrYUKc6P4/xofGRXQydAjQVw2K6leR9H9I8T+CCovXH2szJEJwKCnzIeU//u+wvmKErsLl6WH2IMoOTqupjA79ZxfQoQdfmBsYS8TOE17FiKBVUBYZjELYDr3EuixozGBaiyj/3ZwQNIUxap5NlorePi0AbmCvwgOHjD824qIh4w9gV2EZOJPH65WoUzRzbbLKExlvC8B39vyVNWppGKabqr4MP6YbgHkHPGMBBPJrqpu3Sqy0fwBd6Yu68nkebQhLIUwH9vVo0hy1itwHdXqvMq+i129o2wWx2Wo2Eu0ZSqPtwDHyAu+8O9vERzkiQpEfz6561E3akyWqYlCzyXrlTnVSJ9ioM9Ay+IC3lWPNZUIY6NTzPpfgP8Q4K341j9VjILSidRE9VT5nmtuVKdV9GXZ/AJKTtDlZ9pduthZVNEvgf+4ZCkoGF+XvjamQNjKWKfpmSw1/GgbwrBGyqKVz0B7O5cFqU7xzBQ17G+B74L4JdR8AY+MJ0oQk0EbOflb5iI/p9pjLczx0JV16PsT1EGUEZO4aGnW2TyGzrfdRMwuMSjL/qrJx1FQYQnKQj+Bmv7n+lKiBEF5JYT+OqKFn40w+GqvCbr+3tpofHiuocE+8eenWO8OwHLw4CaV6zW9gP6hquulcCiJJbmJFaGG7uee8iyu2v60HEDra9CFpo6Wo2rwMf59kFvrNb2PfhgDj0vBGoeRXFRucYZfYeiBCfyTg93a8kDgk+iycPdGdXhQHwA31UUf7W2F4wHE1oMGEmRVGgQldW1sUnAob8TLniz5ADwJ1mK1HVrRBTARwviHVw8C+sk7s82Uqo2RuBuTY1IlEnT7DE5uO6dSlpnApws7O1AsfjccPokCNU1lyCo1rjCnNofeMGQiwQAXP8ac9yjBnG8u5T+1hwDonr5HHIQc91paMIIhtQC0EPGKvezfJOqRr0K/eFVQHeme3DCu/TO3u7xNvQhcd2jtTOcAU4AdoOJMsZGc7eCP4eZNUxVy0GSUSoRfQWTbofuXUUeeiJYoOqivINhuLKiDDt4YqMeVRi3Qj2jePBetKqbD9KU08E515Jg153RvD2mjD1IoiAE8P2jZfoNF3VaRmnMi1jaK8Nf9rWO3nQ9FJvYNaF5rt8E1XFHhAFvkmKnL1i57bYBzhwusR0JWbG/SnnsF9XYKEgZo7QarSmzhcJv3T4dfaxLbOAVA/oN932GdbcRoWRYM4fXpdZuMMQQMYatwvn4NtVkZ9wqtIbE0KW6b0Sw85EfEobgr9h/jb5TeIRGBBQ/C0gkXePVQt4o+ZrTp0w1DvTDGJvdxSGin/LBNVZ4v0S/xZsLKoEeHA4tqp47CMrOGhJsnYa1sKB6QnDaAtUSQDor9rdonsELPT/wPHCSwFreNcNtZx7dBOsBwVnmIPMhzmYC+12Pq8650eoO/gT+4QCmt5Yg/DeOldmYh4Pr4t1yTI0VRY6yH0WcS3vF/lb0ZQgOkosTmXCeIQj/jZPcDFodVFc8NeeY0Bwnf+I9xpVj3o6+JUPwTg+gdiLsFVv2o32D7tkZSZUkNPQJxQuNPI7zqSebtFbs74k0VAWCnwTY/wILDuTR0r+Af2/2PRAbCqYWI9NYdVLg9E8+mmsA/561M51jSBPMqEfYrrTKG0mvw69Zg4iUrY1inNhXRBR2oogH11zro+5EX7dlVYCrpYgLrQrKutG9Ar9ujxlQTArubBxjg+yc5NidTa4053tmF6dAgLMK8s84HADgPb1l7OdVjiOxICfGa4wYGKJhXBQF+Mirur9/YdWa6Y1dnabBVL4fRXXXy1HapvZZ/PeGLSm4BGBkOS/rNCumiZWlLJ9Xdf899HeGPfalujsRYC1nXfd1LwbpWMZ7/PeGJQfcIK7K0VJBJ4pZiJs40rqWVI9ZSgU+pQQ719XYQS3i8if+Ow2kXsa+F5KiVC8QBQWKA1Rp6FeV80trC3a3VTNAgwnaWvXIZ6B/HNs0dMNypKxwqjaB7cELoF1bwJ+TQzWsYv/rlB9Maez7QXqGHrveBYSLHvV/JeVLWOSsVP2rQemXomtyMLfZ4Kzk/u9YutUMHDtZYA48Yor7p6orAPFCDD5zju1hOY4BrTjPw4IO4kuXbF03Cj8Y3k7gAuixklw1fYyIulBLwoKLuhSMkjCkzUtRxEdpG6vY/626Z2jznCYqw664/7k9WxjHeP8Hwfexy34zjI65Gtq/lXhqAP8xj4OpKyCLyCv6YZxTPAichoEX5scJ+rU85O/lPQh/q+bXsOBN7rHIBysMS1D5nnd4ATur/VjB+kfgt4djTlXNpbouN3UmpDheNBWMtOj9rjj9g6Z3kF0ZqaLC17aQ2HAZ+P04rGb2Hze94NAOweEVfDCxHCjQMIoV+n9B+ezRq209FysxAfww560EfaOv0P/ztEfFc0zbHV58Dxv3FkfJV6H/l8Cfygf3OnAfeQR/6uhYK/T/PvcB9dN/ii6v619bO01fkV/Xuta1rnWta13rWte61rWuda1rXeta17rWta51wdrBWutv/n3YNc0wTQuWaRra/ld6Af5Gu7fX5tZ+v9veAtjb65ffW1cvuJ4B2RvPtnMaYclRysq1v8wTzj+2tr/l5OxeH2rpsfZffK7ZV38nsanbzuWybct6ngTwymfRbNdVL1/qRmfE5/fzrnVvwcooT55O2QlnIvZJQotmiG1Tu7b9lv/zaV14DPf84HByvsx17a3APT/WPGJG9PrWN9ys2xrTS7/TuVN3hqzCOZBHnEg4DD380wyDhOV8UZ2hOQN8z/F4XOp8bIx5VdEsq64N4dBMpz+42BhQgQ+bkNAkSRp5tdzeGquq7dXTDvAvfNsJf4P/OZZf5df39ogP3jRL41mNsWn7fjidmhs6Z+DYBXze79x4150syURd86oSgrc4EBI/yUlk9DRI71qJhuY0Qoii4P0i+DRGILPlLpl7wzmC5GIf04ROAMJ+4Tclvbxy0cSSlJXT7NBu2jM4ObhxB0r7obxaWbK3Zd9XsJbBZ2WN2zl8DT4OmcaH5+M37v7qDvyUuhZ4qy8XOIW5n26DkIhGhA7SXrxzoDlVUXZ8mvMw/yHCPC9oQo9L4GvWQLF/b3I4JJQifAjgtDJ2ooubZklWCnjSM/bqxJzwDkuCMxZZf61eX4EvquwK+GkN4PenG5oK46xHvInXy2+0a0bwEW74LLwQXV13ZVmrIQC4Ano4ekuXzDQno6IUrB6WwQ+LrqB0Se3o9ohD87wz3Alin8BJVDtwyrJksX3F81jCo053tvq+VpvGVNcA+B2FRy53X1Dg43cs9dTXZV2rt/wafBD8A40jribI7r4BfgaSX6ZqwgKOOhK1+gQ4YycggXfIlq5XIvilSJlYBF8C+EVbLel83ZFqnEkQZKgwDvDCpoKDAnKJz5BlWTAu4GOO8Mw1ntK67PDgZkyoh07xNhFeYxSLF9ERfJzBWCyCP3Rn8L/s6KzZlRfmEQcJ+MbFd91pMtD50yxgnDQV8zLCuTEMhZ+Q4JAJ6c6iD+AHDG9iXlc7L1U/30gasceBGgA+6A0pX5BmOe4wgmD2ACBq3aW2Rwh+WoKWFHhRFKenI/ApbNh0iQ4fa3DnGQiAf8pE1XaL4Pf1jeBjpyUAv+B113X3t8vWnYrhlJcyPiLDkUi2gT50AD622YUNOIE+8+YwUODj9y6rnTzOW9CHs5KPrdEypiqPWT86yBHBv9Dwruc4qvm2J7nYcgrBr5XItMcWCFeD/AQ0kNKhdRARkIqsD4wl8NWk72XwhTK4py8NLgq+58c4F7Dg3d09m3VH4P2mkrfAka1nSy0QQDn2qgNChkqpl8GMEGkOxZEn5bLaGQuipqzOycTe6hOWTGXfo/f+gj/ech5B7abqxG2Wwe9rTgvg+IrmI2cq0U3rexSbAM9BMQsHqp2TAn/BRuoSwE9vAB81vh/4IQ6YokV4t+jrjhoswrh83r2t/V43nh3Zw2eYwJ9tWIY6n8ScX5H8AqioENUM1dzAcwPJ8XzP9YFRbaeC2M1rVazJRqF+5mZJ8pWg12yw3jm4cGrsehyYujwUBV4yC68yuAj/MvjdpHe+Al+z+4wRL1S3JEM/5vq94HcsYgyk83n3yQk3bRkeAPsOrEk/Y/kA/JAUgl+R/K7veFlVM1RTd0Lsk49zHdRXFciv4G/wHvp4zW0xUTGB8KbS+vjUe91y5Rl8kP7ZMzeBD0ZhEfz+JvBB8AEedVUP5+z4d4s+6nyKXuhn8PE+4LPXwLunCH4vL5wI1Pmk4OIq+PU8+DurQuwPoCviee9Ee77GmyfwUTVdELydbskQ/TZsldd7l/pyAr8XYmnSt6GO1dfgg95F50I16Q+woWdy53gQAB/9SXaaAR87Gg9gwdCuddid9Y8LtYNz48tFtiMBfFA8AP77954GA+GIEwR/cdz21Y8xqR14Mmldvm7/XOG7Kyo24ykonX/K0vQXwd+ZMsmwlW3EKAp/FCd3TuO6Bv4W0HcHDpyOM04vXrC3M/AvwDVeBB9DKAD/R52vRrBaOcID8pl/b3gYgq/gH2fAV9Nq4DPh7tSXbr8CH5yI0zXw+6/B1xwBLB10du04QJejlGdJf9ccOgRfOfaX+mrq5t0L7DCd0MvQ0d5uKGqdZZ6Px7vr6u4j1cQxlIqcKMn/XksuYDsT+rPgY0/3RA2HK1Pp7GeopgJ/WAYfFBq84KqHu3uGPWTomg6mdcQOBXWpJj3evoBtAxcEejwLPsroSBKSBKCgqXERz6O8FC/FspMlwNcB8OUn8LempybiHpLhm3N8JvCXJH8COE2TiIZc6pdfy9Q6LRncoccH/8LJAp6IAUjUbHvdPXgIPovkPfE1eIsK/Yn+Uu1M6OP8EcpANR2Gi9HuDRXiKs+HcwE24zP4sKMhYE/8gOKYmm+rHeQ7C+A/6SwDFkdCLx4/awIQGnRfQPiXwU9FB4ToGvg7a4D9w2eA8wFOi+thR8ryeE98bdq/efCnzluWDFgJhuHQf1LP4N5RDMj1V3g+fARwPT9TEs1G7AMv+K7gn3V+vxzOgsdmUeSHPrmIXeJUzDP4OvjU79aUktKMQeC+XgdfdykG8uqJhONoRtA8DP2l/d3gn2bBf3r68WQcY1LRLEmqT5uKbAcscdtdAx/XBfig8tXYZ3qpVDV9Zl3m6M4G90os0QCtz0Ig/C/Oha2SIhUirRL3ffJuysmplfNORUuvgL+3JNoUpgQfxxUNLso+Y/dMWgfwp/jqAviI8REMblad+kT/HM/HLEDbLWeyirZpZ8A3YnhSP+TN5VQa0ztgf7XJBZgYEaBhXoaUv5D8Jy0QLAjAg/Z9/QJ8jh3EUkKbXiXtMHtXNYNUSbHh2BQYpayvSP5mYwTYzzMN2PlgaXboBhH2ZrrD09IU+NUV8PdqZhsys0/MC8DnoNTbdl7yNwB++zILvvmC4MdzLqY5Vsi9MKOVqYQWbsLRvEwjKrm/Av7e6dH3DAO/vSAKsizBdUxVC+CpRR4mLwQ4XqUoKMW+eYprLoGvZrZzBD9lA/hVoJ23hnQpwcGYd4g+gg8fVFSL4O+so0qUXeQWMJMFItT3y+B3cdO21Wfwf5hH1/VDEs+kkswRYX/NaB0OCQYghgXJX1Y7G6UXooKQojjOgY8DuwXCXqpYtIqRAuw5/NuVE5PKruh8g1I+dXy2zyN2NOB+BCM17HbRV+AD2cyGRfCf0WNB2R8+jloD8FXa8YrB7USeFxfx/B/gAx3iMOYX4G8Q/AwfJ8sY+BYH9zAPvnkL+F4Ykk50nyFEnV9OWReEnNPgLP4xiQlOplZyX9fVMvjw5gT8iDKtQfCniNTOkNMIhaxn+u3gY846uyb5r+DLC/CzGlOoy+ALUbxUM5KPubc45sOc5PcAfIWN2RNKD5PWl8/zVPOa2gEqGISEgPaekXwBPns5dS/kRUEm8DlCHxOh8mOwFxVdBN9wD4E6L6+CDwtEn0T4t914q+irBHqVXNH5OJMkUcUFl+CL6+BLcH9BjJtLtZNgczr/OAt+X73mdDHqeYBf0rwSXlg0VS9qisGZjnwCn4F/osA/ofcOjozAWU8hWGeSCRBHfPBltbO3CzV6t+4j4y0QDjY4CQJQRf1wq9uucrhg2bIrBhcnDWY067MLtqO0zjL4g0DljcmUTwZ3yCgFGphf2iZzRO4BJxE0Dw19NfUN/KS5ZApiL5acLHi6PMwn0zmj89HW8rIHptNjtgdJDvxU+LGNKoWoElVKsQD+1qBgBFkUpB9kHMfdYSS1Tm/V+ujhAq2gyzpfdyrkOuDNuZ/Bb6bCjaWdNobq7MB9ppoiy8PA82h7wfMNx1UMR1WihWEcFzEtxou5nlMa8Rr4RovTU9BbmuH5yFNqEKeZaj0HfnyWqUKK02Au5FCaQ4K9DV/ohw9ueCqMXaadvC20rOH0UiX5S7tlSjfJwIyIz9FZ+BBTkdXQzwagwPFQdVCXilmHH4n+TzhcKI39q5cF/7WakPOCi17qS+AvxXbQwwV7GwCTGWY8XIFMhWaOMVPvqeuGO/GtBcnfGS0ARquIfFLuIPrBVEIx3harBYOLti1bBB+0DngPUYyfc//5Q3Qt0HwAd3aIJBqLbPKEzMscGILv+dciIZpNQwL0u7sMTH4Nvsr0BGAAg4t0CwbWUlGLrKL6wllvT5jCzebBx+RhRiPOxOcTb7hUjV4QN4o+RjVRwS2xna0pC4pZGnYRGQfhqoArtG07b/U0u0om9D+DD9viBiCYvj9cbBuarsmCgWb1fGyXPNq7eclfDCmreG86tSS8OJYY8WRsBvw/zj9Yd3usoDwls2pnZ0o4FwVorgtWg6KvmoDWtw0rAvBR7SyyHc2RWDoIJxh15+bTvtAce+t286Vyuq9OJ2aq9Qse5IJGpjRuL0zuG3vY48BQ3wefHfZucyf4ej/UaQQ20avs2Xj+CQce5LM/HCVfiL7OklnJR8E/YWmiuKQLOGrQQ/CFvCWronh+thTVVFmflMcxKInLFxjYThd8pa4fZ37U3hqzBFzMSFzuzZT+pVU+42ed19YY+NRLk7uX8+NVPH9Z7Wj22As1hdsbZjNZfYY6f07tTOBjYI3Ngg+Cz3DveDRTGrt/VjMVYtEPt4g+sJ1sOaoJ5yjr05Lnudd9FvwNGmswmhg2nimV2xhC1il6LdFnrfsHaix0s0RbtZ+iym+CrztDTRB9V84oNQC/W9b5ui1V4RqALy6ZmJJ8xniYVQs63+3LRfA1BwPOdT1/3IF+A/il6MpbqpavhpQ1S7KE8U7wOBo+CTd61OYACo5jPuGyzkN3ZF+XkQ+y+zkVqqBNkoKysmjjn5b+Z92OGl7TswTBP8wRWXNUbPEymfIHshFVh8jSABypGXOEkl+W4Fk1/RL4HQODzOZ0/s4c+dnUz0krllEBYKp0U7sF/KWQMs5OArNO4b3Kck49YHF/JkrF9T+jPwkfjhjwL5K/mKJ5HijO9olpCHxT+yj06tuBhLEEB3jMCT6AD+iWc5ksbIB9xDGXDHRveQnBRkl+FEWEnRbBPwJhmQcfY2GIR71QF4sxlxIJeH2D6MOboTsNVPMzl9EtOoBGomEBfqL09M82b8pygSPeTXU97yvi94ZTHRgWP3MSzNoekOw4jinOUKWv36qgx/KUvelUrusGAZiaYlaCQP5oClYRwP/w0HvdtGWDloKEXhjVwpjP7zIgEaxelnys1c5mwAfBL+uu4+VSXANMAkAS8X6xKuijCkP1RpHnwzqXC6py1QE9W2S0rBzquW1UivkkgPCCq0mPxDKmrBwAECbuIUS9UooF1gWcGOuTASUqJMD/Vqy5x1K5TKVSfN8L5isIAHwOAPXA6Yx3y7LdUfaiAMLng/S3s9IH4FcJA1+076/p/FMyAz4INpa2tmJRq2BoOSZxUeTjl4RnAh/O8MmxbbwIpwplHU9KOsW24Oymsl64H4WcF2cR4sSesBxHF9/BduQRQwRA4wmrh4UAK2pHUA6BKnTuRyxTNsCxNUzLGSXQPBfrGzxvQcAAfFaQFPPzgPaxb9s4fmmlqpPtO0E89OGK+ZN/Bp9FVyQf3GosGTAv/eYQx9t3YjQXEv9bQyYEZyrkX+fSJ/AB/eQ0NFglj2s4NhP0OCky68d68Y7N3pK+H3OgHpyh4cVvjj3MvSQYEyOsX9z/vTlglTMrFXnoBymbPM7zQRVKsjP4SwWb1oiXZwjlVZadRHbCRz0caDXlFgUhXuC9LJRxgM9e4e2DSLTGgh0E8OHMX4KvOzmORhP9FScK/BOABMDPv9T6qPMRfJxHEmLgGO9FoHOEf0bwAXtVRLz0o54lxcQE6JcUy+NR5BX2gRpMK648ABybvlSXYNR9Buq5U9pWZfeCANFf/IzWCDQe3Guw2TRhGPbLEkJyMd0SqvFex7BU3L+zhwzH3TO+CL6IEIMLtYMMGT4UKftxObW+MVqwOXnT9DLQv2I7R7yBFZFpKANT4Ecqfj+pnaG/Hh8F2e9rvEhSYp2REkA1VxVrZrzqag3Rzuxk32EqVcAjIK9E8D28lEEZg01cDs1aY4pVjHhUSBCoHQRfsIA/nMc71ePiJGiAED9b4JFiCfwCHuECfIw7tBSDItHV6MHebrw4b+ZLuz8HkaKf40g8nAEf4GUgmmEZYX6UXw7+2ps9ZrNTpbsOLkaEkciBhLCF+0Tv4oPOODRFQSgl9N1kjgDjI8G1wVfWiMcNM08x8X2Vw4DDx6i6xtfVw8iWZ8VhSQ8gC/5hswQ+Pgy85FPiHuSM0ZD4JLquUAygYS0S8PGL+JruNMTzfe/nUhgcktNJHOVwy1QM8AdGzA3VKSZdQekECsdQ9pb+pb23xNjEMX6Hj1OYsJLKO2ABUn91iLklecS5Srr6UzU+SnvKKEhmg7P8rgzNArUDcg8nNKwWJZ/40aXaMYKQKjP1Rexgb78VtlwXfTC4DTB5EgLlJuF5xRXYv5Fjw+6bkgLAy5FmiOIw3WeGExAOt83UQHdCNqGH+VaSqNunsHH+cbg+fckaW84F57yg0yNzvJVbqyocZ5oiulkGX6q7vlQsU00KFjfJPoIPlhT0ARYGyy+0gYGlQMMR74pdFX3NxpTRdKXJdd133RemJgabm0opsX8CB56HdfHJCUhP49w8XgDgt4uhLwRgiWNoxHEYnJkprB/Bj92LBSbDgcf+smfEziKv37IUzz/bft/8+NeqYYPr8a+CZnsrxuOIz3T1pTuVu/lUpKf6dzzdt/Z4Ico+7xx2zbj9W3Euh+2iipTyWFHc9/3meu+W/WxZoa7d1i1l+oiavtgtRdem9/9Q37s/J7rgm7/qbfLz8bR/a8zC7rXU9P5+OcqpVgs+8dohf13rWte61rWuda1rXeta17rWta51rWtd61rXuta1rsdcm//+x/tYQ/6ND7zZ/bj9tZvNDS+e+on813dpZxg/88rwP+Zy6YIGX1x6E/NDvcjeNBe7PcHXvrrvutNMS1VBLqeE94ah/wR8a5i/4Xx1LFn+WVe5t44vy31nNqZcurv8wxjH92h/+t8PC772RVGSZjmvXXKdpWaFe/t9lfnWGu3fE/y3i52aNYRXyor2dhM6y1i8+/Swoc4SFnjZ07sq+rotC9sydMN4tselqs+9/aFBoSl/Q/BVd5JzdZ9mD/m1ki6jPbhLF8bw5sdPRHVnuShS74fgeK1tuu5gzZt6wVYzyQL6/xnwbdUaVrOXG1CfxdkCidbmD5DmvFMD5pgsyTYoCMcSrnblfL0vld0Z7rh05e/9Dv7W4CP2x+vTW0CcDd3rzSXt9fPegWbjFdwFfQ6bBF83rxgWz9i8P1LWbPnde/A3vzH4L6rVm/1yHfutCejurcUPqbtvF+gMuWxuTenqG3PxAJ1BfYf+QjnQ+XWb852k31ryNTv+YmqR5uDFRj1YqFJ9Z3L3V6jH9CotmBd9vL8+5PotrP2/onawu6cT2l+QbwMbvWzwMy912hjPBay6O5pLnpre46HYLWwP9k3FQ7H52tED0/C+C7z1u4I/2kDuXMfYXP+wwPG32615XGoJBNr8eau09hhoC7I7ob550vlsjf1mEoXbwA/fioNhOfnvyvMdZ8Ra2atdYo0c5Hq7xaYOCzxxe6ZCaFIXzS0cCniXzUe34HvgH9wKS8uHIY7jl4L+puA3HLi0ZjuLZdGbNz2+edo+L96m1FN1/xM82MWbPear82XIuVbfd4E/2Pq7y6TDbwp+qG5s6E6z9Px4ad2T1lSAbSx25ph0yjVzC4JvT6XtxuwB2mCbQke7JUqGOv9deOO31PmT2tGetk9bw19qGQZ28HkU3nTJgCaLn9MYqA7qfKbVyytbHYfgdSxlP2c7kO34xi2B1fce7maz+zck/28PnOJzKydrg1c8W2O35L9KZdkUbossHo3y3jwqujL7dUe6zuv79AtXnZ33PZJQ4c1fafgfgP/0z4Gv+okutbQ1Gld/a2ZmL+oV8MMM58XcbualxBj6n93RZifbwGMAYz2rNXXLZWfOX278AP7T7wv+8Nba1hmWolgv7zS0OS40OQOGnyxO2X36hNBs1Fl1qhrZ6wHcqNiOtfsPgz/FdlBT6O58Z3zdVbOvzq1dQGifl3z+SshFnqlPMVFsR7XdPO2XDpDujPJ5SqJsNNNdsDBocN/F883hN3Wyfj73zojmjO7eyhWiZ/C3S6GZp43RJ4sDS179gLdGeOPSrUJ7HGxsp2GYtlyy7p9Dysff1sPd/4R5vLz5/0Mf3iGKvJPNt8VQgeVlnul8/K5lZ0yznOMweF45Ls+V/pjJAlX4e4JvWO/g1p6ti8QdvOJjbnFvWtZ8aGZn2sZSdly3Pl7t/wE/eAGwnW6qoIFtLt5I31vW+0Dg8nv9z7n8da3/gRfudtvPDbi2u93uE+3/9Dc/32q3fCEUvudTu7fd/O1bfJ7dVL2w+GZ/4CNs3r/Vbvv0X1iby935VFuycNV56sr960Lx8wcuelt//MP+z/8nSjSzHZuvT9Ev/MDXN9r8x6um/n9u94r6uta1rnWta13rWte61rWuda1rXX//+j/q8bl7S0IQjAAAAABJRU5ErkJggg==);--mark:url(data:image/png;base64,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);
+--bg:#f4f7fb;--bg2:#e1e9f3;--panel:#ffffff;--ink:#16243a;--mut:#53647b;--line:#d3dce8;--acc:#1a3f77;--onacc:#ffffff;--teal:#2f7d3a;--bad:#c0392b;--good:#2a7a38;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a2b;--bg2:#1b2c47;--panel:#15233a;--ink:#e8eef7;--mut:#9db0c9;--line:#2c3f5e;--acc:#7fb0f5;--onacc:#0b1626;--teal:#5cc16a;--bad:#ff8470;--good:#6fdc88}}
+:root[data-theme="dark"]{--bg:#0f1a2b;--bg2:#1b2c47;--panel:#15233a;--ink:#e8eef7;--mut:#9db0c9;--line:#2c3f5e;--acc:#7fb0f5;--onacc:#0b1626;--teal:#5cc16a;--bad:#ff8470;--good:#6fdc88}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif}
+.mono{font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+#app{display:grid;grid-template-columns:280px 1fr 320px;grid-template-rows:auto 1fr auto;height:100vh;height:100dvh}
+header{grid-column:1/-1;display:flex;align-items:center;gap:12px;padding:8px 16px;border-bottom:1px solid var(--line);background:var(--panel)}
+.brandmark{width:44px;height:44px;flex:none;border-radius:10px;background:#fff var(--mark) center/80% no-repeat;border:1px solid var(--line)}
+.ttl h1{margin:0;font-size:19px;line-height:1.15;font-weight:700;color:var(--acc)}
+.ttl span{display:block;color:var(--mut);font-size:13px}
+header .sp{flex:1}
+.hdhint{color:var(--mut);font-size:13px}
+header button{white-space:nowrap}
+#stage{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,var(--bg2),var(--bg) 70%);touch-action:none;cursor:grab;min-height:340px}
+#stage:active{cursor:grabbing}
+canvas{display:block;width:100%;height:100%}
+aside{padding:6px 14px 14px;overflow:auto;background:var(--panel);border-right:1px solid var(--line)}
+aside.r{border-right:0;border-left:1px solid var(--line);padding-top:14px}
+h2{font-size:15px;color:var(--ink);margin:18px 0 6px;font-weight:700}
+h2:first-child{margin-top:0}
+.hint{margin:0 0 8px;color:var(--mut);font-size:13px}
+details{border-bottom:1px solid var(--line);padding:10px 0 12px}
+details:last-of-type{border-bottom:0}
+summary{font-size:15px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;padding:2px 0 6px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:8px;height:8px;border-right:2px solid var(--mut);border-bottom:2px solid var(--mut);transform:rotate(45deg);margin-right:4px;transition:transform .15s}
+details[open] summary::after{transform:rotate(-135deg)}
+.row{display:flex;flex-wrap:wrap;gap:6px}
+#mode button{flex:1 1 0;padding-left:6px;padding-right:6px}
+#scn button{flex:1 1 auto}
+button,.chip{font:inherit;font-weight:500;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:8px;padding:7px 12px;min-height:38px;cursor:pointer}
+button:hover{border-color:var(--acc);background:rgba(127,127,127,.08)}
+button.on{background:var(--acc);color:var(--onacc);border-color:var(--acc);font-weight:600}
+button.big{width:100%;padding:10px;font-weight:600;background:var(--teal);color:#fff;border-color:var(--teal)}
+button.big.alt{background:transparent;color:var(--acc);border:1.5px solid var(--acc);margin-top:6px}
+button.big.alt:hover{background:rgba(127,127,127,.1)}
+button.big.stop{background:var(--bad);border-color:var(--bad);color:#fff}
+label.sl{display:block;font-size:13px;color:var(--mut);margin-top:10px}
+input[type=range]{width:100%;accent-color:var(--acc)}
+.tag{position:absolute;left:0;top:0;transform:translate(-999px,-999px);display:flex;align-items:center;gap:5px;padding:3px 9px 3px 6px;font-size:12px;min-height:0;border-radius:999px;background:var(--panel);border:1px solid var(--acc);white-space:nowrap;will-change:transform}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--acc);display:block}
+.tag.sel{background:var(--acc);color:var(--onacc)}
+.card{border:1px solid var(--line);border-radius:8px;padding:10px 12px;background:rgba(127,127,127,.06)}
+.card b{display:block;font-size:15px;margin-bottom:2px}
+.card p{margin:5px 0;color:var(--mut);font-size:13.5px}
+.card p em{font-style:normal;color:var(--ink);font-weight:600}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.kv{border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+.kv small{display:block;color:var(--mut);font-size:12.5px}
+.kv strong{font-size:19px;font-weight:600}
+.kv canvas{height:26px;margin-top:2px}
+#status{margin-top:8px;padding:10px;border-radius:8px;font-weight:600;text-align:center;border:1px solid var(--line)}
+#status.ok{color:var(--good);border-color:var(--good)}
+#status.bad{color:var(--bad);border-color:var(--bad)}
+.note{font-size:12.5px;color:var(--mut);margin-top:12px}
+#stg{display:grid;gap:2px;margin-top:8px}
+.stg{display:flex;gap:8px;align-items:baseline;padding:5px 8px;border-radius:6px;font-size:13.5px;color:var(--mut)}
+.stg.act{background:var(--acc);color:var(--onacc);font-weight:600}
+.stg.done{color:var(--good)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+#credit{grid-column:1/-1;display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:8px 16px;border-top:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--mut)}
+.logofull{width:78px;height:60px;flex:none;border-radius:8px;background:#fff var(--logo) center/contain no-repeat;border:1px solid var(--line)}
+#credit p{margin:0}
+#credit .by{color:var(--ink);font-size:15px;font-weight:700}
+#credit a{color:var(--acc);font-weight:600;text-decoration:none;margin-right:14px}
+#credit a:hover{text-decoration:underline}
+#credit .copy{margin-left:auto;text-align:right;max-width:420px}
+dialog{border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--ink);max-width:460px;width:calc(100% - 32px);padding:20px 22px}
+dialog::backdrop{background:rgba(10,20,35,.55)}
+dialog h2{margin:0 0 8px;font-size:18px}
+dialog ol{padding-left:20px;margin:0 0 14px}
+dialog li{margin:6px 0}
+@media (max-width:900px){
+#app{display:flex;flex-direction:column;height:auto}
+header{order:-2}
+#stage{order:-1;flex:none;height:62vh;height:62dvh}
+aside,aside.r{border:0;border-top:1px solid var(--line)}
+.hdhint{display:none}
+#credit .copy{margin-left:0;text-align:left}
+}
+</style>
+</head>
+<body>
+<div id="app">
+<header>
+<div class="brandmark" role="img" aria-label="Dugdha Kavach logo"></div>
+<div class="ttl"><h1>Dugdha Kavach</h1><span>Smart balti 3D simulator</span></div>
+<span class="sp"></span>
+<span class="hdhint">Drag to rotate. Scroll or pinch to zoom. Tap a label to learn about a part.</span>
+<button id="helpBtn">How to use</button>
+</header>
+
+<aside>
+<details open><summary>Milking</summary>
+<p class="hint">Choose how the milk is collected, then press start.</p>
+<div class="row" id="mode"><button data-m="hand">Hand milking</button><button data-m="machine" class="on">Machine milking</button></div>
+<div id="vacrow"><label class="sl" for="vac">Vacuum level: <span id="vacv" class="mono">42</span> kPa</label>
+<input id="vac" type="range" min="32" max="54" step="1" value="42"></div>
+<button id="go" class="big" style="margin-top:12px">Start milking</button>
+<label class="sl" for="sp">Simulation speed: <span id="spv" class="mono">1.0</span>×</label>
+<input id="sp" type="range" min="0.3" max="3" step="0.1" value="1">
+<div class="row" style="margin-top:10px"><button id="rst">Reset bucket</button><button id="mout">Open milk outlet</button></div>
+</details>
+<details open><summary>Milk to test</summary>
+<p class="hint">Pick a milk condition, then start milking to see how the readings and the alert change.</p>
+<div class="row" id="scn">
+<button data-s="normal" class="on">Normal</button><button data-s="mast">Mastitis</button><button data-s="water">Watered down</button><button data-s="sour">Sour</button></div>
+</details>
+<details open><summary>Sensor labs</summary>
+<p class="hint">Zoom into the sensors and see the physics behind them.</p>
+<button id="ocOpen" class="big alt" style="margin-top:0">Open optical sensor lab</button>
+<button id="dlOpen" class="big alt">Open device labs (6 devices)</button>
+</details>
+<details open><summary>Clean the bucket</summary>
+<p class="hint">Runs the full washing routine step by step.</p>
+<button id="cip" class="big alt" style="margin-top:0">Start cleaning cycle</button>
+<div id="stg"></div>
+</details>
+<details><summary>View and camera</summary>
+<h2>Show or hide</h2>
+<div class="row" id="lay">
+<button data-l="ghost">See-through steel</button><button data-l="milk" class="on">Milk</button><button data-l="elec" class="on">Electronics</button><button data-l="wire" class="on">Wires</button><button data-l="tags" class="on">Part labels</button><button data-l="spin">Auto-rotate</button></div>
+<h2>Pull parts apart</h2>
+<input id="ex" type="range" min="0" max="1" step="0.01" value="0" aria-label="Pull parts apart">
+<h2>Camera angle</h2>
+<div class="row" id="cams"><button data-c="front">Front</button><button data-c="pod">Sensor box</button><button data-c="base">Bottom</button><button data-c="top">Top</button><button data-c="side">Outlet side</button><button data-c="cip">Cleaning view</button><button data-c="back">Back (pump, waste)</button></div>
+</details>
+</aside>
+
+<div id="stage"></div>
+
+<aside class="r">
+<h2>Live readings</h2>
+<p class="hint">Simulated values, for learning.</p>
+<div class="grid">
+<div class="kv"><small>Volume</small><strong class="mono" id="vV">0.0 L</strong></div>
+<div class="kv"><small>Weight</small><strong class="mono" id="vW">0.00 kg</strong><canvas id="cW"></canvas></div>
+<div class="kv"><small>Temperature</small><strong class="mono" id="vT">—</strong></div>
+<div class="kv"><small>Conductivity</small><strong class="mono" id="vE">—</strong><canvas id="cE"></canvas></div>
+<div class="kv"><small>pH</small><strong class="mono" id="vP">—</strong><canvas id="cP"></canvas></div>
+<div class="kv"><small>Optical index</small><strong class="mono" id="vO">—</strong></div>
+<div class="kv"><small>Vacuum</small><strong class="mono" id="kVac">—</strong></div>
+<div class="kv"><small>Milk flow</small><strong class="mono" id="kFlow">—</strong></div>
+</div>
+<div id="status" class="ok">Waiting for milk</div>
+<h2>Selected part</h2>
+<div class="card" id="info"><b>Tap a label on the 3D model</b><p>You will see what the part does and how to build it for real.</p></div>
+<h2>How this mode works</h2><div class="card" id="phys"></div>
+<h2>Cleaning and sensor safety</h2><div class="card" id="cipInfo"></div>
+<p class="note">CIP concentrations, temperatures and times are indicative starting points; confirm against your sensor datasheets and detergent supplier before use. Values are illustrative, not measured. The optical index is a spectral fingerprint, not a direct SCC reading; alert thresholds need calibration against lab reference tests.</p>
+</aside>
+<footer id="credit">
+<div class="logofull" role="img" aria-label="Dugdha Kavach logo"></div>
+<div><p class="by">Built by HIF</p>
+<p><a href="https://github.com/hifjurrahmanchoudhurt" target="_blank" rel="noopener">GitHub</a><a href="mailto:hiflolllll@gmail.com">hiflolllll@gmail.com</a></p></div>
+<p class="copy">© 2026 Dugdha Kavach. All rights reserved.<br>Values shown are simulated and meant for learning and design.</p>
+</footer>
+</div>
+
+<dialog id="help">
+<h2>How to use this simulator</h2>
+<ol>
+<li>Choose hand or machine milking, then press <b>Start milking</b>.</li>
+<li>Pick a milk condition under <b>Milk to test</b> and watch the readings and alert change.</li>
+<li>Tap any label on the 3D bucket to learn what that part does.</li>
+<li>Use <b>Clean the bucket</b> to see each washing step.</li>
+</ol>
+<button id="helpX" class="big">Got it</button>
+</dialog>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const V3=THREE.Vector3,$=id=>document.getElementById(id);
+const stage=$('stage');
+const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+stage.appendChild(renderer.domElement);
+const scene=new THREE.Scene();
+const cam=new THREE.PerspectiveCamera(38,1,.1,100);
+scene.add(new THREE.HemisphereLight(0xfff1dc,0x5a4630,.9));
+const sun=new THREE.DirectionalLight(0xfff0d6,1.15);sun.position.set(5,9,6);sun.castShadow=true;
+sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-6,right:6,top:6,bottom:-6,near:1,far:25});scene.add(sun);
+const rim=new THREE.DirectionalLight(0x9fd8ff,.5);rim.position.set(-6,3,-5);scene.add(rim);
+
+/* materials */
+const M=(c,m,r,x)=>new THREE.MeshStandardMaterial(Object.assign({color:c,metalness:m,roughness:r},x||{}));
+const steel=M(0xcfc8ba,.55,.42,{side:THREE.DoubleSide});
+const steelD=M(0x8d8a84,.6,.5), rubber=M(0x1c1c1e,0,.9), gold=M(0xd7a63a,.8,.3);
+const alu=M(0x9aa1a8,.7,.4), black=M(0x101114,.2,.6), wood=M(0x8a5a2e,0,.85);
+const glass=M(0xbfe6ee,.1,.05,{transparent:true,opacity:.35,depthWrite:false});
+const casing=M(0x2f353c,.3,.5,{transparent:true,opacity:.5,depthWrite:false});
+const milkM=M(0xf6efe0,0,.25,{transparent:true,opacity:.92,emissive:0x3a3320,emissiveIntensity:.35});
+const hoseM=M(0xe3ece9,0,.2,{transparent:true,opacity:.45,depthWrite:false});
+const pcb=M(0x1b7a45,.1,.5), pcb2=M(0x1f5fa8,.1,.5), pcb3=M(0xa8322a,.1,.5);
+
+const root=new THREE.Group();scene.add(root);
+const G=()=>{const g=new THREE.Group();root.add(g);return g};
+const box=(w,h,d,m,x,y,z,p)=>{const o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);o.position.set(x,y,z);(p||root).add(o);return o};
+const cyl=(rt,rb,h,m,x,y,z,p,rx,rz)=>{const o=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,28),m);o.position.set(x,y,z);o.rotation.x=rx||0;o.rotation.z=rz||0;(p||root).add(o);return o};
+const tube=(pts,r,m,seg)=>{const c=new THREE.CatmullRomCurve3(pts.map(p=>new V3(p[0],p[1],p[2])));const o=new THREE.Mesh(new THREE.TubeGeometry(c,seg||60,r,8,false),m);return [o,c]};
+
+/* floor: earthen ground + wooden plank (desi setup) */
+const gc=document.createElement('canvas');gc.width=gc.height=256;const gx=gc.getContext('2d');
+gx.fillStyle='#8b6b47';gx.fillRect(0,0,256,256);
+for(let i=0;i<2500;i++){gx.fillStyle='rgba('+(i%2?'60,40,20':'190,150,100')+',.12)';gx.fillRect(Math.random()*256,Math.random()*256,2+Math.random()*3,2+Math.random()*3)}
+const gt=new THREE.CanvasTexture(gc);gt.wrapS=gt.wrapT=THREE.RepeatWrapping;gt.repeat.set(4,4);
+const floor=new THREE.Mesh(new THREE.CircleGeometry(9,48),new THREE.MeshStandardMaterial({map:gt,roughness:1}));
+floor.rotation.x=-Math.PI/2;floor.position.y=-.5;floor.receiveShadow=true;root.add(floor);
+box(5.8,.1,5.4,wood,0,-.45,-.1);
+
+/* bucket body: tapered SS balti, thick wall via lathe */
+const prof=[[0,0],[1.0,0],[1.05,.05],[1.5,3.6],[1.54,3.6],[1.54,3.66],[1.5,3.66],[1.46,3.6],[1.01,.09],[0,.09]].map(p=>new THREE.Vector2(p[0],p[1]));
+const body=new THREE.Mesh(new THREE.LatheGeometry(prof,72),steel);root.add(body);
+for(const s of [-1,1]){ // D ear handles
+  const h=new THREE.Mesh(new THREE.TorusGeometry(.3,.035,10,24,Math.PI),steelD);
+  h.position.set(s*1.44,3.2,0);h.rotation.z=-s*Math.PI/2;root.add(h);}
+// hammered-dent bands (desi look)
+for(const y of [.5,1.9]){const b=new THREE.Mesh(new THREE.TorusGeometry(1.05+.126*(y-.04)+.005,.018,8,72),steelD);b.rotation.x=Math.PI/2;b.position.y=y;root.add(b)}
+// weld seam
+box(.03,3.5,.02,steelD,0,1.8,-(1.05+.126*1.7)-.005).rotation.z=0;
+
+/* milk */
+const milk=new THREE.Mesh(new THREE.CylinderGeometry(1,1,1,48),milkM);root.add(milk);
+const R0=1.0,K=.128,MAXV=15;
+const rAt=y=>1.01+K*(y-.09)-.015;
+const levelOf=v=>{const r=Math.cbrt(1.0303+3*K*v/Math.PI);return (r-1.01)/K+.09};
+let lastLevel=-1;
+function setMilk(v){const h=levelOf(v);if(Math.abs(h-lastLevel)<.002)return;lastLevel=h;
+  if(v<.01){milk.visible=false;return}
+  milk.geometry.dispose();milk.geometry=new THREE.CylinderGeometry(rAt(h),rAt(.09),h-.09,48);milk.position.y=.09+(h-.09)/2;milk.visible=layer.milk}
+
+/* lid */
+const lid=G();
+cyl(1.55,1.55,.09,steel,0,3.66,0,lid);
+cyl(1.2,1.5,.07,steel,0,3.73,0,lid);
+const kn=new THREE.Mesh(new THREE.TorusGeometry(.14,.035,8,20),steelD);kn.position.set(-.4,3.82,-.3);lid.add(kn);
+cyl(.11,.11,.45,steelD,.7,3.95,.3,lid);cyl(.15,.15,.05,gold,.7,4.12,.3,lid);
+cyl(.06,.06,.12,steelD,.5,3.85,-.7,lid);
+cyl(.1,.1,.3,steelD,-.7,3.9,-.5,lid);cyl(.14,.14,.05,gold,-.7,4.06,-.5,lid);
+cyl(.03,.03,.75,steelD,-.7,3.3,-.5,lid);
+const ball=new THREE.Mesh(new THREE.SphereGeometry(.09,16,12),steelD);ball.position.set(-.7,2.95,-.5);lid.add(ball);
+for(const s of [-1,1]){box(.35,.12,.14,steelD,s*1.5,3.72,0,lid);box(.05,.5,.1,steelD,s*1.57,3.45,0,lid)}
+
+/* milking cluster (right) */
+const cluster=G();cluster.position.set(2.7,1.6,.9);
+cyl(.24,.2,.22,steelD,0,0,0,cluster);cyl(.12,.12,.25,rubber,0,.22,0,cluster);
+const cups=[];
+[[.34,.34],[-.34,.34],[.34,-.34],[-.34,-.34]].forEach((p,i)=>{
+  const g=new THREE.Group();g.position.set(p[0]*1.2,.4,p[1]*1.2);cluster.add(g);
+  const sh=new THREE.Mesh(new THREE.CylinderGeometry(.11,.08,.6,20),M(0x9aa1a8,.6,.4,{transparent:true,opacity:.4,depthWrite:false}));g.add(sh);
+  const ln=new THREE.Mesh(new THREE.CylinderGeometry(.085,.05,.62,20),rubber);ln.position.y=.03;g.add(ln);
+  g.rotation.z=-p[0]*.6;g.rotation.x=p[1]*.6;cups.push(g);
+  const [tb]=tube([[p[0]*1.2,.15,p[1]*1.2],[p[0]*.6,.1,p[1]*.6],[0,.15,0]],.03,rubber,10);cluster.add(tb)});
+const [hose,hoseC]=tube([[2.7,1.85,.9],[2.8,2.9,.9],[2.3,4.3,.7],[1.2,4.55,.4],[.7,4.35,.3],[.7,4.05,.3]],.07,hoseM,80);root.add(hose);
+
+/* load cells + feet + plate */
+const lc=G();
+box(2.3,.08,2.3,steelD,0,-.08,0,lc);
+const lcPts=[];
+for(const sx of [-1,1])for(const sz of [-1,1]){
+  box(.34,.14,.34,alu,sx*.8,-.2,sz*.8,lc);box(.16,.02,.16,gold,sx*.8,-.125,sz*.8,lc);
+  cyl(.12,.14,.13,rubber,sx*.8,-.34,sz*.8,lc);lcPts.push([sx,sz])}
+
+/* dry electronics pod (aluminium enclosure), tilted to follow the bucket wall */
+const pod=G();pod.position.set(0,1.9,1.55);pod.rotation.x=.125;
+box(1.3,1.9,.5,casing,0,0,0,pod);
+box(1.34,.05,.54,alu,0,.97,0,pod);box(1.34,.05,.54,alu,0,-.97,0,pod);
+const bez=box(1,.58,.03,black,0,.42,.26,pod);
+const oc=document.createElement('canvas');oc.width=256;oc.height=150;const og=oc.getContext('2d');
+const otex=new THREE.CanvasTexture(oc);
+const scr=new THREE.Mesh(new THREE.PlaneGeometry(.92,.5),new THREE.MeshBasicMaterial({map:otex}));scr.position.set(0,.42,.28);pod.add(scr);
+box(.4,.75,.03,pcb,-.3,-.2,-.05,pod);box(.14,.1,.04,black,-.3,-.05,-.03,pod);
+box(.32,.3,.03,pcb2,.25,-.25,-.05,pod);box(.4,.3,.03,pcb3,.2,.15,-.05,pod);
+cyl(.025,.025,.35,black,.5,1.1,0,pod);
+const led=new THREE.Mesh(new THREE.SphereGeometry(.03,10,10),new THREE.MeshBasicMaterial({color:0x44ff88}));led.position.set(.5,-.65,.26);pod.add(led);
+// probes through wall into milk (temp, EC)
+const tp=cyl(.035,.035,.55,steelD,-.45,-.65,-.5,pod,Math.PI/2);cyl(.05,.05,.12,red(),-.45,-.65,-.8,pod,Math.PI/2);
+function red(){return M(0xd94a2f,.3,.4)}
+cyl(.05,.05,.4,black,-.45,-.65,-.3,pod,Math.PI/2);
+cyl(.07,.07,.1,steelD,-.45,-.65,-.25,pod,Math.PI/2);
+const ecG=new THREE.Group();ecG.position.set(.1,-.85,-.5);pod.add(ecG);
+cyl(.07,.07,.4,black,0,0,.2,ecG,Math.PI/2);
+for(const dx of [-.05,.05,-.15,.15])cyl(.016,.016,.5,gold,dx*.9,0,-.1,ecG,Math.PI/2);
+// clip + slot (bracket to hang pod on the rim)
+const clip=G();
+box(.55,.95,.06,alu,0,3.15,1.52,clip);box(.4,.25,.25,alu,0,2.95,1.5,clip);
+box(.3,.05,.08,black,0,3.3,1.56,clip);box(.5,.06,.16,alu,0,3.62,1.47,clip);
+// pH side-stream flow cell (right of pod) + tubing
+const phC=G();
+const cell=cyl(.13,.13,.6,glass,1.0,1.85,1.35,phC);
+cyl(.14,.14,.05,steelD,1.0,1.58,1.35,phC);cyl(.14,.14,.05,steelD,1.0,2.15,1.35,phC);
+cyl(.06,.06,.5,steelD,1.0,2.45,1.35,phC);cyl(.09,.09,.18,M(0x2c6bd6,.2,.3),1.0,2.15,1.35,phC);
+box(.4,.06,.06,alu,.82,1.85,1.45,phC);
+const phPts=[[.85,1.0,.82],[1.0,1.0,1.15],[1.0,1.3,1.35],[1.0,1.58,1.35],[1.0,2.1,1.35],[1.02,2.35,1.35],[.9,2.5,1.1],[.82,2.5,1.02]];
+const [phT,phC2]=tube(phPts,.035,hoseM,60);phC.add(phT);
+for(const p of [phPts[0],phPts[7]]){const s=new THREE.Mesh(new THREE.SphereGeometry(.07,12,12),gold);s.position.set(p[0],p[1],p[2]);phC.add(s)}
+// optical cartridge at outlet (AS7265x) + drain valve
+const cart=G();
+box(.55,.42,.42,black,-1.42,.35,0,cart);
+const asm=new THREE.MeshBasicMaterial({color:0xb06bff});box(.2,.02,.2,asm,-1.42,.57,0,cart);
+box(.5,.22,.05,pcb,-1.42,.66,0,cart).rotation.x=0;
+cyl(.07,.07,.4,steelD,-1.05,.35,0,cart,0,Math.PI/2);cyl(.07,.07,.5,steelD,-1.95,.35,0,cart,0,Math.PI/2);
+cyl(.11,.11,.18,gold,-2.05,.35,0,cart,0,Math.PI/2);const mvM=M(0xd94a2f,.2,.4);const mvH=box(.05,.3,.06,mvM,-1.8,.5,0,cart);
+for(const [x,z] of [[-1.6,.2],[-1.6,-.2],[-1.25,.2],[-1.25,-.2]])cyl(.02,.02,.44,steelD,x,.35,z,cart);
+
+/* wires */
+const wires=G();
+const wc=[0xff9a1f,0xffe14a,0x54d17a,0xf2f2f2];
+lcPts.forEach((s,i)=>{const [t]=tube([[s[0]*.8,-.22,s[1]*.8],[s[0]*.9,-.36,s[1]*.95],[s[0]*.4,-.36,1.9],[s[0]*.25,.4,2.0],[s[0]*.25,.95,1.75]],.02,M(wc[i],0,.5),50);wires.add(t)});
+const [rib]=tube([[-1.42,.6,.2],[-1.5,.7,1.0],[-.8,.9,1.5],[-.45,1.0,1.55]],.03,M(0xb06bff,0,.5),40);wires.add(rib);
+const [wp]=tube([[.5,2.5,1.8],[1.1,2.7,1.8],[1.2,2.9,1.4]],.02,M(0x4aa3ff,0,.5),20);wires.add(wp);
+
+/* shadows */
+root.traverse(o=>{if(o.isMesh&&o.material!==milkM&&o.material!==glass&&o.material!==hoseM&&o!==floor){o.castShadow=true;o.receiveShadow=true}});
+
+/* particles (milk flow) */
+const NP=190,pos=new Float32Array(NP*3),pu=[],pk=[];
+for(let i=0;i<NP;i++){pu.push(Math.random());pk.push(i<140?0:1)}
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+const dc=document.createElement('canvas');dc.width=dc.height=32;const dx=dc.getContext('2d');dx.fillStyle='#fff';dx.beginPath();dx.arc(16,16,14,0,7);dx.fill();
+const pts=new THREE.Points(pg,new THREE.PointsMaterial({size:.085,map:new THREE.CanvasTexture(dc),alphaTest:.5,color:0xfff6e2}));
+pts.frustumCulled=false;root.add(pts);
+
+/* CIP: feed tank, pump, hose, drain pail, pH isolation valve, spray + drain particles */
+const tankM=M(0x2b6cb0,.1,.6);
+cyl(.45,.45,.9,tankM,-2.1,.05,-1.6,root);cyl(.47,.47,.06,black,-2.1,.53,-1.6,root);
+box(.4,.35,.35,black,-1.35,-.2,-1.7,root);cyl(.1,.1,.2,steelD,-1.35,.03,-1.7,root);
+const [cipHose]=tube([[-2.1,.55,-1.6],[-2.2,1.8,-1.5],[-1.6,3.7,-1.0],[-1.0,4.4,-.6],[-.7,4.25,-.5],[-.7,4.1,-.5]],.05,hoseM,70);root.add(cipHose);
+const pail=new THREE.Mesh(new THREE.CylinderGeometry(.4,.32,.55,28,1,true),M(0x6b7f92,.5,.5,{side:THREE.DoubleSide}));pail.position.set(-2.5,-.13,.05);root.add(pail);
+const [spout,drainC]=tube([[-1.05,.35,0],[-1.6,.35,0],[-2.1,.35,0],[-2.35,.2,0],[-2.5,-.1,0]],.05,steelD,40);root.add(spout);
+const valveM=M(0x3cc46a,.2,.4);
+{const v=new THREE.Mesh(new THREE.SphereGeometry(.08,12,12),gold);v.position.set(1.0,1.15,1.28);phC.add(v);
+ const hd=new THREE.Mesh(new THREE.BoxGeometry(.2,.04,.04),valveM);hd.position.set(1.0,1.15,1.28);hd.rotation.y=.6;phC.add(hd)}
+const NS=150,ND=50,cg=new THREE.BufferGeometry(),cpos=new Float32Array((NS+ND)*3),cu=[],cyh=[],cang=[];
+for(let i=0;i<NS+ND;i++){cu.push(Math.random());cyh.push(1.6+Math.random()*1.6);cang.push(Math.random()*6.283)}
+cg.setAttribute('position',new THREE.BufferAttribute(cpos,3));
+const cpM=new THREE.PointsMaterial({size:.07,map:new THREE.CanvasTexture(dc),alphaTest:.5,color:0x9fd3ff});
+const cp=new THREE.Points(cg,cpM);cp.frustumCulled=false;root.add(cp);
+const BALL=new V3(-.7,2.95,-.5);
+
+/* separate CIP waste outlet (back), vacuum pump + pulsator (machine), hand-milking gear */
+const [wasteSp,wasteC]=tube([[.6,.33,-.9],[.6,.33,-1.3],[.6,.33,-1.65],[.6,.15,-1.85],[.6,-.05,-1.95]],.05,steelD,40);root.add(wasteSp);
+const wpail=new THREE.Mesh(new THREE.CylinderGeometry(.4,.32,.55,28,1,true),M(0x5b6470,.5,.5,{side:THREE.DoubleSide}));wpail.position.set(.6,-.125,-1.95);root.add(wpail);
+const wvM=M(0xd94a2f,.2,.4);
+{const a=new THREE.Mesh(new THREE.SphereGeometry(.09,12,12),gold);a.position.set(.6,.33,-.95);root.add(a);
+ const b=new THREE.Mesh(new THREE.SphereGeometry(.08,12,12),gold);b.position.set(.6,.33,-1.3);root.add(b)}
+const wvH=new THREE.Mesh(new THREE.BoxGeometry(.05,.3,.06),wvM);wvH.position.set(.6,.5,-1.3);root.add(wvH);
+const pLedM=new THREE.MeshBasicMaterial({color:0x333333});
+const pulsBox=box(.34,.2,.3,black,1.0,3.87,-.4,lid);const pLed=new THREE.Mesh(new THREE.SphereGeometry(.025,8,8),pLedM);pLed.position.set(1.0,3.99,-.4);lid.add(pLed);
+const [pulseTube]=tube([[1.0,3.98,-.4],[1.8,4.15,-.1],[2.5,3.2,.4],[2.72,1.85,.85]],.03,M(0x222222,0,.7),50);root.add(pulseTube);
+const pumpG=new THREE.Group();root.add(pumpG);
+box(.7,.5,.5,M(0x3f5f82,.3,.5),1.9,-.15,-1.8,pumpG);cyl(.17,.17,.55,steelD,1.9,.24,-1.8,pumpG,0,Math.PI/2);cyl(.12,.12,.1,black,2.22,.24,-1.8,pumpG,0,Math.PI/2);
+cyl(.14,.14,.3,glass,1.6,.2,-1.75,pumpG);cyl(.15,.15,.04,steelD,1.6,.37,-1.75,pumpG);
+cyl(.14,.14,.03,M(0xf3f3f3,0,.6),1.9,-.05,-1.54,pumpG,Math.PI/2);
+const needle=new THREE.Group();needle.position.set(1.9,-.05,-1.52);pumpG.add(needle);box(.015,.11,.01,M(0xd94a2f,0,.5),0,.05,0,needle);
+const [vacHose]=tube([[1.6,.4,-1.75],[1.7,1.8,-1.4],[1.3,3.6,-1.0],[.7,4.3,-.8],[.5,4.25,-.7],[.5,3.98,-.7]],.045,M(0x1c3a5c,0,.6),70);root.add(vacHose);
+const handG=new THREE.Group();root.add(handG);const strainer=new THREE.Group();root.add(strainer);
+{const rg=new THREE.Mesh(new THREE.TorusGeometry(1.5,.04,8,64),steelD);rg.rotation.x=Math.PI/2;rg.position.y=3.66;strainer.add(rg);
+ const cl=new THREE.Mesh(new THREE.CircleGeometry(1.5,48),M(0xf4f1ea,0,.95,{transparent:true,opacity:.55,side:THREE.DoubleSide,depthWrite:false}));cl.rotation.x=-Math.PI/2;cl.position.y=3.62;strainer.add(cl)}
+const skinM=M(0xe2b3a3,0,.8),hideM=M(0xe9dfd0,0,.9),armM=M(0xa0673e,0,.7);
+{const bl=new THREE.Mesh(new THREE.SphereGeometry(1,24,16),hideM);bl.scale.set(1.9,.85,1.1);bl.position.set(.5,6.1,.1);handG.add(bl);
+ const ud=new THREE.Mesh(new THREE.SphereGeometry(.5,24,16),skinM);ud.scale.set(1.4,.85,1);ud.position.set(.5,5.25,.2);handG.add(ud);
+ for(const t of [[.22,.4],[.78,.4],[.25,0],[.75,0]])cyl(.06,.05,.6,skinM,t[0],4.85,t[1],handG);
+ box(.9,.08,.7,wood,2.0,.25,1.9,handG);for(const l of [[1.65,1.65],[2.35,1.65],[1.65,2.15],[2.35,2.15]])cyl(.045,.045,.65,wood,l[0],-.08,l[1],handG)}
+const hands=[];
+[[.22,-1],[.78,1]].forEach(a=>{const g=new THREE.Group();g.position.set(a[0],4.85,.4);handG.add(g);
+  const f=new THREE.Mesh(new THREE.TorusGeometry(.1,.055,10,16),armM);f.rotation.x=Math.PI/2;g.add(f);
+  const ar=new THREE.Mesh(new THREE.CylinderGeometry(.06,.09,.9,12),armM);ar.position.set(a[1]*.45,-.25,.3);ar.rotation.set(.5,0,-a[1]*1.1);g.add(ar);hands.push(g)});
+const TL=new V3(.22,4.55,.4),TR=new V3(.78,4.55,.4),CT=new V3(.5,3.68,.2);
+const foam=new THREE.Mesh(new THREE.CircleGeometry(1,40),new THREE.MeshBasicMaterial({color:0xfffaf0,transparent:true,opacity:0,depthWrite:false}));foam.rotation.x=-Math.PI/2;root.add(foam);
+const NH=70,NM=50,hg=new THREE.BufferGeometry(),mg=new THREE.BufferGeometry(),hthr=[],hj=[],cmu=[];
+hg.setAttribute('position',new THREE.BufferAttribute(new Float32Array(NH*3),3));mg.setAttribute('position',new THREE.BufferAttribute(new Float32Array(NM*3),3));
+for(let i=0;i<NH;i++){hthr.push(.2+Math.random()*.75);hj.push(Math.random()*2-1)}for(let i=0;i<NM;i++)cmu.push(Math.random());
+const milkPM=()=>new THREE.PointsMaterial({size:.075,map:new THREE.CanvasTexture(dc),alphaTest:.5,color:0xfff6e2});
+const hp=new THREE.Points(hg,milkPM()),mp=new THREE.Points(mg,milkPM());hp.frustumCulled=mp.frustumCulled=false;root.add(hp);root.add(mp);
+
+/* layers / explode */
+const layer={ghost:false,milk:true,elec:true,wire:true,tags:true,spin:false};
+const parts=[[lid,[0,1.5,0]],[pod,[0,0,1.4]],[clip,[0,.5,1.4]],[phC,[1.2,0,1.2]],[cart,[-1.1,0,0]],[lc,[0,-.7,0]]];
+const base=parts.map(p=>p[0].position.clone());
+let exK=0;
+function applyLayers(){
+  steel.transparent=layer.ghost;steel.opacity=layer.ghost?.22:1;steel.depthWrite=!layer.ghost;
+  milk.visible=layer.milk&&lastLevel>.1;
+  for(const g of [pod,clip,phC,cart,lc])g.visible=layer.elec;
+  wires.visible=layer.wire&&layer.elec&&exK<.05;
+  labelBox.style.display=layer.tags?'block':'none';
+}
+function applyExplode(){cipHose.visible=exK<.05;parts.forEach((p,i)=>p[0].position.set(base[i].x+p[1][0]*exK,base[i].y+p[1][1]*exK,base[i].z+p[1][2]*exK));wires.visible=layer.wire&&layer.elec&&exK<.05}
+
+/* parts info + tags */
+const INFO={
+lid:{m:'machine',n:'Clamped SS304 lid',p:[0,4.0,.3],c:[0,3.4,0,8],d:'Sealed lid with two toggle clamps, milk inlet port and vent. Keeps dust and flies out, and holds the hose fitting.',b:'Local steel workshop: 1.2 mm SS304 sheet, spun or pressed, silicone gasket, food-grade tri-clamp inlet.'},
+cluster:{m:'machine',n:'Milking cluster',p:[2.7,2.0,.9],c:[1.8,2,.9,7],d:'Four teat cups on a claw. Milk from the claw travels through one silicone hose into the lid inlet.',b:'Off-the-shelf portable milking-machine cluster. The hose stays food-grade silicone; no electronics touch it.'},
+clip:{n:'Clip slot',p:[0,3.5,1.6],c:[0,3.2,1.5,5.5],d:'Spring clip hooks the whole sensor pod onto the bucket wall and rim so it can be lifted off for washing.',b:'Laser-cut aluminium bracket with a slot. No welding onto the milk vessel.'},
+pod:{n:'Dry aluminium case',p:[.65,2.6,1.85],c:[0,1.9,1.6,5],d:'Sealed enclosure holding ESP32-S3, HX711 load-cell amplifier, RFID reader and Wi-Fi antenna. Stays on the dry side, outside the milk zone.',b:'IP65 aluminium box, cable glands for probes and load-cell wires. Milk-side probes pass through sanitary fittings.'},
+oled:{n:'OLED status screen',p:[-.3,2.35,1.9],c:[0,2.2,1.85,4],d:'Shows weight, temperature, EC, pH and the quality verdict for the farmer, with no phone needed.',b:'0.96–1.5 inch OLED behind a clear polycarbonate window.'},
+temp:{n:'Temperature probe',p:[-.45,1.25,1.3],c:[-.4,1.2,1.5,4],d:'Stainless probe tip in the milk. Needed for temperature compensation of EC and pH, and to flag warm, spoiling milk.',b:'DS18B20 or PT1000 in a SS316 sheath, O-ring sealed into the wall fitting.'},
+ec:{n:'EC sensor',p:[.1,1.05,1.3],c:[.1,1.0,1.5,4],d:'Electrodes measure electrical conductivity. Mastitis raises it, added water lowers it.',b:'4-electrode conductivity cell with SS316 or gold-plated pins, driven with AC to avoid polarisation.'},
+ph:{n:'pH side-stream cell',p:[1.0,2.3,1.35],c:[1.0,1.9,1.4,4],d:'A small branch of milk passes the pH glass probe and returns to the bucket, so the probe is not left sitting in the milk.',b:'Silicone tubing, tri-clamp taps on the wall, pH probe in a transparent flow cell. A small isolation valve closes it off during alkaline wash and sanitiser.'},
+optical:{n:'Optical cartridge (AS7265x)',p:[-1.42,.72,0],c:[-1.5,.4,0,5],d:'Removable black housing with a sealed window. The spectral sensor reads on the dry side and gives an optical fingerprint of the milk.',b:'Printed or machined light-tight box, quartz or glass window with O-rings, 4 screws so it can be unscrewed and cleaned.'},
+loadcell:{n:'Load cells ×4',p:[.8,-.2,.8],c:[0,-.1,0,6.5],d:'Four cells under the bucket feet weigh the milk continuously through the HX711, giving yield per cow.',b:'4 × 50 kg bar cells under a steel plate. Level the plate and tare the empty bucket.'},
+cip:{n:'CIP port + spray ball',p:[-.7,4.2,-.5],c:[-.7,3.2,-.5,6],d:'A tri-clamp port on the lid feeds a dip tube and spray ball that wash the inner wall, the lid underside and the probe tips. Cleaning liquid leaves through its own CIP waste valve, separate from the milk outlet, so it never crosses the optical cartridge.',b:'Static spray ball on a 12 mm SS tube, food-grade silicone or EPDM gasket, fed from a small CIP tank and pump.'},
+tank:{n:'CIP tank + pump',p:[-2.1,1.0,-1.6],c:[-1.8,.8,-1.2,7],d:'Holds the wash liquid at temperature and pumps it to the lid. Swap the liquid for each stage: water, alkaline, citric acid, sanitiser.',b:'Food-grade PP drum, thermostat heater capped at 55 °C, 12 V diaphragm pump with EPDM or PTFE wetted parts.'},
+outlet:{n:'Milk outlet + valve',p:[-2.05,.55,0],c:[-1.9,.4,0,4.5],d:'Milk leaves here, through the optical cartridge, into the milk can. This line is kept separate from CIP waste so cleaning liquid never touches the optical window.',b:'SS ball valve with tri-clamp end. After each session flush with warm water, then unscrew the cartridge and rinse the window with a soft cloth.'},
+wasteOut:{n:'CIP waste outlet',p:[.6,.75,-1.3],c:[.6,.5,-1.2,6],d:'A second, separate bottom drain used only for cleaning liquid, with its own valve. The handle is red when closed and green when open.',b:'Tri-clamp outlet with SS ball valve and a hose to a waste drain.'},
+vacpump:{m:'machine',n:'Vacuum (pressure) pump',p:[1.9,.65,-1.8],c:[1.6,.6,-1.3,6],d:'Holds about 42 kPa vacuum in the bucket through a hose to the lid. The vacuum draws milk in from the teat cups and keeps the lid sealed. The gauge needle follows the live vacuum.',b:'Small oil-free rotary-vane pump with a regulator, gauge and a moisture trap so milk can never reach the motor. The pod can log vacuum with a small pressure sensor.'},
+pulsator:{m:'machine',n:'Pulsator',p:[1.0,4.15,-.4],c:[1.2,3.6,-.2,6],d:'Alternates vacuum and air to the cup shells 60 times a minute at 60:40. The milk phase opens the liner; the rest phase squeezes the teat so blood flow can recover. The LED shows the phase.',b:'Electronic pulsator on the lid with a tube to the claw shells.'},
+hand:{m:'hand',n:'Hand milking',p:[.5,5.0,.2],c:[.5,4.3,.2,6.5],d:'The milker squeezes the teats in alternate pulses, about one a second per hand. Milk leaves in short ballistic squirts onto the strainer cloth and falls into the open bucket.',b:'Wash hands and teats before milking, keep the bucket covered between cows, and keep the sensor pod on the clip slot.'},
+strainer:{m:'hand',n:'Strainer cloth',p:[-1.2,3.75,.6],c:[-.6,3.6,.4,6],d:'Cloth stretched over the bucket mouth catches hair and dust. In hand mode the bucket is open, so this is the main hygiene barrier.',b:'Clean muslin or food-grade filter cloth, replaced for every cow and washed in hot water.'}
+};
+const labelBox=document.createElement('div');stage.appendChild(labelBox);
+const tags={};
+for(const k in INFO){const b=document.createElement('button');b.className='tag';b.innerHTML='<i></i>'+INFO[k].n;b.style.padding='3px 8px 3px 5px';b.onclick=e=>{e.stopPropagation();select(k)};labelBox.appendChild(b);tags[k]=b}
+let selK=null;
+function select(k){selK=k;const f=INFO[k];for(const j in tags)tags[j].classList.toggle('sel',j===k);
+  $('info').innerHTML='<b>'+f.n+'</b><p>'+f.d+'</p><p><em>Real build:</em> '+f.b+'</p>';
+  {const L={loadcell:'load',ph:'ph',temp:'temp',vacpump:'vac',pulsator:'vac',tank:'cip',cip:'cip',pod:'ctl',oled:'ctl',optical:'oc'}[k];if(L){const b=document.createElement('button');b.className='big alt';b.style.marginTop='8px';b.textContent='Open the 3D lab for this part';b.onclick=()=>L==='oc'?$('ocOpen').click():window.dlOpen(L);$('info').appendChild(b)}}
+  goal.t.set(f.c[0],f.c[1],f.c[2]);goal.d=f.c[3]}
+
+/* camera */
+const st={t:new V3(0,1.9,0),th:.5,ph:1.3,d:11},goal={t:new V3(0,1.9,0),th:.5,ph:1.3,d:11};
+const PRE={front:[0,1.9,0,.35,1.32,11],pod:[0,1.9,1.5,.05,1.38,5.2],base:[0,-.1,0,.8,1.75,7.5],top:[0,2.5,0,.2,.3,10],side:[-1.5,.8,0,-1.35,1.4,7],cip:[-1,2,-.5,-.9,1.25,12],back:[.5,1.3,-1,3.3,1.3,9.5]};
+function preset(n){const p=PRE[n];goal.t.set(p[0],p[1],p[2]);goal.th=p[3];goal.ph=p[4];goal.d=p[5]}
+function place(){st.t.lerp(goal.t,.1);st.th+=(goal.th-st.th)*.1;st.ph+=(goal.ph-st.ph)*.1;st.d+=(goal.d-st.d)*.1;
+  cam.position.set(st.t.x+st.d*Math.sin(st.ph)*Math.sin(st.th),st.t.y+st.d*Math.cos(st.ph),st.t.z+st.d*Math.sin(st.ph)*Math.cos(st.ph*0+st.th));cam.lookAt(st.t)}
+const ptr=new Map();let pd=0;
+stage.addEventListener('pointerdown',e=>{if(e.target.closest('.tag'))return;ptr.set(e.pointerId,e);stage.setPointerCapture(e.pointerId);pd=0});
+stage.addEventListener('pointermove',e=>{const o=ptr.get(e.pointerId);if(!o)return;
+  if(ptr.size===1){goal.th-=(e.clientX-o.clientX)*.008;goal.ph=Math.min(2.2,Math.max(.15,goal.ph-(e.clientY-o.clientY)*.008))}
+  else{const a=[...ptr.values()];const d0=Math.hypot(a[0].clientX-a[1].clientX,a[0].clientY-a[1].clientY);ptr.set(e.pointerId,e);const b=[...ptr.values()];const d1=Math.hypot(b[0].clientX-b[1].clientX,b[0].clientY-b[1].clientY);goal.d=Math.min(20,Math.max(2.5,goal.d*d0/(d1||1)))}
+  ptr.set(e.pointerId,e)});
+const up=e=>ptr.delete(e.pointerId);stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);
+stage.addEventListener('wheel',e=>{e.preventDefault();goal.d=Math.min(20,Math.max(2.5,goal.d*(1+e.deltaY*.001)))},{passive:false});
+
+/* simulation */
+const SC={normal:{ec:4.9,ph:6.65,o:.62,t:37.2},mast:{ec:6.6,ph:6.95,o:.83,t:37.4},water:{ec:3.8,ph:6.7,o:.44,t:37},sour:{ec:5.3,ph:6.1,o:.55,t:36.6}};
+let sc='normal',running=false,speed=1,vol=0;
+const cur={ec:4.9,ph:6.65,o:.62,t:37.2};
+const hist={w:[],e:[],p:[]};
+const TARE=2.1;
+function spark(id,arr,lo,hi,col){const c=$(id),r=devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;if(!w)return;c.width=w*r;c.height=h*r;const g=c.getContext('2d');g.scale(r,r);g.strokeStyle=col;g.lineWidth=1.5;g.beginPath();arr.forEach((v,i)=>{const x=i/89*w,y=h-(v-lo)/(hi-lo)*(h-3)-1.5;i?g.lineTo(x,y):g.moveTo(x,y)});g.stroke()}
+let mode='machine',vacSet=42,vac=0,vacShow=0,flow=0,foamAmt=0,tempOff=0,mout=false,runT=0,fOpen=1,rateNow=0;
+const hashf=k=>{const x=Math.sin(k*127.1+311.7)*43758.5453;return x-Math.floor(x)};
+const envHand=t=>{const ph=((t%1)+1)%1,x=(ph%.5)/.5;return Math.pow(Math.sin(Math.PI*x),1.3)};
+const openPair=(t,o)=>(((t+o)%1)+1)%1<.6;
+const sstep=(a,b,x)=>{const t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t)};
+function moutUI(){const b=$('mout');b.textContent=mout?'Close milk outlet':'Open milk outlet';b.classList.toggle('on',mout)}
+function physUI(){const m=mode==='machine';$('vacrow').style.display=m?'block':'none';
+  $('phys').innerHTML=m?'<p><em>Vacuum:</em> the pump holds the bucket near the setpoint (about 42 kPa). Vacuum pulls milk in from the cups and keeps the lid gasket shut. Too low and cups slip and flow drops; too high stresses the teats.</p><p><em>Pulsation:</em> 60 cycles a minute at 60:40. Two cup pairs alternate: liners open to milk, then squeeze to rest the teat, so flow ripples about once a second.</p><p><em>Closed system:</em> stable temperature, almost no splash or foam, low contamination.</p><p class="mono" id="physd"></p>'
+  :'<p><em>Squeeze:</em> the milker\'s hands alternate, about one squeeze a second each. Milk leaves in short ballistic squirts onto the strainer cloth, so flow is bursty and slows as the hands tire.</p><p><em>Open bucket:</em> milk cools faster, and splash and foam add noise to EC, optical and load-cell readings. No vacuum, so no pump.</p><p><em>Hygiene:</em> the strainer cloth catches hair and dust; contamination risk is higher than with a closed machine.</p><p class="mono" id="physd"></p>'}
+function milkPhysics(dt){
+  const mach=mode==='machine',want=running&&mach;
+  vac+=((want?vacSet:0)-vac)*Math.min(1,dt*(want?2.2:1.6));if(!want&&vac<.2)vac=0;
+  runT=running?runT+dt:0;let rate=0;
+  if(running){const lat=Math.min(1,runT/2.5);
+    if(mach){const nO=(openPair(clock,0)?2:0)+(openPair(clock,.5)?2:0);fOpen=(nO/4)/.6;
+      rate=.35*Math.min(1,Math.max(0,(vac-28)/14))*(vac/42)*(.88+.12*fOpen)*lat*(1-.3*sstep(.7,1,vol/MAXV))}
+    else{const tt=clock-.35;rate=.16*1.6*envHand(tt)*(.75+.5*hashf(Math.floor(tt*2)))*(1-.25*vol/MAXV)*lat}
+    vol=Math.min(MAXV,vol+rate*speed*dt);if(vol>=MAXV){running=false;setGo()}}
+  rateNow=rate;flow+=(rate*7.5-flow)*Math.min(1,dt*6);
+  foamAmt=Math.min(.55,foamAmt+(mode==='hand'&&running?envHand(clock-.35)*dt*1.2:0));foamAmt*=1-Math.min(1,dt*.7);
+  tempOff+=((mode==='hand'&&vol>.5?-2.4:0)-tempOff)*Math.min(1,dt*.08);
+  if(mout&&!running){vol=Math.max(0,vol-1.3*speed*dt);if(vol<=0){mout=false;moutUI()}}
+}
+function setMode(m){if(running||cip.on||m===mode)return;mode=m;[...$('mode').children].forEach(b=>b.classList.toggle('on',b.dataset.m===m));physUI();
+  if(m==='hand'){goal.t.set(.3,2.6,0);goal.th=.35;goal.ph=1.3;goal.d=12.5}else preset('front')}
+const CIPS=[
+{n:'Transfer milk out',s:'MILK OUT',l:'Milk leaves by the milk outlet',sp:'Milk valve open, milk passes the optical cartridge into the milk can',no:'Bucket is emptied first. The CIP waste valve stays closed so no cleaning liquid reaches the milk line.',c:0xf6efe0,t:37,ec:4.9,ph:6.65,o:.62,iso:false,dur:3},
+{n:'Pre-rinse',s:'PRE-RINSE',l:'Potable water',sp:'35–40 °C · 3–5 min',no:'Lukewarm water lifts milk residue without baking protein onto the steel.',c:0x9fd3ff,t:38,ec:.5,ph:7.2,o:.05,iso:false,dur:6},
+{n:'Alkaline wash',s:'ALKALI WASH',l:'Mild food-grade, non-chlorinated alkaline detergent',sp:'0.5–1 % · pH ≈ 11–12 · 50–55 °C · ~10 min',no:'Strips fat and protein film. No chlorine, so SS304 and seals are not pitted; kept below 60 °C to protect the probes.',c:0xe0d98a,t:52,ec:9,ph:11.6,o:.1,iso:true,dur:9},
+{n:'Intermediate rinse',s:'RINSE',l:'Potable water',sp:'Ambient–40 °C · until EC and pH return near the water supply',no:'EC and pH sensors confirm the alkali is gone before acid goes in.',c:0x9fd3ff,t:38,ec:.6,ph:7.4,o:.05,iso:false,dur:6},
+{n:'Acid wash',s:'ACID WASH',l:'Food-grade citric acid',sp:'0.5–1 % · pH ≈ 2.2–2.5 · 45–50 °C · ~5 min',no:'Dissolves milkstone (calcium and protein scale) that would foul probes and the window. Avoid HCl and nitric acid.',c:0xffb27a,t:47,ec:3.2,ph:2.4,o:.07,iso:false,dur:6},
+{n:'Final rinse',s:'FINAL RINSE',l:'Potable water',sp:'Until neutral · EC and pH match the water supply',no:'The optical index near zero shows the window is clear of film.',c:0x9fd3ff,t:30,ec:.45,ph:7.1,o:.02,iso:false,dur:6},
+{n:'Sanitise (optional)',s:'SANITISE',l:'Food-grade peracetic acid',sp:'≈ 100–150 ppm · ambient · ~2 min',no:'Low-ppm PAA is gentle on seals and probes. Avoid hypochlorite bleach.',c:0xc8f5ea,t:28,ec:.8,ph:4.2,o:.03,iso:true,dur:5},
+{n:'Drain + air-dry',s:'DRAIN / DRY',l:'CIP waste valve open, lid off',sp:'Air dry; unscrew the cartridge for a visual check',no:'Flush the milk line with warm water, unscrew the cartridge and rinse the window by hand. Lift the pod off by the clip slot for a manual wash; never submerge it.',c:0x9fd3ff,t:27,ec:.3,ph:7,o:.02,iso:false,dur:4}];
+const cip={on:false,i:0,el:0,disp:0,done:false,ghostPrev:false,rep:''};
+const isoNow=()=>cip.on&&CIPS[cip.i].iso;
+let stat={ok:true,t:'MILK OK'};
+function drawOled(w){const g=og;g.fillStyle='#03130f';g.fillRect(0,0,256,150);g.fillStyle='#5cf2d0';g.font='bold 14px monospace';g.fillText(cip.on?'CIP CLEANING':'DUGDHA KAVACH',10,18);
+  g.font='15px monospace';g.fillStyle='#e8fff8';
+  g.fillText('WT '+w.toFixed(2)+' kg',10,44);g.font='12px monospace';g.fillStyle='#9fe8ff';if(!cip.on)g.fillText(mode==='hand'?'HAND':'VAC '+vacShow.toFixed(0),160,44);g.font='15px monospace';g.fillStyle='#e8fff8';g.fillText('T  '+cur.t.toFixed(1)+' C',10,64);g.fillText('EC '+cur.ec.toFixed(2)+' mS',10,84);g.fillText(isoNow()?'pH ISOLATED':'pH '+cur.ph.toFixed(2),10,104);
+  g.fillStyle=stat.ok?'#5cf28a':'#ff7a5c';g.font='bold 14px monospace';g.fillText(stat.t,10,132);otex.needsUpdate=true}
+function verdict(){if(cip.on)return {ok:true,t:'CIP: '+CIPS[cip.i].s};
+  if(cip.done&&vol<.5)return {ok:true,t:'CLEAN - READY'};
+  if(mode==='machine'&&running&&runT>3){if(vac>50)return {ok:false,t:'HIGH VACUUM'};if(vac<36)return {ok:false,t:'LOW VACUUM'}}
+  if(vol<.5)return {ok:true,t:'WAITING'};
+  if(cur.ec>5.9||cur.ph>6.85)return {ok:false,t:'MASTITIS SUSPECT'};
+  if(cur.ec<4.3)return {ok:false,t:'DILUTION SUSPECT'};
+  if(cur.ph<6.4)return {ok:false,t:'ACIDIC / SPOILING'};
+  return {ok:true,t:'MILK OK'}}
+function setGhost(v){layer.ghost=v;$('lay').querySelector('[data-l=ghost]').classList.toggle('on',v);applyLayers()}
+function renderStg(){$('stg').innerHTML=CIPS.map((x,i)=>'<div class="stg '+(cip.on&&i===cip.i?'act':((cip.on&&i<cip.i)||cip.done?'done':''))+'"><span class="mono">'+(i+1)+'</span> '+x.n+'</div>').join('');$('cip').textContent=cip.on?'Stop cleaning':'Start cleaning cycle'}
+function cipUI(){const el=$('cipInfo'),R=(c,t)=>'<p><span class="dot" style="background:'+c+'"></span>'+t+'</p>';
+  if(!cip.on){el.innerHTML='<b>'+(cip.done?'Cycle complete':'Sensor-safe liquids')+'</b>'+(cip.done?'<p>'+cip.rep+'</p>':'')+'<p><em>Use:</em> potable water, mild non-chlorinated alkaline detergent, food-grade citric acid, low-ppm peracetic acid.</p><p><em>Avoid:</em> chlorine bleach, caustic above ~60 °C, HCl or nitric acid, alcohol or solvents on the optical window, scrubbing the pH glass or window, pressure-washing the pod.</p>';return}
+  const S=CIPS[cip.i];
+  el.innerHTML='<b>'+(cip.i+1)+'. '+S.n+'</b><p><em>Liquid:</em> '+S.l+'</p><p><em>Spec:</em> '+S.sp+'</p><p>'+S.no+'</p>'+
+  R(S.iso?'#d94a2f':'#3cc46a',S.iso?'pH cell isolated: valve closed, probe held in KCl':'pH probe in loop and flushed')+R('#3cc46a','EC and temp: SS316 and gold, safe')+R('#3cc46a','Optical window: on the milk line only, never wetted by CIP liquid')+R('#3cc46a','Pod and load cells: dry, outside the liquid path')}
+function cipEnd(){cip.on=false;cip.done=true;vol=0;lastLevel=-1;setGhost(cip.ghostPrev);renderStg();cipUI()}
+function cipStart(){running=false;setGo();vac=0;mout=false;moutUI();cip.on=true;cip.i=0;cip.el=0;cip.done=false;cip.disp=vol;cip.ghostPrev=layer.ghost;setGhost(true);renderStg();cipUI()}
+let acc=0,clock=0;
+function sim(dt){
+  let T=SC[sc];
+  if(cip.on){const S=CIPS[cip.i];cip.el+=dt*speed;
+    if(cip.i===0){vol=Math.max(0,vol-4*speed*dt);cip.disp=vol}
+    else{T=S;if(cip.i===7)cip.disp=Math.max(0,cip.disp-1.2*speed*dt);else cip.disp+=(1.4-cip.disp)*Math.min(1,dt*2)}
+    if(cip.el>=S.dur&&(cip.i>0||vol<=0)){
+      if(cip.i===5)cip.rep='Final rinse verified: EC '+cur.ec.toFixed(2)+' mS/cm, pH '+cur.ph.toFixed(2)+', optical '+cur.o.toFixed(2);
+      cip.i++;cip.el=0;if(cip.i>=CIPS.length)cipEnd();else{renderStg();cipUI()}}
+  }else{milkPhysics(dt)}
+  if(!cip.on){T=Object.assign({},T);T.t+=tempOff;T.o+=foamAmt*.12}
+  const k=Math.min(1,dt*1.2),n=()=>(Math.random()-.5),hd=mode==='hand'&&!cip.on;
+  cur.ec+=(T.ec-cur.ec)*k+n()*(hd?.07:.02);cur.ph+=(T.ph-cur.ph)*k+n()*.004;cur.o+=(T.o-cur.o)*k+n()*(hd?.014:.004);cur.t+=(T.t-cur.t)*k+n()*.03;
+  const liq=cip.on&&cip.i>0?cip.disp:vol,w=TARE+(cip.on&&cip.i>0?liq:vol*1.032);
+  acc+=dt;if(acc>.2){acc=0;stat=verdict();
+    const wd=w+(mode==='hand'&&!cip.on?(Math.random()-.5)*.14*(running?envHand(clock):0):(Math.random()-.5)*(running?.012:.004));
+    vacShow=mode==='machine'&&vac>1?vac-(running&&rateNow>0?1.3*fOpen:0)+(Math.random()-.5)*.3:0;
+    hist.w.push(wd);hist.e.push(cur.ec);hist.p.push(cur.ph);for(const a in hist)if(hist[a].length>90)hist[a].shift();
+    $('vV').textContent=liq.toFixed(1)+' L';$('vW').textContent=wd.toFixed(2)+' kg';$('kVac').textContent=mode==='hand'?'atm':vacShow.toFixed(1)+' kPa';$('kFlow').textContent=flow.toFixed(1)+' L/min';const pd=$('physd');if(pd)pd.textContent=mode==='machine'?'Vacuum '+vacShow.toFixed(1)+' kPa · pulsator '+(running?'60 cpm, 60:40':'idle'):'Squeeze '+(running?'60':'0')+'/min · fatigue '+Math.round(25*vol/MAXV)+' %';
+    const has=vol>.5||(cip.on&&cip.i>0);$('vT').textContent=has?cur.t.toFixed(1)+' °C':'—';$('vE').textContent=has?cur.ec.toFixed(2)+' mS':'—';$('vP').textContent=!has?'—':(isoNow()?'isolated':cur.ph.toFixed(2));$('vO').textContent=has?cur.o.toFixed(2):'—';
+    const st=$('status');{const FR={'MILK OK':'Milk looks good','MASTITIS SUSPECT':'Possible mastitis. Check the cow.','DILUTION SUSPECT':'Milk may be watered down','ACIDIC / SPOILING':'Milk is turning sour','HIGH VACUUM':'Vacuum is too high','LOW VACUUM':'Vacuum is too low','WAITING':'Waiting for milk','CLEAN - READY':'Clean and ready'};st.textContent=stat.t.indexOf('CIP: ')===0&&cip.on&&CIPS[cip.i]?'Cleaning: '+CIPS[cip.i].n:(FR[stat.t]||stat.t)}st.className=stat.ok?'ok':'bad';
+    spark('cW',hist.w,0,20,'#3b8f4a');spark('cE',hist.e,0,10,'#b8741a');spark('cP',hist.p,2,12,'#d1553a');drawOled(wd)}
+}
+function setGo(){const b=$('go');b.textContent=running?'Pause milking':(vol>=MAXV?'Bucket is full. Reset to go again.':'Start milking');b.classList.toggle('stop',running)}
+$('go').onclick=()=>{if(cip.on||vol>=MAXV)return;mout=false;moutUI();running=!running;if(running&&cip.done){cip.done=false;cipUI()}setGo()};
+$('cip').onclick=()=>{if(cip.on){cip.on=false;setGhost(cip.ghostPrev);renderStg();cipUI()}else cipStart()};
+$('rst').onclick=()=>{mout=false;moutUI();if(cip.on){cip.on=false;setGhost(cip.ghostPrev);renderStg();cipUI()}vol=0;running=false;lastLevel=-1;setMilk(0);setGo()};
+$('sp').oninput=e=>{speed=+e.target.value;$('spv').textContent=speed.toFixed(1)};
+$('scn').onclick=e=>{const s=e.target.dataset.s;if(!s)return;sc=s;[...$('scn').children].forEach(b=>b.classList.toggle('on',b===e.target))};
+$('lay').onclick=e=>{const l=e.target.dataset.l;if(!l)return;layer[l]=!layer[l];e.target.classList.toggle('on',layer[l]);lastLevel=-1;applyLayers()};
+$('ex').oninput=e=>{exK=+e.target.value;applyExplode();applyLayers()};
+$('mode').onclick=e=>{const m=e.target.dataset.m;if(m)setMode(m)};
+$('vac').oninput=e=>{vacSet=+e.target.value;$('vacv').textContent=vacSet};
+$('mout').onclick=()=>{if(cip.on||running||vol<=.05)return;mout=!mout;moutUI()};
+$('cams').onclick=e=>{const c=e.target.dataset.c;if(c)preset(c)};
+
+/* loop */
+function resize(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+new ResizeObserver(resize).observe(stage);resize();
+const tmp=new V3();let last=performance.now();
+function frame(now){requestAnimationFrame(frame);const dt=Math.min(.05,(now-last)/1000);last=now;clock+=dt;
+  if(layer.spin&&!ptr.size)goal.th+=dt*.35;
+  sim(dt);const cl=cip.on&&cip.i>0;setMilk(cl?cip.disp:vol);milkM.color.setHex(cl?CIPS[cip.i].c:0xf6efe0);milkM.emissiveIntensity=cl?0:.35;valveM.color.setHex(isoNow()?0xd94a2f:0x3cc46a);place();
+  const mach=mode==='machine',hnd=mode==='hand'&&!cip.on,mOpen=exK<.05&&((mout&&!cip.on&&vol>.05)||(cip.on&&cip.i===0&&vol>.05)),wOpen=cip.on&&cip.i>0&&cip.i<7;
+  lid.visible=mach||cip.on;strainer.visible=hnd;handG.visible=hnd;cluster.visible=mach;pumpG.visible=mach;pulsBox.visible=pLed.visible=mach;
+  const tv=mach&&exK<.05;hose.visible=pulseTube.visible=vacHose.visible=tv;
+  mvM.color.setHex(mOpen?0x3cc46a:0xd94a2f);mvH.rotation.z=mOpen?1.5:0;wvM.color.setHex(wOpen?0x3cc46a:0xd94a2f);wvH.rotation.z=wOpen?1.5:0;
+  const pumping=running&&mach&&vac>25;
+  cups.forEach((c,i)=>{const op=pumping?openPair(clock,(i===1||i===2)?.5:0):true,ln=c.children[1],tg=op?1:.35;ln.scale.x+=(tg-ln.scale.x)*.4;ln.scale.z=ln.scale.x});
+  pLedM.color.setHex(pumping?(openPair(clock,0)?0x44ff88:0xff5a3a):0x333333);
+  needle.rotation.z=2.36-Math.min(60,vacShow)/60*4.71;pumpG.position.y=vac>5?Math.sin(clock*90)*.004:0;
+  hands.forEach((o,i)=>{const h=(((clock%1)+1)%1)<.5?0:1,e=running&&hnd&&i===h?envHand(clock):0;o.scale.set(1-.3*e,1,1-.3*e);o.position.y=4.85-.08*e});
+  {const fl=milk.visible&&lastLevel>0&&!cl&&foamAmt>.01;foam.visible=fl;if(fl){const rr=rAt(lastLevel);foam.position.y=lastLevel+.012;foam.scale.set(rr,rr,1);foam.material.opacity=Math.min(.8,foamAmt*.9)}}
+  
+  asm.color.setHSL(.76,.9,.5+Math.sin(clock*3)*.15);led.visible=Math.sin(clock*4)>-.3;
+  // particles
+  const fy=levelOf(vol),active=running&&mode==='machine'&&vac>25&&exK<.05,a=pg.attributes.position.array;
+  for(let i=0;i<NP;i++){
+    if(!(pk[i]?running&&exK<.05:active)||(pk[i]&&vol<3)){a[i*3]=a[i*3+1]=a[i*3+2]=-99;continue}
+    pu[i]=(pu[i]+dt*(pk[i]?.25:.32)*speed)%1;const u=pu[i];
+    if(pk[i]){phC2.getPointAt(u,tmp);a[i*3]=tmp.x;a[i*3+1]=tmp.y;a[i*3+2]=tmp.z}
+    else if(u<.72){hoseC.getPointAt(u/.72,tmp);a[i*3]=tmp.x;a[i*3+1]=tmp.y;a[i*3+2]=tmp.z}
+    else{const f=(u-.72)/.28;a[i*3]=.7+(Math.random()-.5)*.02;a[i*3+1]=3.95-f*f*(3.95-Math.max(fy,.1));a[i*3+2]=.3}
+  }
+  {const cOn=cip.on&&exK<.05&&cip.el>.3,S=cip.on?CIPS[cip.i]:null,ca=cg.attributes.position.array;
+   if(S)cpM.color.setHex(cip.i===0?0xfff6e2:S.c);
+   const spOn=cOn&&cip.i>0&&cip.i<7,fy2=levelOf(Math.max(cip.disp,.2)),drOn=cOn&&cip.i>0&&cip.disp>.05;
+   for(let i=0;i<NS+ND;i++){cu[i]=(cu[i]+dt*(i<NS?.55:.4)*Math.max(.6,speed))%1;const u=cu[i];let x=-99,y=-99,z=-99;
+    if(i<NS){if(spOn){const yh=cyh[i],an=cang[i],rw=rAt(yh);
+      if(u<.3){const f=u/.3;x=BALL.x+(rw*Math.cos(an)-BALL.x)*f;y=BALL.y+(yh-BALL.y)*f;z=BALL.z+(rw*Math.sin(an)-BALL.z)*f}
+      else{const f=(u-.3)/.7;y=yh+(fy2-yh)*f;const r=rAt(y);x=r*Math.cos(an);z=r*Math.sin(an)}}}
+    else if(drOn){wasteC.getPointAt(u,tmp);x=tmp.x;y=tmp.y;z=tmp.z}
+    ca[i*3]=x;ca[i*3+1]=y;ca[i*3+2]=z}
+   cg.attributes.position.needsUpdate=true}
+  {const ma=mg.attributes.position.array;for(let i=0;i<NM;i++){cmu[i]=(cmu[i]+dt*.45)%1;if(mOpen){drainC.getPointAt(cmu[i],tmp);ma[i*3]=tmp.x;ma[i*3+1]=tmp.y;ma[i*3+2]=tmp.z}else ma[i*3]=ma[i*3+1]=ma[i*3+2]=-99}
+   mg.attributes.position.needsUpdate=true;
+   const ha=hg.attributes.position.array,hOn=running&&hnd&&exK<.05,fy3=levelOf(vol);
+   for(let i=0;i<NH;i++){let x=-99,y=-99,z=-99;
+    if(hOn){const u=(clock/.75+i/NH)%1,te=clock-u*.75,ph=((te%1)+1)%1,hi=ph<.5?0:1,e=Math.pow(Math.sin(Math.PI*((ph%.5)/.5)),1.3);
+     if(e>hthr[i]){const T0=hi?TR:TL;
+      if(u<.4){const f=u/.4;x=T0.x+(CT.x+hj[i]*.3-T0.x)*f;z=T0.z+(CT.z+hj[i]*.2-T0.z)*f;y=T0.y-(T0.y-CT.y)*f*f}
+      else{const f=(u-.4)/.6;x=CT.x+hj[i]*.3*(1+.3*f);z=CT.z+hj[i]*.2;y=CT.y+(fy3-CT.y)*f*f}}}
+    ha[i*3]=x;ha[i*3+1]=y;ha[i*3+2]=z}
+   hg.attributes.position.needsUpdate=true}
+  pg.attributes.position.needsUpdate=true;
+  // labels
+  const w=stage.clientWidth,h=stage.clientHeight;
+  for(const k in INFO){const p=INFO[k].p;tmp.set(p[0],p[1],p[2]);
+    if(k==='pod'||k==='clip'||k==='oled'||k==='temp'||k==='ec'||k==='ph'||k==='optical'||k==='loadcell'||k==='outlet'||k==='lid'){const i=['lid','pod','clip','phC','cart','lc'];}
+    const off={pulsator:0,cip:0,lid:0,pod:1,clip:2,ph:3,optical:4,loadcell:5,outlet:4,oled:1,temp:1,ec:1}[k];
+    if(off!==undefined){const d=parts[off][0].position.clone().sub(base[off]);tmp.add(d)}
+    tmp.project(cam);const b=tags[k],vis=tmp.z<1&&(!INFO[k].m||INFO[k].m===mode);
+    b.style.transform=vis?'translate('+((tmp.x*.5+.5)*w+8)+'px,'+((-tmp.y*.5+.5)*h-10)+'px)':'translate(-999px,-999px)'}
+  renderer.render(scene,cam)}
+place();applyLayers();setMilk(0);renderStg();cipUI();physUI();moutUI();drawOled(TARE);requestAnimationFrame(frame);
+})();
+</script>
+<style>
+#oc{position:fixed;inset:0;z-index:50;background:var(--bg);display:none;grid-template-columns:1fr 350px;grid-template-rows:auto 1fr}
+#oc.on{display:grid}
+#oc header{grid-column:1/-1}
+#ocs{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,var(--bg2),var(--bg) 75%);touch-action:none;cursor:grab}
+#ocp{padding:12px;overflow:auto;background:var(--panel);border-left:1px solid var(--line)}
+#ocspec{width:100%;height:130px;display:block;cursor:pointer}
+#ocp .kv strong{font-size:16px}
+@media(max-width:900px){#oc.on{display:block;overflow:auto}#ocs{height:62dvh}#ocp{border:0;border-top:1px solid var(--line)}}
+</style>
+<div id="oc">
+<header><div class="brandmark" role="img" aria-label="Dugdha Kavach logo"></div><div class="ttl"><h1>Optical sensor lab</h1><span>Spectral sensor AS7265x in 3D</span></div><span class="sp"></span><span class="hdhint">Drag to rotate. Scroll to zoom. Click any part.</span><button id="ocX">Back to bucket</button></header>
+<div id="ocs"></div>
+<aside id="ocp">
+<h2>Milk in the sensor</h2>
+<div class="row" id="ocsc"><button data-s="normal" class="on">Normal</button><button data-s="mast">Mastitis</button><button data-s="water">Watered down</button><button data-s="sour">Sour</button><button data-s="ref">Plain water</button><button data-s="foul">Dirty window</button></div>
+<label class="sl">Fat <span id="ocfv" class="mono"></span> %</label><input id="ocf" type="range" min="0" max="6" step=".1" value="3.8">
+<label class="sl">Flow <span id="ocqv" class="mono"></span> L/min</label><input id="ocq" type="range" min="0" max="3" step=".05" value="1">
+<label class="sl">Integration time <span id="octv" class="mono"></span> ms</label><input id="oct" type="range" min="20" max="700" step="10" value="150">
+<h2>Illumination</h2>
+<div class="row" id="ocil"><button data-i="all" class="on">All (cycle)</button><button data-i="white">White</button><button data-i="uv">UV 395</button><button data-i="ir">IR 875</button></div>
+<h2>Light spectrum (click a bar)</h2>
+<canvas id="ocspec"></canvas>
+<div class="card" id="occh" style="margin-top:6px"></div>
+<h2>Readings (simulated)</h2>
+<div class="grid">
+<div class="kv"><small>Turbidity R</small><strong class="mono" id="ocT">—</strong></div>
+<div class="kv"><small>Blood index</small><strong class="mono" id="ocB">—</strong></div>
+<div class="kv"><small>Water band</small><strong class="mono" id="ocW">—</strong></div>
+<div class="kv"><small>Photon yield</small><strong class="mono" id="ocMC">—</strong></div>
+<div class="kv"><small>Reynolds no.</small><strong class="mono" id="ocRe">—</strong></div>
+<div class="kv"><small>Channel speed</small><strong class="mono" id="ocV">—</strong></div>
+<div class="kv"><small>ΔP over channel</small><strong class="mono" id="ocDP">—</strong></div>
+<div class="kv"><small>Wall shear</small><strong class="mono" id="ocSh">—</strong></div>
+<div class="kv"><small>Residence time</small><strong class="mono" id="ocRes">—</strong></div>
+<div class="kv"><small>Reading vs int. time</small><strong class="mono" id="ocAvg">—</strong></div>
+</div>
+<div id="ocst" style="margin-top:8px;padding:8px 10px;border-radius:10px;font-weight:700;text-align:center;border:1px solid var(--line)">—</div>
+<h2>View</h2>
+<label class="sl">Housing cutaway</label><input id="ocop" type="range" min="0.05" max="1" step=".01" value=".3">
+<label class="sl">Exploded view</label><input id="ocex" type="range" min="0" max="1" step=".01" value="0">
+<div class="row" id="oclay" style="margin-top:6px"><button data-l="ph" class="on">Photons</button><button data-l="fl" class="on">Milk tracers</button><button data-l="tg" class="on">Tags</button><button data-l="sp">Auto-spin</button></div>
+<div class="row" id="occam" style="margin-top:6px"><button data-c="front">Front (schematic)</button><button data-c="iso">3D</button><button data-c="sec">Section</button><button data-c="top">Top</button></div>
+<h2>Selected part</h2>
+<div class="card" id="ocinfo"><b>Click any part or tag</b><p>Every element explains what it does, the physics behind it, and how to build it.</p></div>
+<h2>Physics used</h2>
+<div class="card">
+<p><em>Light transport:</em> milk scatters strongly (fat globules + casein micelles), so light diffuses. μs′ ≈ 7.5·fat%·(λ/600)<sup>−0.4</sup> + 4·casein%·(λ/600)<sup>−2.2</sup> cm⁻¹. Absorption μa = water + riboflavin (450 nm) + haemoglobin (542/577 nm, blood in mastitis).</p>
+<p><em>Reflectance:</em> Kubelka–Munk slab over a black back wall: K=2μa, S=0.75μs′, R=1/(a+b·coth(bSd)), a=1+K/S, b=√(a²−1), d=6 mm.</p>
+<p><em>Signal:</em> counts = 60 + G·LED(λ)·(R·Tw²+stray)·t, shot noise √N, 16-bit clip at 65535. Tw² = 0.927 (two glass–air surfaces, 3.5 % each); baffles cut stray ×0.12.</p>
+<p><em>Flow:</em> Re=ρvD<sub>h</sub>/μ, ΔP=12μLQ/(wh³(1−0.63h/w)), wall shear γ̇=6Q/(wh²), milk 1030 kg/m³ and about 2 mPa·s at 37 °C. Tracers run in slow motion.</p>
+<p><em>Photons:</em> illustrative Monte Carlo with an enlarged mean free path; survival per step is a′<sup>40</sup> so absorption stays correct. Yield is photons that return inside a bore.</p>
+</div>
+<p class="note">Illustrative model for design intuition, not a calibrated instrument. Thresholds must be calibrated against lab reference milk. Optical constants are typical literature-range values.</p>
+</aside>
+</div>
+<script>
+(function(){
+const $=id=>document.getElementById(id),V3=THREE.Vector3,oc=$('oc'),R3=Math.random;
+let ren,scn,cam,stage,inited=false,selK=null,selBox=null;
+const WL=[410,435,460,485,510,535,560,585,610,645,680,705,730,760,810,860,900,940];
+const CHP=['AS72653','AS72653','AS72653','AS72653','AS72653','AS72653','AS72652','AS72652','AS72651','AS72652','AS72651','AS72652','AS72651','AS72651','AS72651','AS72651','AS72652','AS72652'];
+const wA=[.0001,.0001,.0003,.0004,.0006,.0008,.0012,.002,.0027,.0033,.0045,.007,.027,.026,.02,.043,.068,.29];
+const g=(l,c,w)=>Math.exp(-Math.pow((l-c)/w,2));
+const SCN={normal:{F:3.8,C:2.6,hb:0,sour:0,foul:0,col:0xf6efe0},mast:{F:3.2,C:2.6,hb:.12,sour:0,foul:0,col:0xf1d3cb},water:{F:2.4,C:1.7,hb:0,sour:0,foul:0,col:0xe1e9ee},sour:{F:3.8,C:2.6,hb:0,sour:1,foul:0,col:0xf3e8b9},ref:{F:0,C:0,hb:0,sour:0,foul:0,col:0xbfe6ee},foul:{F:3.8,C:2.6,hb:0,sour:0,foul:.6,col:0xf6efe0}};
+let S=Object.assign({},SCN.normal),illum='all',ch=9,Q=1,TI=150,expl=0,opt,flowS,okMeta={};
+const D=.6,TW2=.927,GN=296,DARK=60,STRAY=.036*.12,CHX=[-.95,0,.95];
+const Ew=l=>.9*g(l,570,95)+.45*g(l,452,14),Eu=l=>.5*g(l,395,10),Ei=l=>1.1*g(l,875,32);
+const Eil=l=>(illum==='all'||illum==='white'?Ew(l):0)+(illum==='all'||illum==='uv'?Eu(l):0)+(illum==='all'||illum==='ir'?Ei(l):0);
+function optics(s){const mua=[],mus=[],R=[],wf=1-(s.F+s.C+5.4)/100;
+ for(let i=0;i<18;i++){const l=WL[i],a=wA[i]*wf/.87+(s.F+s.C>0?.2*g(l,450,45):0)+s.hb*2.8*(g(l,542,18)+g(l,577,12)+9*g(l,415,15));
+  const b=Math.max(.01,7.5*s.F*Math.pow(l/600,-.4)+4*s.C*(1+.6*s.sour)*Math.pow(l/600,-2.2+1.4*s.sour));
+  const Sx=.75*b,aa=1+2*a/Sx,bb=Math.sqrt(aa*aa-1);mua.push(a);mus.push(b);R.push(1/(aa+bb/Math.tanh(bb*Sx*D)))}
+ return {mua,mus,R}}
+const met=R=>({t:(R[8]+R[9]+R[10])/3,b:(R[5]+R[8])/2-(R[6]+R[7])/2,w:1-R[17]/R[15]});
+const NORM=met(optics(SCN.normal).R);
+function flow(){const q=Q/60000,w=.012,h=.006,L=.04,mu=.002*(1+.04*(S.F-3.5)),A=w*h,v=q/A,Dh=2*w*h/(w+h);
+ return {v,Re:1030*v*Dh/mu,dP:12*mu*L*q/(w*h*h*h*(1-.63*h/w)),gw:6*q/(w*h*h),res:q>0?A*L/q:Infinity}}
+const gauss=()=>(R3()+R3()+R3()-1.5)*2;
+let cnt=new Array(18).fill(DARK),Rm=new Array(18).fill(NaN),mS={t:NaN,b:NaN,w:NaN};
+function measure(){opt=optics(S);const uv=illum==='all'||illum==='uv';
+ for(let i=0;i<18;i++){const l=WL[i],E=Eil(l),Rt=opt.R[i]*TW2*Math.pow(1-.55*S.foul,2)+STRAY;
+  const n0=DARK+GN*E*Rt*TI+gauss()*Math.sqrt(Math.max(1,DARK+GN*E*Rt*TI));
+  const fl=uv&&S.F+S.C>0?GN*TI*.03*g(l,530,30):0;
+  cnt[i]=Math.min(65535,Math.max(0,n0+fl+gauss()*Math.sqrt(Math.max(1,fl))));
+  Rm[i]=E<.08?NaN:((Math.min(65535,n0)-DARK)/(GN*E*TI)-STRAY)/TW2}
+ const m=met(Rm);for(const k in m)mS[k]=isNaN(mS[k])||isNaN(m[k])?m[k]:mS[k]+(m[k]-mS[k])*.35}
+function verdict(){const t=mS.t,b=mS.b;if(isNaN(t)||isNaN(b))return [1,'Turn on white and infrared light'];
+ if(t<.08)return [1,'Water or empty channel'];if(t<.72*NORM.t)return [0,'Window is dirty. Clean it.'];
+ if(b-NORM.b>.012)return [0,'Possible blood or mastitis'];if(t<.985*NORM.t)return [0,'Low fat or watered down'];return [1,'Milk looks good']}
+const INFO={
+milkin:{n:'Milk in',g:'body',p:[-6.4,.4,0],d:'Milk arrives from the bucket outlet in a 6 mm silicone hose. At 1 L/min the flow is laminar (Re far below 2300) with a parabolic profile: fastest on the axis, almost stopped at the wall. Fat globules ride the streamlines, so the window always sees a fresh, representative slice.',b:'Food-grade silicone on a barbed or tri-clamp adapter. Keep the run level or rising so air cannot collect under the window.'},
+clampin:{n:'Hose clamp (in)',g:'body',p:[-5.6,.85,0],d:'A worm-drive or Oetiker clamp squeezes the hose onto the barb so the joint holds pressure without leaking, and lets you pull the line off for cleaning.',b:'Stainless clamp with a smooth inside so no crevice can hold milk and sour.'},
+channel:{n:'Flow channel',g:'body',p:[-1.3,-.15,.7],d:'A 40 × 12 × 6 mm milk-wetted cavity. The fixed 6 mm depth fixes the optical geometry, so the sensor always looks at the same layer. At 1 L/min the residence time is about 0.17 s, shorter than the integration time, so a reading averages fresh milk. With no flow, fat creams upward by Stokes drift (about 1 mm/h) toward the window.',b:'SS316L or food-grade PP block, polished (Ra under 0.8 µm) so films do not stick. Matte black walls make the back of the slab absorbing.'},
+window:{n:'Sealed optical window',g:'win',p:[1.4,.6,.7],d:'A 3 mm quartz or borosilicate pane (n ≈ 1.46) between wet channel and dry electronics. Each glass–air surface reflects ((n−1)/(n+1))² ≈ 3.5 % straight back: a ghost signal added to every channel. The glass–milk side reflects only about 0.2 % because the indices nearly match. A fouling film on the wet side absorbs light and lowers every reading.',b:'Quartz or borosilicate, 3 mm, optional AR coating. Clean with warm water and a soft cloth, no solvents.'},
+oring:{n:'O-rings',g:'win',p:[-1.8,.32,.72],d:'A silicone or FKM ring is squeezed 15–25 % in a groove around the glass. It seals wet from dry, because milk would otherwise creep by capillary action into the electronics.',b:'FDA-grade O-ring, about 1.5 mm cross-section, replaced at each service.'},
+board:{n:'AS7265x board',g:'elec',p:[1.4,2.0,.9],d:'Three chips (AS72651, AS72652, AS72653) together read 18 channels from 410 to 940 nm, each about 20 nm wide behind an interference filter, with 16-bit ADCs. Counts ≈ gain × LED power × reflectance × integration time, plus a dark offset and shot noise (√N). Pick a channel in the spectrum to see its chip.',b:'AS7265x triad breakout, 3.3 V, I²C, mounted face-down above the window.'},
+chips:{n:'LEDs + detectors',g:'elec',p:[-.95,1.75,.45],d:'Each chip has a detector array and a drivable LED: UV 395 nm, white (blue die + phosphor) and IR 875 nm. White covers only 410–700 nm, so the IR LED is needed for the 860–940 nm water bands. The UV LED also excites riboflavin fluorescence near 530 nm. Illumination = All cycles them.',b:'On-chip LED drivers, 12.5–100 mA. Pulse them only during a reading so the milk is not warmed.'},
+baffle:{n:'Light baffles',g:'baf',p:[.95,1.15,.3],d:'Matte black bores between chip and window. Only photons that re-emerge inside the bore reach a detector; photons leaving at wider angles hit the black wall. This cuts window ghost reflection and chip-to-chip crosstalk (modelled as a ×0.12 stray factor).',b:'Printed or machined black tubes, bore about 5 mm, matte finish.'},
+ribbon:{n:'Ribbon cable',g:'elec',p:[.2,4.2,-.7],d:'Carries 3.3 V, GND, SDA, SCL and LED/INT lines to the ESP32-S3. I²C at 100–400 kHz is fine over about 30 cm with 4.7 kΩ pull-ups.',b:'6-core ribbon through a gland or gasketed slot in the housing top, away from pump wiring.'},
+esp32:{n:'ESP32-S3 (dry side)',g:'elec',p:[1.1,6.4,.5],d:'Sets gain and integration time (steps of 2.8 ms), reads the 18 channels, subtracts the dark and reference baseline, compares with calibrated thresholds and sends the verdict to the OLED and Wi-Fi. It never touches milk.',b:'In the main dry pod; only the ribbon comes to the cartridge, so the cartridge stays small.'},
+housing:{n:'Light-tight housing',g:'body',p:[3.8,-.6,1.4],d:'Matte black walls keep out room light, which is thousands of times stronger than the faint LED light returning from milk. The black back wall is also the absorbing backing in the Kubelka–Munk model, so milk cannot see a bright background. Slide the cutaway to look inside.',b:'Black PETG/ASA with 2 mm walls and a gasketed cover, or black-anodised aluminium.'},
+screws:{n:'4 housing screws',g:'scr',p:[3.3,2.5,1.6],d:'M3 screws clamp the cover on a gasket so the box is light-tight and the window stays pressed on its O-rings. Unscrew them to open the cartridge for cleaning. Torque gently (about 0.5 N·m) so the glass does not crack.',b:'SS A2 pan-head M3 into brass heat-set inserts.'},
+drain:{n:'Drain / reference port',g:'body',p:[0,-2.2,.45],d:'A bottom port to flush the channel with clean water or a reference liquid without opening the cartridge, and to drain milk and trapped air. With water in the channel almost no light returns, so the reading is the dark + stray baseline the ESP32 subtracts. Try the Water ref. scenario.',b:'Tri-clamp or barbed stub with a removable cap. Flush with warm water after every session.'},
+clampout:{n:'Hose clamp (out)',g:'body',p:[5.6,.85,0],d:'Holds the outlet line. A leak-free outlet keeps the channel full, so no air gap forms under the window.',b:'Same stainless clamp as the inlet.'},
+milkout:{n:'Milk out',g:'body',p:[6.4,.4,0],d:'Milk leaves toward the milk can. The outlet is kept level with or above the channel so it stays full; a half-empty channel would scatter light off an air gap and read as a false fat change.',b:'Silicone hose to the milk valve, separate from the CIP waste line.'}};
+const wc=l=>{let r=0,g=0,b=0;if(l<440){r=(440-l)/60;b=1}else if(l<490){g=(l-440)/50;b=1}else if(l<510){g=1;b=(510-l)/20}else if(l<580){r=(l-510)/70;g=1}else if(l<645){r=1;g=(645-l)/65}else if(l<=700)r=1;else return [.65,.2,.45];return [r,g,b]};
+const rgb=l=>{const c=wc(l);return 'rgb('+c.map(v=>Math.round(40+215*v)).join(',')+')'};
+const grp={},pick=[],tags={};
+let ledM=[],houseM,milkM,filmM,photC,fPts,pPts,tracerOn=true,photOn=true,tagsOn=true,spin=false;
+const st={t:new V3(0,.8,0),th:0,ph:1.5,d:17},gl={t:new V3(0,.8,0),th:.5,ph:1.25,d:17};
+const PRE={front:[0,1.5,17],iso:[.6,1.2,17],sec:[1.5,1.5,14],top:[.02,.25,16]};
+function init(){inited=true;stage=$('ocs');
+ ren=new THREE.WebGLRenderer({antialias:true,alpha:true});ren.setPixelRatio(Math.min(devicePixelRatio||1,2));stage.appendChild(ren.domElement);
+ ren.domElement.style.cssText='display:block;width:100%;height:100%';
+ scn=new THREE.Scene();cam=new THREE.PerspectiveCamera(36,1,.1,200);
+ scn.add(new THREE.HemisphereLight(0xfff1dc,0x4a3a2a,1));const d1=new THREE.DirectionalLight(0xffffff,1.1);d1.position.set(6,10,12);scn.add(d1);const d2=new THREE.DirectionalLight(0x9fd8ff,.5);d2.position.set(-8,2,-6);scn.add(d2);
+ const M=(c,m,r,x)=>new THREE.MeshStandardMaterial(Object.assign({color:c,metalness:m,roughness:r},x||{}));
+ ['elec','win','baf','scr','cap','body'].forEach(n=>{grp[n]=new THREE.Group();scn.add(grp[n])});
+ const mk=(geo,mat,x,y,z,gn,k)=>{const o=new THREE.Mesh(geo,mat);o.position.set(x,y,z);grp[gn].add(o);if(k){o.userData.k=k;pick.push(o)}return o};
+ const BX=(w,h,d)=>new THREE.BoxGeometry(w,h,d),CY=(r,h,s,op)=>new THREE.CylinderGeometry(r,r,h,s||24,1,op);
+ const steel=M(0xb9bfc6,.8,.35),hoseM=M(0xcfe8e4,0,.2,{transparent:true,opacity:.28,depthWrite:false});
+ milkM=M(0xf6efe0,0,.3,{transparent:true,opacity:.62,depthWrite:false,emissive:0x403828,emissiveIntensity:.4});
+ const line=(geo,gn,x,y,z,c)=>{const l=new THREE.LineSegments(new THREE.EdgesGeometry(geo),new THREE.LineBasicMaterial({color:c}));l.position.set(x,y,z);grp[gn].add(l)};
+ const fill=(geo,x,y,z,rz)=>{const f=new THREE.Mesh(geo,milkM);f.position.set(x,y,z);if(rz)f.rotation.z=rz;grp.body.add(f)};
+ for(const s of [-1,1]){const h=mk(CY(.3,5,20),hoseM,s*4.5,0,0,'body',s<0?'milkin':'milkout');h.rotation.z=Math.PI/2;fill(CY(.25,5,20),s*4.5,0,0,Math.PI/2);
+  const c=mk(new THREE.TorusGeometry(.38,.09,10,24),M(0x6b7178,.8,.35),s*5.6,0,0,'body',s<0?'clampin':'clampout');c.rotation.y=Math.PI/2;
+  mk(BX(.3,.2,.2),steel,s*5.6,.5,0,'body',s<0?'clampin':'clampout');
+  const co=mk(CY(.42,.3,24),steel,s*3.8,0,0,'body');co.rotation.z=Math.PI/2}
+ mk(BX(4,.6,1.2),M(0x9fd8cf,.1,.2,{transparent:true,opacity:.2,depthWrite:false}),0,0,0,'body','channel');fill(BX(3.9,.55,1.1),0,0,0);line(BX(4,.6,1.2),'body',0,0,0,0x0f8f7c);
+ mk(CY(.3,3.1,20),hoseM,0,-1.85,0,'body','drain');fill(CY(.24,3.1,20),0,-1.85,0);mk(CY(.46,.35,24),M(0x6b7178,.6,.5),0,-3.6,0,'cap','drain');
+ mk(BX(3.4,.3,1.2),M(0xf5a623,.1,.1,{transparent:true,opacity:.6,emissive:0x8a5200,emissiveIntensity:.5}),0,.45,0,'win','window');
+ const pts=[];for(let i=0;i<48;i++){const t=i/48*6.283,c=Math.cos(t),s=Math.sin(t);pts.push(new V3(1.78*Math.sign(c)*Math.pow(Math.abs(c),.33),.31,.68*Math.sign(s)*Math.pow(Math.abs(s),.33)))}
+ mk(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts,true),96,.06,8,true),M(0xe8e4d8,0,.5),0,0,0,'win','oring');
+ filmM=M(0x6b4a24,0,.9,{transparent:true,opacity:0,depthWrite:false});mk(BX(3.4,.01,1.2),filmM,0,.305,0,'win');
+ houseM=M(0x1d2026,.2,.6,{transparent:true,opacity:.3,depthWrite:false,side:THREE.DoubleSide});
+ mk(BX(7.6,6.9,2.8),houseM,0,-.5,0,'body','housing');line(BX(7.6,6.9,2.8),'body',0,-.5,0,0x6c7480);
+ for(const x of [-3.3,3.3])for(const y of [2.5,-3.5]){const sc=mk(CY(.17,.18,16),steel,x,y,1.49,'scr','screws');sc.rotation.x=Math.PI/2}
+ mk(BX(3,.12,1.8),M(0x6b4c93,.1,.5),0,1.9,0,'elec','board');mk(BX(.9,.15,.3),M(0x14161c,.3,.4),0,2.03,-.6,'elec','board');
+ for(const x of [-1.1,1.1])mk(BX(.3,.1,.2),M(0x14161c,.3,.4),x,2.0,.5,'elec','board');
+ CHX.forEach((xc,i)=>{mk(BX(.5,.12,.5),M(0x16181c,.3,.3),xc,1.78,0,'elec','chips');mk(BX(.18,.02,.18),M(0x1a2a55,.5,.2),xc-.1,1.715,-.08,'elec','chips');
+  const lm=new THREE.MeshBasicMaterial({color:0xffffff});ledM.push(lm);mk(new THREE.SphereGeometry(.07,10,8),lm,xc+.12,1.71,.1,'elec','chips');
+  mk(CY(.26,1.1,24,true),M(0x0b0b0d,.1,.9,{side:THREE.DoubleSide,transparent:true,opacity:.4,depthWrite:false}),xc,1.15,0,'baf','baffle')});
+ mk(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([[0,2.06,-.6],[0,2.6,-.95],[0,3.6,-.95],[.3,5,-.5],[.2,6.2,-.1]].map(p=>new V3(...p))),40,.09,8),M(0x8a63c4,0,.5),0,0,0,'elec','ribbon');
+ mk(BX(2.2,.12,1.1),M(0x14161c,.2,.5),.2,6.3,0,'elec','esp32');mk(BX(.9,.1,.7),M(0xc8ccd2,.8,.3),-.3,6.4,0,'elec','esp32');mk(BX(.4,.14,.3),steel,1.4,6.32,0,'elec','esp32');mk(BX(.5,.02,.3),M(0xd7a63a,.8,.3),.7,6.37,0,'elec','esp32');
+ const dc=document.createElement('canvas');dc.width=dc.height=32;{const x=dc.getContext('2d');x.fillStyle='#fff';x.beginPath();x.arc(16,16,14,0,7);x.fill()}const dtex=new THREE.CanvasTexture(dc);
+ fPts=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.BufferAttribute(new Float32Array(NF*3),3)),new THREE.PointsMaterial({size:.1,map:dtex,alphaTest:.5,color:0x0f8f7c}));fPts.frustumCulled=false;scn.add(fPts);
+ photC=new THREE.PointsMaterial({size:.13,map:dtex,alphaTest:.5,color:0xffffff});
+ pPts=new THREE.Points(new THREE.BufferGeometry().setAttribute('position',new THREE.BufferAttribute(pp,3)),photC);pPts.frustumCulled=false;scn.add(pPts);
+ for(let i=0;i<NF;i++){fx[i]=R3()*13.6-6.8;fy[i]=(R3()-.5)*.56;fz[i]=R3()*2-1}
+ for(let i=0;i<NP;i++)pl[i]=0;
+ const lb=document.createElement('div');lb.id='oclb';stage.appendChild(lb);
+ for(const k in INFO){const b=document.createElement('button');b.className='tag';b.innerHTML='<i></i>'+INFO[k].n;b.onclick=e=>{e.stopPropagation();select(k)};lb.appendChild(b);tags[k]=b}
+ const ptr=new Map(),rc=new THREE.Raycaster();let mv=0;
+ stage.addEventListener('pointerdown',e=>{if(e.target.closest('.tag'))return;ptr.set(e.pointerId,e);stage.setPointerCapture(e.pointerId);mv=0});
+ stage.addEventListener('pointermove',e=>{const o=ptr.get(e.pointerId);if(!o)return;mv+=Math.abs(e.clientX-o.clientX)+Math.abs(e.clientY-o.clientY);gl.th-=(e.clientX-o.clientX)*.008;gl.ph=Math.min(2.6,Math.max(.1,gl.ph-(e.clientY-o.clientY)*.008));ptr.set(e.pointerId,e)});
+ stage.addEventListener('pointerup',e=>{ptr.delete(e.pointerId);if(mv>5||e.target.closest('.tag'))return;const r=stage.getBoundingClientRect();
+  rc.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),cam);
+  const h=rc.intersectObjects(pick,false),x=h.find(q=>q.object.userData.k!=='housing')||h[0];if(x)select(x.object.userData.k)});
+ stage.addEventListener('pointercancel',e=>ptr.delete(e.pointerId));
+ stage.addEventListener('wheel',e=>{e.preventDefault();gl.d=Math.min(40,Math.max(4,gl.d*(1+e.deltaY*.001)))},{passive:false});
+ new ResizeObserver(resize).observe(stage);
+ refresh();ui();requestAnimationFrame(frame)}
+const NF=240,fx=[],fy=[],fz=[],NP=90,pp=new Float32Array(NP*3),pd=new Float32Array(NP*3),pa=new Float32Array(NP),pl=new Uint8Array(NP);let emit=0,det=0;
+function resize(){const w=stage.clientWidth,h=stage.clientHeight;if(!w||!h)return;ren.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+function kbox(k){const b=new THREE.Box3();pick.forEach(o=>{if(o.userData.k===k){o.updateWorldMatrix(true,false);b.expandByObject(o)}});return b}
+function select(k){selK=k;for(const j in tags)tags[j].classList.toggle('sel',j===k);const f=INFO[k];
+ $('ocinfo').innerHTML='<b>'+f.n+'</b><p><em>How it works:</em> '+f.d+'</p><p><em>Real build:</em> '+f.b+'</p>';
+ if(selBox)scn.remove(selBox);selBox=new THREE.Box3Helper(kbox(k),0xf2b134);scn.add(selBox);
+ const b=kbox(k),c=b.getCenter(new V3());gl.t.set(c.x*.6,c.y*.6+.3,c.z*.4)}
+function refresh(){opt=optics(S);flowS=flow();milkM.color.setHex(S.col);filmM.opacity=S.foul*.8;$('ocfv').textContent=S.F.toFixed(1);$('ocf').value=S.F;
+ const ap=opt.mus[ch]/(opt.mua[ch]+opt.mus[ch]);okMeta.sv=Math.pow(ap,40);
+ const c=wc(WL[ch]);photC.color.setRGB(.35+.65*c[0],.35+.65*c[1],.35+.65*c[2]);
+ $('occh').innerHTML='<b>Ch '+(ch+1)+' · '+WL[ch]+' nm · '+CHP[ch]+'</b><p>μa '+opt.mua[ch].toFixed(4)+' cm⁻¹ · μs′ '+opt.mus[ch].toFixed(1)+' cm⁻¹</p><p>Penetration depth δ = 1/√(3μa(μa+μs′)) = <em>'+(10/Math.sqrt(3*opt.mua[ch]*(opt.mua[ch]+opt.mus[ch]))).toFixed(1)+' mm</em> (channel is 6 mm deep). Light colour in the 3D view follows this channel.</p>';
+ emit=det=0}
+function ui(){$('ocqv').textContent=Q.toFixed(2);$('octv').textContent=TI}
+function drawSpec(){const c=$('ocspec'),r=devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;if(!w)return;c.width=w*r;c.height=h*r;const x=c.getContext('2d');x.scale(r,r);
+ const bw=w/18,mut=getComputedStyle(document.documentElement).getPropertyValue('--mut')||'#888';
+ const rf=optics(SCN.normal).R;x.fillStyle='rgba(127,127,127,.12)';x.fillRect(0,0,w,h-14);
+ for(let i=0;i<18;i++){const v=cnt[i]/65535,bh=v*(h-16);x.fillStyle=rgb(WL[i]);x.fillRect(i*bw+2,h-14-bh,bw-4,bh);
+  if(i===ch){x.strokeStyle='#f2b134';x.lineWidth=2;x.strokeRect(i*bw+1,h-14-bh-1,bw-2,bh+2)}
+  if(v>.999){x.fillStyle='#ff5a3c';x.fillRect(i*bw+2,0,bw-4,3)}
+  const rv=Math.min(1,(DARK+GN*Eil(WL[i])*(rf[i]*TW2+STRAY)*TI)/65535);x.fillStyle=mut;x.fillRect(i*bw+bw/2-3,h-14-rv*(h-16)-1,6,2);
+  if(i%3===0||i===17){x.fillStyle=mut;x.font='9px monospace';x.fillText(WL[i],i*bw+1,h-3)}}
+ x.fillStyle=mut;x.font='9px monospace';x.fillText('counts (16-bit) · tick = normal milk',4,10)}
+$('ocspec').onclick=e=>{const r=e.target.getBoundingClientRect();ch=Math.min(17,Math.max(0,Math.floor((e.clientX-r.left)/r.width*18)));refresh()};
+let tm=0,tmp=new V3(),clock=0,last=performance.now();
+function frame(now){requestAnimationFrame(frame);if(!oc.classList.contains('on'))return;const dt=Math.min(.05,(now-last)/1000);last=now;clock+=dt;
+ if(spin)gl.th+=dt*.3;st.t.lerp(gl.t,.1);st.th+=(gl.th-st.th)*.1;st.ph+=(gl.ph-st.ph)*.1;st.d+=(gl.d-st.d)*.1;
+ cam.position.set(st.t.x+st.d*Math.sin(st.ph)*Math.sin(st.th),st.t.y+st.d*Math.cos(st.ph),st.t.z+st.d*Math.sin(st.ph)*Math.cos(st.th));cam.lookAt(st.t);
+ grp.elec.position.y=3.2*expl;grp.baf.position.y=1.6*expl;grp.win.position.y=.7*expl;grp.scr.position.z=2*expl;grp.cap.position.y=-1.2*expl;
+ const seq=['white','uv','ir'],cur=illum==='all'?seq[Math.floor(clock/1.5)%3]:illum,lc={white:0xffffff,uv:0x9b4dff,ir:0xff3b30}[cur];ledM.forEach(m=>m.color.setHex(lc));
+ tm+=dt;if(tm>.2){tm=0;measure();paint();drawSpec()}
+ fPts.visible=tracerOn;const f=flowS,vh=f.v*2.54;
+ if(tracerOn&&Q>0){const a=fPts.geometry.attributes.position.array;for(let i=0;i<NF;i++){const inC=Math.abs(fx[i])<2,u=(inC?1.5*f.v:2*vh)*(1-Math.pow(fy[i]/.3,2))*100;fx[i]+=u*.1*dt;if(fx[i]>6.8){fx[i]=-6.8;fy[i]=(R3()-.5)*.56;fz[i]=R3()*2-1}
+  a[i*3]=fx[i];a[i*3+1]=fy[i];a[i*3+2]=fz[i]*(inC?.55:.2)}fPts.geometry.attributes.position.needsUpdate=true}
+ else if(tracerOn){const a=fPts.geometry.attributes.position.array;for(let i=0;i<NF;i++){a[i*3]=fx[i];a[i*3+1]=fy[i];a[i*3+2]=fz[i]*(Math.abs(fx[i])<2?.55:.2)}fPts.geometry.attributes.position.needsUpdate=true}
+ stepP(dt);
+ if(selBox&&selK)selBox.box.copy(kbox(selK));
+ const w=stage.clientWidth,h=stage.clientHeight;$('oclb').style.display=tagsOn?'block':'none';
+ for(const k in INFO){const p=INFO[k].p;tmp.set(p[0],p[1],p[2]).add(grp[INFO[k].g].position).project(cam);tags[k].style.transform=tmp.z<1?'translate('+((tmp.x*.5+.5)*w+8)+'px,'+((-tmp.y*.5+.5)*h-10)+'px)':'translate(-999px,-999px)'}
+ ren.render(scn,cam)}
+function spawn(i){const xc=CHX[Math.floor(R3()*3)],a=R3()*6.283,r=Math.sqrt(R3())*.2,th=R3()*.6,ph=R3()*6.283;
+ pp[i*3]=xc+r*Math.cos(a);pp[i*3+1]=1.68;pp[i*3+2]=r*Math.sin(a);pd[i*3]=Math.sin(th)*Math.cos(ph);pd[i*3+1]=-Math.cos(th);pd[i*3+2]=Math.sin(th)*Math.sin(ph);pa[i]=0;pl[i]=1;emit++}
+function stepP(dt){pPts.visible=photOn;if(!photOn)return;const sp=6*dt,ell=.12;
+ for(let i=0;i<NP;i++){if(!pl[i]){if(R3()<.25)spawn(i);else{pp[i*3+1]=-99;continue}}
+  let x=pp[i*3],y=pp[i*3+1],z=pp[i*3+2];const oy=y;
+  x+=pd[i*3]*sp;y+=pd[i*3+1]*sp;z+=pd[i*3+2]*sp;
+  if(y>1.72){let hit=false;for(const xc of CHX)if((x-xc)*(x-xc)+z*z<.0625)hit=true;if(hit&&pd[i*3+1]>0)det++;pl[i]=0;pp[i*3+1]=-99;continue}
+  if(y>.6){let ok=false;for(const xc of CHX)if((x-xc)*(x-xc)+z*z<.0676)ok=true;if(!ok){pl[i]=0;pp[i*3+1]=-99;continue}
+   if(oy<=.6&&pd[i*3+1]>0&&R3()<.035*.8){pd[i*3+1]=-pd[i*3+1];y=.59}}
+  else if(y>.3){if(Math.abs(x)>1.7||Math.abs(z)>.6){pl[i]=0;pp[i*3+1]=-99;continue}}
+  else{pa[i]+=sp;if(y<-.3||Math.abs(x)>2||Math.abs(z)>.6){pl[i]=0;pp[i*3+1]=-99;continue}
+   if(pa[i]>=ell){pa[i]=0;if(R3()>okMeta.sv){pl[i]=0;pp[i*3+1]=-99;continue}const c=2*R3()-1,s=Math.sqrt(1-c*c),p=R3()*6.283;pd[i*3]=s*Math.cos(p);pd[i*3+1]=c;pd[i*3+2]=s*Math.sin(p)}}
+  pp[i*3]=x;pp[i*3+1]=y;pp[i*3+2]=z}
+ pPts.geometry.attributes.position.needsUpdate=true;if(emit>900){emit/=2;det/=2}}
+function paint(){const f=flowS,v=verdict(),fm=(a,d)=>isNaN(a)?'—':a.toFixed(d);
+ $('ocT').textContent=fm(mS.t,3);$('ocB').textContent=isNaN(mS.b)?'—':(mS.b*100).toFixed(1);$('ocW').textContent=fm(mS.w,3);$('ocMC').textContent=emit>40?(det/emit*100).toFixed(1)+' %':'…';
+ $('ocRe').textContent=f.Re.toFixed(0)+(f.Re>2300?' turb.':f.Re>1500?' trans.':' lam.');$('ocV').textContent=(f.v*100).toFixed(1)+' cm/s';$('ocDP').textContent=f.dP.toFixed(1)+' Pa';$('ocSh').textContent=f.gw.toFixed(0)+' 1/s';
+ $('ocRes').textContent=isFinite(f.res)?(f.res*1000).toFixed(0)+' ms':'no flow';$('ocAvg').textContent=!isFinite(f.res)?'static sample':TI/1000>f.res?'averages '+(TI/1000/f.res).toFixed(1)+' fills':'inside 1 fill';
+ const s=$('ocst');s.textContent=v[1];s.style.color=v[0]?'var(--good)':'var(--bad)';s.style.borderColor=v[0]?'var(--good)':'var(--bad)'}
+$('ocsc').onclick=e=>{const k=e.target.dataset.s;if(!k)return;S=Object.assign({},SCN[k]);[...$('ocsc').children].forEach(b=>b.classList.toggle('on',b===e.target));mS={t:NaN,b:NaN,w:NaN};refresh()};
+$('ocf').oninput=e=>{S.F=+e.target.value;mS={t:NaN,b:NaN,w:NaN};refresh()};
+$('ocq').oninput=e=>{Q=+e.target.value;flowS=flow();ui()};$('oct').oninput=e=>{TI=+e.target.value;ui()};
+$('ocil').onclick=e=>{const k=e.target.dataset.i;if(!k)return;illum=k;[...$('ocil').children].forEach(b=>b.classList.toggle('on',b===e.target));mS={t:NaN,b:NaN,w:NaN}};
+$('ocop').oninput=e=>{houseM.opacity=+e.target.value};$('ocex').oninput=e=>{expl=+e.target.value};
+$('oclay').onclick=e=>{const l=e.target.dataset.l;if(!l)return;e.target.classList.toggle('on');const on=e.target.classList.contains('on');if(l==='ph')photOn=on;if(l==='fl')tracerOn=on;if(l==='tg')tagsOn=on;if(l==='sp')spin=on};
+$('occam').onclick=e=>{const c=e.target.dataset.c;if(!c)return;const p=PRE[c];gl.t.set(0,.8,0);gl.th=p[0];gl.ph=p[1];gl.d=p[2]};
+$('ocOpen').onclick=()=>{oc.classList.add('on');if(!inited)init();resize();last=performance.now()};
+$('ocX').onclick=()=>oc.classList.remove('on');
+})();
+</script>
+
+<style>
+#dl{position:fixed;inset:0;z-index:50;background:var(--bg);display:none;grid-template-columns:1fr 340px;grid-template-rows:auto 1fr}
+#dl.on{display:grid}#dl header{grid-column:1/-1}
+#dls{position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,var(--bg2),var(--bg) 75%);touch-action:none;cursor:grab}
+#dlp{padding:12px;overflow:auto;background:var(--panel);border-left:1px solid var(--line)}
+#dltr{width:100%;height:64px;display:block}
+@media(max-width:900px){#dl.on{display:block;overflow:auto}#dls{height:60dvh}#dlp{border:0;border-top:1px solid var(--line)}}
+</style>
+<div id="dl">
+<header><div class="brandmark" role="img" aria-label="Dugdha Kavach logo"></div><div class="ttl"><h1>Device labs</h1><span>3D physics for each part</span></div><span class="sp"></span><span class="hdhint">Drag to rotate. Scroll to zoom. Click any part.</span><button id="dlX">Back to bucket</button></header>
+<div id="dls"></div>
+<aside id="dlp">
+<h2>Device</h2><div class="row" id="dlsw"></div>
+<h2>Inputs</h2><div id="dlsl"></div>
+<h2>Readings (simulated)</h2><div class="grid" id="dlrows"></div>
+<div id="dlst" style="margin-top:8px;padding:8px 10px;border-radius:10px;font-weight:700;text-align:center;border:1px solid var(--line)">—</div>
+<h2 id="dltl">Trace</h2><canvas id="dltr"></canvas>
+<div class="row" style="margin-top:6px"><button id="dltg" class="on">Tags</button><button id="dlsp">Auto-spin</button><button id="dlrs">Reset view</button></div>
+<h2>Selected part</h2>
+<div class="card" id="dlinfo"><b>Click any part or tag</b><p>Each element explains how it works and how to build it.</p></div>
+<h2>Physics used</h2><div class="card" id="dleq"></div>
+<p class="note">Illustrative models with typical datasheet values. Calibrate against your own hardware and reference instruments.</p>
+</aside>
+</div>
+<script>
+(function(){
+const $=id=>document.getElementById(id),V3=THREE.Vector3,dl=$('dl'),R=Math.random,gs=()=>(R()+R()+R()-1.5)*2,f=(x,d)=>x.toFixed(d);
+const B=(w,h,d)=>new THREE.BoxGeometry(w,h,d),C=(r,h)=>new THREE.CylinderGeometry(r,r,h,28),Sp=r=>new THREE.SphereGeometry(r,18,14),To=(r,t)=>new THREE.TorusGeometry(r,t,10,32);
+const MILK=0xf6efe0,STEEL=0xb9bfc6,GOLD=0xd7a63a,GLS=0xbfe6ee,RED=0xd94a2f,GRN=0x1b7a45;
+const DEV={
+load:{n:'Load cells',cam:[0,.5,0,.6,1.15,15],
+sl:[['m','Milk mass (kg)',0,15,.1,9],['d','Load offset (cm)',0,12,.5,0],['T','Temperature (°C)',5,45,1,30]],
+eq:'<p><em>Bridge:</em> 4 bar cells at 5 V give about 25 µV per kg of total load (1 mV/V at 50 kg each).</p><p><em>ADC:</em> HX711 gain 128, 24 bit: counts = V × 128/5 × 2²³. Noise ≈ 2 g rms.</p><p><em>Errors:</em> corner error 0.01 %/cm off-centre, zero drift about 6 g/K after taring at 20 °C.</p>',
+parts:{plate:['Steel load plate','Spreads the bucket weight over the four cells so the total hardly depends on where the weight sits.','6 mm stainless plate, flat to 0.2 mm, levelled on its feet, empty bucket tared.'],
+cell:['Bar load cell (×4)','An aluminium beam that bends slightly under load. The bend strains gauges on its faces. Cell colour shows its share of the load.','50 kg IP65 bar cells, bolted at one end, loaded at the other.'],
+strain:['Strain gauges','Foil grids whose resistance rises with stretch (gauge factor ≈ 2). A Wheatstone bridge turns this into millivolts.','Bought bonded and potted inside the cell. Never open it.'],
+load:['Bucket + milk','The weight being measured. Sliding the offset moves its centre of mass and the cells share unevenly.','Bucket centred on a locating ring.'],
+hx:['HX711 amplifier','24-bit ADC with low-noise gain. Reads the bridge and sends counts to the ESP32 at 10 or 80 samples/s.','Close to the cells, short shielded cable, stable 5 V.']}},
+ec:{n:'EC cell',cam:[0,.5,0,.5,1.2,12],
+sl:[['k','Milk κ at 25 °C (mS/cm)',1,9,.1,4.6],['T','Temperature (°C)',20,45,.5,37],['f','Drive frequency (kHz)',.1,20,.1,2]],
+eq:'<p><em>Cell:</em> κ = K/R with K = 1 cm⁻¹. Milk κ rises ≈ 2 %/K: κ25 = κT / (1 + 0.02 (T−25)).</p><p><em>Polarisation:</em> each electrode has a double-layer capacitance. A 2-electrode cell sees Z = Rs + 2/(jωC) and reads low at low frequency. A 4-electrode cell senses voltage on inner rings carrying no current, avoiding this.</p>',
+parts:{body:['Cell tube','Glass or PEEK tube that fixes electrode spacing, so the cell constant is a fixed number.','Moulded PEEK or borosilicate, polished bore.'],
+ci:['Current electrodes','Outer rings inject AC through the milk. AC reverses each cycle so ions do not pile up on the metal.','Gold-plated or SS316L rings driven by a 1–10 kHz sine.'],
+vi:['Voltage electrodes','Inner rings only sense voltage. Almost no current flows, so there is no polarisation drop in the measurement.','Same metal, high-impedance amplifier input.'],
+ntc:['Temperature sensor','Lets the reading be corrected to 25 °C. A 12 K change shifts EC by about 24 % otherwise.','Small PT1000 in the cell wall.'],
+afe:['Analog front end','Generates the sine, measures current and voltage, extracts amplitude with a lock-in or RMS detector.','AD5934 or sine DAC + instrumentation amp into the ESP32 ADC.']}},
+ph:{n:'pH cell',cam:[0,.3,0,.5,1.2,12],
+sl:[['p','True milk pH',2,12,.05,6.65],['T','Temperature (°C)',20,55,1,37],['s','Probe slope (%)',80,100,1,96],['q','Side-stream flow (mL/min)',0,60,1,20],['vc','Isolation valve (1 = closed)',0,1,1,0]],
+eq:'<p><em>Nernst:</em> slope = 0.1984 × T(K) mV/pH (59.16 at 25 °C, 61.5 at 37 °C). EMF = −slope × (pH−7).</p><p><em>ATC:</em> without it, reading = 7 + (S_T/59.16)(pH−7).</p><p><em>Glass:</em> ≈ 100 MΩ at 25 °C, halves every ≈ 8 K, so the amplifier needs fA-level bias. Response is a first-order lag, faster with flow and heat.</p>',
+parts:{bulb:['Glass bulb','Thin pH-sensitive glass. H⁺ swaps with Na⁺ in its gel layer, making a voltage proportional to pH.','Pharma-grade pH electrode. Never scrub the bulb.'],
+ref:['Reference junction','Ag/AgCl in KCl gives a steady reference. A ceramic plug leaks KCl slowly to complete the circuit.','Gel-filled double-junction reference.'],
+flow:['Flow cell','A small side-stream passes the bulb and returns. Flow refreshes the liquid layer on the glass, speeding response.','Clear polycarbonate cell, tri-clamp ends, silicone tubing.'],
+valve:['Isolation valve','Closed during alkaline wash and sanitiser so strong chemicals never reach the glass. Red = closed, green = open.','Small SS or PVDF ball valve with a KCl storage vial.'],
+amp:['High-impedance amplifier','Glass is about 100 MΩ so the input bias current must be below 1 pA. Guard ring and short coax block mains hum.','LMP7721-class electrometer op-amp.']}},
+temp:{n:'Temperature probe',cam:[0,.5,0,.6,1.2,12],
+sl:[['T','Milk temperature (°C)',5,60,.5,37],['i','Excitation current (mA)',.05,1.5,.05,.25],['q','Milk movement (mL/min)',0,60,1,20]],
+eq:'<p><em>PT1000:</em> R = 1000 (1 + 3.9083e-3 T − 5.775e-7 T²) Ω, ≈ 3.85 Ω/K.</p><p><em>Self-heating:</em> ΔT = I²R / δ, with δ ≈ 8 mW/K still, rising with movement.</p><p><em>Response:</em> first-order, τ ≈ 25 s still and shorter when milk moves. Class A: ±(0.15 + 0.002|T|) °C.</p>',
+parts:{sheath:['SS316 sheath','Sealed stainless tube protecting the sensor and conducting heat to the element.','3 mm thin-wall SS316L, welded closed at the tip.'],
+pt:['PT1000 element','Platinum film whose resistance rises almost linearly with temperature. Tip colour shows its temperature.','Class A thin-film PT1000, 4-wire connection.'],
+gland:['Sanitary gland','Holds the probe in the wall and seals it with an O-ring.','Tri-clamp or threaded fitting, EPDM or FKM O-ring.'],
+adc:['Measurement chip','Drives a small current, measures voltage across the sensor and a reference resistor, and computes temperature.','MAX31865 or ADS124 ratiometric ADC.']}},
+vac:{n:'Vacuum pump + pulsator',cam:[0,.5,0,.7,1.2,16],
+sl:[['s','Vacuum setpoint (kPa)',32,54,1,42],['c','Pulsation rate (cycles/min)',40,80,1,60],['r','Milk phase ratio (%)',50,70,1,60],['l','Air leak (L/min)',0,60,1,10]],
+eq:'<p><em>Pump curve:</em> S(p) = 120 (1 − p/80) L/min. Demand = pulsator air (1.2 L × cycles/min × p/101.3) + leak. Equilibrium where S = demand.</p><p><em>Chamber:</em> rises τ ≈ 80 ms, falls τ ≈ 30 ms. Liner rest = (1 − ratio) × period, at least 150 ms for teat health.</p>',
+parts:{pump:['Pump motor','Drives the rotor; the regulator holds the setpoint so the motor can run continuously.','Small 12 V or 230 V motor, flexible coupling.'],
+vane:['Rotary-vane head','Rotor with sliding vanes in an offset bore traps, squeezes and expels gas, creating vacuum at the inlet.','Oil-free carbon-vane head.'],
+reg:['Vacuum regulator','Spring valve admits air when vacuum exceeds the setpoint and holds it steady as milk and leaks change.','Adjustable diaphragm regulator with lock nut.'],
+gauge:['Vacuum gauge','Shows bucket vacuum in kPa; the needle follows the live value.','Glycerine-filled 0–100 kPa gauge.'],
+trap:['Moisture trap','Jar between bucket and pump catches milk or foam so it never reaches the pump.','Clear jar with float shut-off, drain after each session.'],
+puls:['Pulsator','Valve that alternates vacuum and air to the cups. Milk phase opens the liner, rest phase squeezes the teat. LED shows the phase.','Electromagnetic pulsator, 60 cycles/min, 60:40.'],
+claw:['Claw + liners','Four teat cups on a claw. Liners open and close with pulsation chamber pressure.','Standard 4-cup cluster, silicone liners.']}},
+cip:{n:'CIP tank + pump',cam:[0,.5,0,.8,1.2,18],
+sl:[['P','Heater power (W)',100,1000,50,500],['V','Liquid volume (L)',4,15,1,10],['s','Setpoint (°C)',30,60,1,52],['u','Pump duty (%)',20,100,5,80],['w','Time speed (×)',1,300,1,40]],
+eq:'<p><em>Heating:</em> m c dT/dt = P − hA (T − 25), m c = 4180 J/K per L, hA ≈ 3 W/K. Thermostat caps at 55 °C to protect probes.</p><p><em>Pump:</em> Q = Qmax · duty · (1 − ΔP/300 kPa); spray ball ΔP = 6.7 Q² kPa.</p><p><em>Flow:</em> Re = ρvD/μ in a 12 mm tube. Re &gt; 4000 is turbulent and cleans better.</p>',
+parts:{tank:['Wash tank','Holds wash liquid at temperature. Swap liquid per stage: water, alkaline, citric acid, sanitiser.','Food-grade PP drum with lid and drain tap.'],
+heater:['Heater coil','Heats the liquid. Thermostat switches it on below the setpoint. It glows when on.','Titanium or SS316 element with a thermal cut-out above 60 °C.'],
+pump:['Diaphragm pump','A flexing diaphragm pushes liquid through check valves. Self-priming; flow falls as pressure rises.','12 V diaphragm pump, EPDM or PTFE wetted parts.'],
+filter:['Strainer','Catches milkstone flakes so they do not block the spray ball.','200 µm stainless mesh in a clear housing.'],
+spray:['Spray ball','Hollow ball with small holes that throws jets at the wall and lid so liquid wets every surface.','Static SS spray ball on a 12 mm tube through the lid.']}}};
+const mat=(c,o)=>new THREE.MeshStandardMaterial(Object.assign({color:c,metalness:.45,roughness:.5},o||{}));
+const BUILD={
+load:(P,a)=>{P('plate',B(6,.2,6),0x8d8a84,0,0,0);a.cells=[];for(const sx of[-1,1])for(const sz of[-1,1]){a.cells.push(P('cell',B(1.8,.5,.55),0x9aa1a8,sx*2,-.4,sz*2));P('strain',B(.5,.06,.4),GOLD,sx*2.4,-.12,sz*2);P(null,C(.3,.3),0x1c1c1e,sx*2,-.8,sz*2)}
+ P('hx',B(1.8,.1,1.2),GRN,0,-.9,4.2);a.bk=P('load',C(2.3,2.2),STEEL,0,1.3,0,{t:.3});a.mk=P('load',C(2.15,1),MILK,0,1.3,0)},
+ec:(P,a)=>{P('body',C(1.3,6),GLS,0,0,0,{t:.25});P(null,C(1.15,5.8),MILK,0,0,0,{t:.55});a.ci=[];[-2.2,2.2].forEach(y=>a.ci.push(P('ci',To(1.2,.14),GOLD,0,y,0,{r:[Math.PI/2,0,0]})));[-.8,.8].forEach(y=>P('vi',To(1.2,.12),0xcfc8ba,0,y,0,{r:[Math.PI/2,0,0]}));
+ P('ntc',Sp(.22),RED,1.1,0,.5);P('afe',B(3,.12,2),0x1f5fa8,0,3.9,0)},
+ph:(P,a)=>{P('flow',C(1.3,5),GLS,0,-.5,0,{t:.25});P(null,C(1.15,4.7),MILK,0,-.5,0,{t:.45});a.bulb=P('bulb',Sp(.55),0x9fd8ff,0,-2,0,{t:.7});P('bulb',C(.35,3.6),0xdfe9ee,0,0,0,{t:.5});P('ref',C(.1,3.4),0xcfc8ba,.55,.3,0);
+ P('valve',Sp(.28),GOLD,-1.9,-1.8,.8);a.vh=P('valve',B(.8,.12,.12),0x3cc46a,-1.9,-1.5,.8);P('amp',B(2.4,.7,1.6),0x6b4c93,0,3.2,0)},
+temp:(P,a)=>{P(null,C(2,2.6),MILK,0,-1.6,0,{t:.35});P('sheath',C(.25,5.5),STEEL,0,-.5,0);a.tip=P('pt',B(.4,.9,.28),0xe8c35a,0,-2.6,0);P('gland',C(.55,.5),0x6b7178,0,.5,0);P(null,C(.1,3),0x222222,0,2.6,0);P('adc',B(2.2,.15,1.4),0xa8322a,0,4.2,0)},
+vac:(P,a)=>{P('pump',C(1,2.3),0x3f5f82,-4,0,0,{r:[0,0,Math.PI/2]});P('vane',C(1,.9),0x9aa1a8,-2.4,0,0,{r:[0,0,Math.PI/2]});a.rot=P('vane',B(.14,1.5,.14),RED,-1.9,0,0);
+ P('reg',C(.45,.9),0x2f353c,-2.4,1.5,0);P('gauge',C(.8,.2),0xf3f3f3,-.8,1.8,.5,{r:[Math.PI/2,0,0]});a.nd=P(null,B(.06,.6,.05),RED,-.8,1.8,.65);a.nd.geometry.translate(0,.3,0);
+ P('trap',C(.8,1.8),GLS,.4,-.2,0,{t:.3});P('puls',B(1.8,.8,1.2),0x16181c,3.2,1.6,0);a.led=P(null,Sp(.12),0x333333,3.2,2.1,.4);a.led.material=new THREE.MeshBasicMaterial({color:0x333333});
+ a.liners=[];for(const sx of[-1,1])for(const sz of[-1,1]){P('claw',C(.4,1.5),0x9aa1a8,5.2+sx*.55,-.5,sz*.55,{t:.35});a.liners.push(P('claw',C(.28,1.55),0x1c1c1e,5.2+sx*.55,-.5,sz*.55))}},
+cip:(P,a)=>{P('tank',C(1.6,4),0x2b6cb0,-5,0,0,{t:.5});a.liq=P(null,C(1.45,3.4),0x9fd3ff,-5,-.1,0,{t:.7});a.coil=[];for(let i=0;i<4;i++)a.coil.push(P('heater',To(.9,.07),RED,-5,-1.3+i*.25,0,{r:[Math.PI/2,0,0]}));
+ P('pump',B(1.3,.9,.9),0x3f5f82,-1.8,-1.6,0);P('filter',C(.3,1),GLS,-3.3,-1.2,0,{r:[0,0,Math.PI/2],t:.4});P(null,C(2,4),STEEL,4.8,-.2,0,{t:.2});
+ P('spray',Sp(.35),STEEL,4.2,2.2,0);a.jets=[];for(let i=0;i<8;i++){const j=P('spray',C(.03,1.4),0x9fd3ff,4.2+Math.cos(i*.785)*.9,2.1,Math.sin(i*.785)*.9,{t:.5});j.rotation.z=Math.cos(i*.785)*1.2;j.rotation.x=-Math.sin(i*.785)*1.2;a.jets.push(j)}}};
+const PHYS={
+load:(v,a)=>{const W=v.m+2.1,N=W*9.81,F=[];let sum=0;for(const sx of[-1,1])for(const sz of[-1,1]){const q=Math.max(0,N/4*(1+sx*v.d/20));F.push(q/490);sum+=q}
+ const mx=Math.max(...F),dr=(v.T-20)*.006,er=W*1e-4*v.d,Wr=sum/9.81+dr+er,mV=.025*Wr;
+ return{cf:F,m:v.m,d:v.d,y:Wr-2.1+gs()*.002,lo:0,hi:16,rows:[['Total load',f(Wr,2)+' kg'],['Max cell',f(mx*100,0)+' % of 50 kg'],['Bridge out',f(mV,3)+' mV'],['ADC counts',(mV*1e-3*2.147e8).toFixed(0)],['Noise (rms)','2.0 g'],['Corner error',f(er*1000,0)+' g'],['Thermal drift',f(dr*1000,0)+' g'],['Milk net',f(Wr-2.1,2)+' kg']],ok:mx<.8&&Math.abs(dr)<.12,t:mx>=.8?'CELL OVERLOAD':Math.abs(dr)>=.12?'RE-TARE: TEMP DRIFT':'WEIGHT STABLE'}},
+ec:(v,a)=>{const kT=v.k*(1+.02*(v.T-25)),Rs=1000/kT,Cd=5e-6,w=2*Math.PI*v.f*1e3,Z=Math.hypot(Rs,2/(w*Cd)),k2=1000/Z,e2=(k2-kT)/kT*100,k4=kT*(1+gs()*5e-4),k25=k4/(1+.02*(v.T-25));
+ return{fr:v.f,y:k25,lo:0,hi:10,rows:[['κ at sample T',f(kT,2)+' mS/cm'],['Solution R',f(Rs,0)+' Ω'],['2-electrode |Z|',f(Z,0)+' Ω'],['2-electrode error',f(e2,1)+' %'],['4-electrode κ',f(k4,2)+' mS/cm'],['κ at 25 °C',f(k25,2)+' mS/cm']],ok:k25>=3.9&&k25<=5.8,t:k25>5.8?'HIGH EC: MASTITIS SUSPECT':k25<3.9?'LOW EC: DILUTION SUSPECT':'EC NORMAL'}},
+ph:(v,a,dt)=>{const St=.198412*(v.T+273.15),tau=(1.2+6*Math.exp(-v.q/8))*Math.pow(2,-(v.T-25)/15);if(a.ph==null)a.ph=v.p;if(!v.vc)a.ph+=(v.p-a.ph)*Math.min(1,dt/tau);
+ const E=-St*v.s/100*(a.ph-7),rd=a.ph+gs()*.003,rn=7+(St/59.16)*(a.ph-7),Rg=100*Math.pow(2,-(v.T-25)/8);
+ return{p:a.ph,vc:v.vc,y:v.vc?7:rd,lo:2,hi:12,rows:[['Nernst slope',f(St*v.s/100,1)+' mV/pH'],['Cell EMF',f(E,1)+' mV'],['Reading (ATC)',v.vc?'isolated':f(rd,2)],['Reading (no ATC)',v.vc?'isolated':f(rn,2)],['ATC error',f(rn-a.ph,3)+' pH'],['Glass resistance',f(Rg,0)+' MΩ'],['Response t95',f(3*tau,0)+' s']],ok:v.vc?true:!(v.p<3||v.p>11),t:v.vc?'ISOLATED: PROBE IN KCl':(v.p<3||v.p>11)?'CLOSE VALVE: CIP LIQUID':Math.abs(a.ph-v.p)>.05?'SETTLING…':'pH LOCKED'}},
+temp:(v,a,dt)=>{const A=3.9083e-3,Bc=-5.775e-7,Rt=T=>1000*(1+A*T+Bc*T*T),I=v.i*1e-3,T0=a.Ts==null?v.T:a.Ts,sh=I*I*Rt(T0)/((8+.6*v.q)*1e-3),tau=25/(1+.04*v.q);
+ a.Ts=T0+((v.T+sh)-T0)*(1-Math.exp(-dt/tau));const Rs=Rt(a.Ts);
+ return{Ts:a.Ts,y:a.Ts+gs()*.003,lo:0,hi:65,rows:[['Sensor R',f(Rs,2)+' Ω'],['Voltage',f(I*Rs*1000,1)+' mV'],['Sensitivity',f(1000*(A+2*Bc*a.Ts),2)+' Ω/K'],['Self-heating',f(sh,3)+' K'],['Time constant',f(tau,1)+' s'],['Class A tol.','±'+f(.15+.002*Math.abs(a.Ts),2)+' °C'],['Reading error',f(a.Ts-v.T,3)+' K']],ok:a.Ts<40&&sh<.2,t:sh>=.2?'SELF-HEATING ERROR':a.Ts>=40?'MILK TOO WARM':'TEMPERATURE OK'}},
+vac:(v,a,dt)=>{a.t=(a.t||0)+dt;const S=p=>120*(1-p/80),Dm=p=>1.2*(p/101.3)*v.c+v.l;let lo=0,hi=79;for(let i=0;i<30;i++){const m=(lo+hi)/2;S(m)>Dm(m)?lo=m:hi=m}
+ const p=Math.min(v.s,lo);a.p=a.p==null?p:a.p+(p-a.p)*Math.min(1,dt*2);const T=60/v.c,Bp=(a.t%T)/T<v.r/100;a.ch=(a.ch||0)+((Bp?a.p:0)-(a.ch||0))*(1-Math.exp(-dt/(Bp?.08:.03)));const rest=(1-v.r/100)*T*1000;
+ return{p:a.p,ch:a.ch,B:Bp,y:a.ch,lo:0,hi:60,rows:[['Bucket vacuum',f(a.p,1)+' kPa'],['Pump capacity',f(S(a.p),0)+' L/min'],['Air demand',f(Dm(a.p),0)+' L/min'],['Reserve',f(S(a.p)-Dm(a.p),0)+' L/min'],['Milk phase',f(v.r/100*T*1000,0)+' ms'],['Rest phase',f(rest,0)+' ms'],['Chamber vacuum',f(a.ch,1)+' kPa']],ok:a.p>=36&&a.p<=50&&lo>=v.s&&rest>=150,t:a.p<36?'LOW VACUUM':a.p>50?'HIGH VACUUM':lo<v.s?'PUMP CANNOT HOLD SETPOINT':rest<150?'LINER REST TOO SHORT':'VACUUM + PULSATION OK'}},
+cip:(v,a,dt)=>{dt*=v.w;const Ts=Math.min(55,v.s);if(a.T==null)a.T=25;if(a.T<Ts-1)a.on=1;if(a.T>=Ts)a.on=0;const hp=a.on?v.P:0,Qm=4*v.u/100;let Q=Qm;for(let i=0;i<60;i++)Q=.5*Q+.5*Qm*(1-6.67*Q*Q/300);
+ const dP=6.67*Q*Q,loss=3*(a.T-25);a.T+=(hp+Q/60000*dP*1000/.4-loss)/(v.V*4180)*dt;a.E=(a.E||0)+hp*dt/3600;
+ const mu=2.414e-5*Math.pow(10,247.8/(a.T+273.15-140)),rho=1000-.35*(a.T-20),vel=Q/60000/(Math.PI*.006*.006),Re=rho*vel*.012/mu;
+ return{T:a.T,on:a.on,Q,y:a.T,lo:20,hi:60,rows:[['Tank temperature',f(a.T,1)+' °C'],['Heater',a.on?'ON':'OFF'],['Pump flow',f(Q,2)+' L/min'],['Delivery pressure',f(dP,0)+' kPa'],['Hose velocity',f(vel,2)+' m/s'],['Reynolds no.',f(Re,0)+(Re>4000?' turb.':' trans.')],['Energy used',f(a.E,0)+' Wh']],ok:Re>4000&&a.T>=Ts-3,t:v.s>55?'SETPOINT CAPPED AT 55 °C':a.T<Ts-3?'HEATING…':Re<4000?'LOW TURBULENCE':'READY TO WASH'}}};
+const ANIM={
+load:(a,o)=>{a.cells.forEach((c,i)=>{c.material.emissive.setRGB(Math.min(1,o.cf[i]*1.3),0,0);c.material.emissiveIntensity=.7});const h=Math.max(.01,o.m/15*1.8);a.mk.scale.y=h;a.mk.position.y=.2+h/2;a.mk.position.x=a.bk.position.x=o.d*.1},
+ec:(a,o,t)=>{a.ci.forEach(m=>{m.material.emissive.setRGB(.5+.5*Math.sin(t*6*(.3+o.fr*.1)),.3,0);m.material.emissiveIntensity=.6})},
+ph:(a,o)=>{a.vh.material.color.setHex(o.vc?RED:0x3cc46a);a.vh.rotation.z=o.vc?0:1.5;a.bulb.material.color.setHSL(Math.min(.7,Math.max(0,(o.p-2)/10*.7)),.7,.6)},
+temp:(a,o)=>{a.tip.material.color.setHSL(.62-Math.min(1,Math.max(0,o.Ts/60))*.62,.8,.55)},
+vac:(a,o,t)=>{a.rot.rotation.x=t*30;a.nd.rotation.z=2.36-Math.min(60,o.p)/60*4.71;a.led.material.color.setHex(o.B?0x44ff88:0xff5a3a);a.liners.forEach(l=>{const x=o.ch>o.p*.5?1:.35;l.scale.x+=(x-l.scale.x)*.4;l.scale.z=l.scale.x})},
+cip:(a,o)=>{a.coil.forEach(c=>{c.material.emissive.setRGB(o.on?1:0,o.on?.2:0,0);c.material.emissiveIntensity=o.on?.9:0});a.liq.material.color.setHSL(.58-Math.min(1,Math.max(0,(o.T-20)/40))*.5,.55,.65);a.jets.forEach(j=>j.visible=o.Q>.3)}};
+/* ===== v3: parts rebuilt to match real hardware photos ===== */
+const tb=(pts,r)=>new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts.map(p=>new V3(...p))),30,r,8),PI=Math.PI,BLK=0x1a1a1c;
+/* ---- Load cells: 4 slim sheet cells + HX711 ---- */
+DEV.load.n='Load cells (4 × slim, HX711)';DEV.load.cam=[0,0,0,.6,1.1,15];
+DEV.load.eq='<p><em>Wiring:</em> each slim cell is a half-bridge (red = E+, black = E−, white = signal). Four cells combine into one Wheatstone bridge, so output ≈ 1 mV/V × load/rating: about 25 µV per kg at 5 V.</p><p><em>ADC:</em> HX711 gain 128, 24 bit, 10 or 80 SPS. Counts = V × 128 / 5 × 2²³. Noise ≈ 2 g rms.</p><p><em>Errors:</em> corner error about 0.01 %/cm, zero drift about 6 g/K after taring at 20 °C.</p>';
+DEV.load.parts={plate:['Weighing platform','A rigid disc or plate that rests on the four cells. It spreads the bucket weight so the sum of the cells hardly depends on where the bucket stands.','6 mm stainless or acrylic plate, cells screwed under it, empty bucket tared.'],
+cell:['Slim sheet load cell (×4)','A thin steel spring element with a centre boss. The load presses the boss and the sheet flexes a few microns. Colour shows each cell\'s share of the load.','4 × 50 kg slim half-bridge cells, M5 screw through the boss, mounting tab on the frame.'],
+strain:['Strain gauge pad','Foil grids glued to the spring element. Stretch raises their resistance (gauge factor ≈ 2). Two gauges per cell make a half-bridge.','Pre-bonded and potted. Never touch or open.'],
+wire:['Cell wires (red / white / black)','Excitation and signal wires from each cell. Short, twisted, equal lengths keep the bridge balanced.','Solder in pairs to the HX711 board in the colour order shown in the cell datasheet.'],
+hx:['HX711 amplifier board','24-bit ADC with a low-noise gain stage. Reads the bridge and sends counts to the ESP32 over two wires (DT, SCK).','Keep it close to the cells, stable 5 V supply, away from the pump wiring.'],
+load:['Bucket + milk','The weight being measured. Slide the offset to shift its centre of mass.','Bucket centred on a locating ring.']};
+BUILD.load=(P,a)=>{P('plate',C(3.9,.14),0xf4f4f4,0,.1,0,{t:.3});a.cells=[];
+ for(const sx of[-1,1])for(const sz of[-1,1]){const x=sx*2,z=sz*2;a.cells.push(P('cell',B(1.7,.16,1.7),0xb9c4cc,x,-.2,z));P('cell',C(.38,.12),0x8d949b,x,-.06,z);P('cell',B(.9,.16,.5),0xb9c4cc,x+sx*1.1,-.2,z);
+  P('strain',B(.7,.04,.35),GOLD,x-sx*.1,-.1,z+sz*.45);P(null,C(.25,.2),BLK,x,-.38,z);
+  P('wire',tb([[x,-.2,z*.8],[x*.5,-.3,z*.5],[0,-.3,.1]],.05),0xcc2a2a,0,0,0);P('wire',tb([[x,-.2,z*.8+.1],[x*.5,-.3,z*.5+.1],[.2,-.3,.2]],.05),0xf0f0f0,0,0,0)}
+ P('hx',B(1.6,.08,1.1),0x2a5ea8,0,-.38,0);P('hx',B(.6,.1,.3),0x111111,0,-.3,0);a.bk=P('load',C(2.3,2.2),STEEL,0,1.3,0,{t:.3});a.mk=P('load',C(2.15,1),MILK,0,1.3,0)};
+/* ---- pH: electrode + BNC + PH-4502C style board ---- */
+DEV.ph.n='pH probe + BNC board';
+DEV.ph.parts={bulb:['Glass bulb','Thin pH-sensitive glass. H⁺ ions swap with Na⁺ in its gel layer, making a voltage proportional to pH. The clear cap protects it in storage.','Pharma-grade pH electrode. Never scrub or dry-wipe the bulb.'],
+ref:['Reference junction','Ag/AgCl in KCl gives a steady reference. A porous plug leaks KCl slowly to complete the circuit.','Gel-filled double-junction reference so milk protein does not clog it.'],
+body:['Probe body','Black plastic shaft holding the glass electrode, KCl fill and wiring.','Epoxy or PP body, sealed top, rated to about 60 °C for continuous use.'],
+bnc:['BNC connector + cable','Coaxial lead: the centre carries the 100 MΩ glass signal and the shield blocks mains hum. Keep it dry and kink-free.','BNC plug on a low-noise coax, drip loop before the board.'],
+flow:['Flow cell','A small side-stream passes the bulb and returns. Flow refreshes the liquid layer on the glass, speeding response.','Clear polycarbonate, tri-clamp ends, silicone tubing.'],
+valve:['Isolation valve','Closed during alkali wash and sanitiser so hot NaOH never reaches the glass. Red = closed, green = open.','Small SS or PVDF ball valve with a KCl storage vial.'],
+amp:['Interface board (blue trimmers)','Electrometer amplifier with an offset trimmer (set 2.5 V at pH 7) and a gain trimmer (slope). Output Po is about 0.18 V per pH on a 5 V board.','PH-4502C-style board. Power 5 V and divide Po for a 3.3 V ESP32 ADC.']};
+BUILD.ph=(P,a)=>{P('flow',C(1.3,4),GLS,-3,-1.2,0,{t:.25});P(null,C(1.15,3.7),MILK,-3,-1.2,0,{t:.45});
+ P('body',C(.42,4.2),0x16181c,-3,2.6,0);P('bnc',C(.3,.7),STEEL,-3,5.0,0);P('ref',C(.1,2.4),0xcfc8ba,-2.6,-.6,0);P('bulb',C(.55,2.2),GLS,-3,.5,0,{t:.3});a.bulb=P('bulb',Sp(.45),0x9fd8ff,-3,-.5,0,{t:.7});
+ P('valve',Sp(.28),GOLD,-4.6,-2.4,.8);a.vh=P('valve',B(.8,.12,.12),0x3cc46a,-4.6,-2.1,.8);
+ P('bnc',tb([[-3,5.2,0],[-1,6.2,0],[1.8,4.2,1.2],[1,3,1],[2.8,3,.4]],.09),BLK,0,0,0);
+ P('amp',B(3.2,.14,2.4),0x1b7a45,3.6,2.8,0);P('amp',B(.9,.7,.9),0x2a5ea8,3,3.2,-.6);P('amp',B(.9,.7,.9),0x2a5ea8,4.3,3.2,-.6);P('amp',C(.35,.6),STEEL,2.3,3.3,.5);P('amp',B(.8,.14,.6),0x111111,3.8,3,.6)};
+const phOld=PHYS.ph;PHYS.ph=(v,a,dt)=>{const o=phOld(v,a,dt),Po=2.5+.18*(7-o.p)*v.s/100;o.rows.push(['Board Po (5 V)',f(Po,2)+' V'],['ESP32 pin safe?',Po<=3.3?'yes':'divide Po!']);return o};
+/* ---- LM35 temperature sensor in a potted SS sheath ---- */
+DEV.temp={n:'LM35 temperature sensor',cam:[0,0,0,.6,1.2,13],
+sl:[['T','Milk temperature (°C)',5,60,.5,37],['V','Supply voltage (V)',4,20,.5,5],['q','Milk movement (mL/min)',0,60,1,20]],
+eq:'<p><em>LM35:</em> Vout = 10 mV/°C, no offset. Accuracy ±0.5 °C at 25 °C, about ±1 °C over −55 to 150 °C. Supply current about 60 µA.</p><p><em>Self-heating:</em> P = Vs × 60 µA = 0.3 mW at 5 V. ΔT = P × θ, θ ≈ 270 K/W in still air and about 33 K/W in stirred liquid.</p><p><em>ADC:</em> ESP32 12 bit at 3.3 V gives 0.8 mV, 0.08 °C per count, but its nonlinearity is worse. ADS1115 16 bit gives 0.0125 °C.</p>',
+parts:{sheath:['Stainless sheath','A sealed SS316 tube that protects the chip from milk and conducts heat to it. Thin wall and a filled tip keep the response fast.','6 mm SS316L tube, welded closed at the tip, polished.'],
+epoxy:['Thermal epoxy fill','Heat-conducting resin around the chip. It excludes air, holds the package and seals out moisture. Tip colour shows the sensor temperature.','Food-safe thermally conductive epoxy, bubble-free.'],
+pkg:['LM35 chip (TO-92)','A silicon temperature sensor: a bandgap circuit turns absolute temperature into a voltage of exactly 10 mV per °C. No calibration and no linearisation needed.','LM35DZ in a TO-92 plastic case, 3 pins: +Vs, Vout, GND.'],
+die:['Silicon die','Two transistors at different current densities give a voltage proportional to absolute temperature (PTAT). An op-amp scales it to 10 mV/°C.','Inside the package, never accessible.'],
+legs:['Three leads','Left to right (flat side facing you): +Vs, Vout, GND. Long leads are soldered to a shielded cable.','Heat-shrink each lead. Keep Vout wire short or add a 1 µF capacitor, since it dislikes cable capacitance.'],
+adc:['ADC board','Measures Vout. A 16-bit ADS1115 gives 0.0125 °C per step. The ESP32 internal ADC is noisier.','ADS1115 on I²C near the ESP32; 100 nF at Vout.']}};
+BUILD.temp=(P,a)=>{P(null,C(2.2,2.6),MILK,0,-2.7,0,{t:.3});P('sheath',C(.7,5.2),STEEL,0,-.4,0,{t:.35});a.tip=P('epoxy',C(.55,1.9),0xe9d9a8,0,-2.1,0,{t:.45});
+ P('pkg',B(.9,1.0,.5),BLK,0,-2.0,0);P('die',B(.35,.04,.3),GOLD,0,-1.9,.0);for(const x of[-.28,0,.28])P('legs',C(.04,3.4),0xcfd2d6,x,-.1,0);
+ P(null,tb([[0,1.6,0],[0,2.6,0],[.6,3.6,0]],.14),0x222222,0,0,0);P('adc',B(2.4,.14,1.6),0x2a5ea8,1,4.0,0)};
+PHYS.temp=(v,a,dt)=>{if(a.off==null)a.off=(R()-.5)*.8;const P=v.V*60e-6,th=33+237*Math.exp(-v.q/12),sh=P*th,T0=a.Ts==null?v.T:a.Ts,tau=18/(1+.04*v.q);
+ a.Ts=T0+((v.T+sh)-T0)*(1-Math.exp(-dt/tau));const Tm=a.Ts+a.off+gs()*.01,Vo=Tm*10;
+ return{Ts:a.Ts,y:Tm,lo:0,hi:65,rows:[['Vout',f(Vo,1)+' mV'],['Sensitivity','10.0 mV/°C'],['Chip error (unit)',f(a.off,2)+' °C'],['Self-heating',f(sh*1000,1)+' m°C'],['Dissipation',f(P*1000,2)+' mW'],['Time constant',f(tau,1)+' s'],['ESP32 step','0.08 °C'],['ADS1115 step','0.0125 °C']],ok:Math.abs(a.off)<=.5&&a.Ts<40,t:a.Ts>=40?'MILK TOO WARM':Math.abs(a.off)>.5?'OUT OF ±0.5 °C SPEC':'TEMPERATURE OK'}};
+/* ---- Vacuum: small diaphragm pump + trap + pulsator ---- */
+DEV.vac.n='Diaphragm vacuum pump + pulsator';DEV.vac.cam=[2.5,.5,0,.7,1.2,21];
+DEV.vac.sl=[['s','Vacuum setpoint (kPa)',32,54,1,42],['d','Motor voltage (V)',6,14,.5,12],['c','Pulsation rate (cycles/min)',40,80,1,60],['r','Milk phase ratio (%)',50,70,1,60],['l','Air leak (L/min)',0,60,1,10]];
+DEV.vac.eq='<p><em>Diaphragm pump:</em> a motor-driven crank flexes a rubber diaphragm. It sucks air through the inlet valve and pushes it out the exhaust valve. It is oil-free, so no oil reaches the milk line.</p><p><em>Curve:</em> S(p) = S₀ (1 − p/80 kPa), with S₀ = 120 L/min × V/12. Demand = pulsator air (1.2 L × cycles/min × p/101.3) + leak. The bucket settles where S = demand.</p><p><em>Chamber:</em> rises τ ≈ 80 ms, falls τ ≈ 30 ms. Liner rest = (1 − ratio) × period, at least 150 ms. Motor current = shaft power / (V × 0.75) + 0.8 A no-load.</p>';
+DEV.vac.parts={mount:['Mounting plate','Steel bracket that bolts the pump to the frame. Rubber washers stop pump vibration reaching the load cells.','Slotted steel plate with rubber isolators.'],
+motor:['DC motor','A brushed or brushless motor drives the crank. Speed rises with voltage, so airflow does too. Cooling fins shed the heat.','12 V motor, about 2800 rpm, IP-rated can, flexible wiring.'],
+gland:['Cable gland','Seals the power cable where it enters the motor so splashes cannot reach the winding.','PG7 nylon or brass gland with strain relief.'],
+head:['Pump head','Housing for the diaphragm chamber and valve plate. The head is translucent here to show the diaphragm working.','Glass-filled nylon or PPS head with FKM seals.'],
+dia:['Diaphragm','A flexible disc that moves up and down. Down-stroke grows the chamber and pulls air in; up-stroke squeezes it out. It never touches oil, so the air is clean.','EPDM or PTFE-coated diaphragm, replaced every 2000 to 5000 hours.'],
+crank:['Eccentric crank','The motor shaft spins an eccentric that turns rotation into the up-down diaphragm motion. Stroke rate = rpm / 60.','Press-fit eccentric on the motor shaft with a bearing.'],
+inlet:['Inlet barb (vacuum side)','Air is drawn from the bucket through the trap into this port. A flap valve inside opens only on the suction stroke.','6 mm barb, silicone hose.'],
+exh:['Exhaust barb','Air leaves here on the push stroke through a second flap valve. Add a small muffler if noise matters.','6 mm barb with a foam muffler.'],
+trap:['Moisture trap','A jar between bucket and pump. Milk or foam sucked through the hose drops out here instead of ruining the pump.','Clear jar with float shut-off. Drain after every session.'],
+gauge:['Vacuum gauge','Shows bucket vacuum in kPa. The needle follows the live value.','Glycerine-filled 0 to 100 kPa gauge.'],
+reg:['Vacuum regulator','A spring valve admits air when vacuum exceeds the setpoint, holding the level steady.','Adjustable diaphragm regulator with lock nut.'],
+puls:['Pulsator','Valve that alternates vacuum and air to the cup shells. Milk phase opens the liner, rest phase squeezes the teat. LED shows the phase.','Electromagnetic pulsator, 60 cycles/min, 60:40.'],
+claw:['Claw + liners','Four teat cups on a claw. Liners open and close with pulsation chamber pressure.','Standard 4-cup cluster, silicone liners.']};
+BUILD.vac=(P,a)=>{P('mount',B(6.6,.15,3.2),STEEL,-1.3,-1.7,0);P('motor',C(1.15,3.2),BLK,-2.8,-.4,0,{r:[0,0,PI/2]});P('motor',C(1.2,.5),0x0e0e10,-4.6,-.4,0,{r:[0,0,PI/2]});
+ for(const z of[-1,0,1])P('motor',B(2.6,.08,.5),0x2a2d31,-2.8,.75,z*.6);P('gland',C(.18,.7),STEEL,-3.4,.8,0);P(null,tb([[-3.4,1.1,0],[-4.2,1.8,0],[-5.6,.8,.4]],.12),BLK,0,0,0);
+ P('head',B(3,2.4,2.6),0x222428,.6,-.1,0,{t:.5});P('head',B(3,.9,2.6),0x2a2d31,.6,1.55,0,{t:.75});a.dia=P('dia',C(.95,.1),0xe6e6e6,.6,.3,0);a.rot=P('crank',B(.14,.9,.14),RED,-.9,-.4,0);
+ P('inlet',C(.22,1),BLK,-.1,2.5,0);P('exh',C(.22,1),BLK,1.3,2.5,0);
+ P('trap',C(.8,1.8),GLS,4.2,-.8,0,{t:.3});P('gauge',C(.8,.2),0xf3f3f3,4.2,1.8,.5,{r:[PI/2,0,0]});a.nd=P(null,B(.06,.6,.05),RED,4.2,1.8,.65);a.nd.geometry.translate(0,.3,0);
+ P('reg',C(.45,.9),0x2f353c,5.6,-.3,0);P('puls',B(1.8,.8,1.2),BLK,7.4,.9,0);a.led=P(null,Sp(.12),0x333333,7.4,1.4,.4);a.led.material=new THREE.MeshBasicMaterial({color:0x333333});
+ a.liners=[];for(const sx of[-1,1])for(const sz of[-1,1]){P('claw',C(.4,1.5),0x9aa1a8,10+sx*.55,-.5,sz*.55,{t:.35});a.liners.push(P('claw',C(.28,1.55),0x1c1c1e,10+sx*.55,-.5,sz*.55))}
+ P(null,tb([[-.1,3,0],[1.5,4.4,0],[4.2,3.6,0],[4.2,.3,0]],.08),0x1c3a5c,0,0,0);P(null,tb([[5.6,.2,0],[6.4,1,0],[7,.9,0]],.07),0x222222,0,0,0);P(null,tb([[7.8,.8,0],[9,.2,0],[10,.2,0]],.07),0x222222,0,0,0)};
+PHYS.vac=(v,a,dt)=>{a.t=(a.t||0)+dt;const S0=120*v.d/12,S=p=>S0*(1-p/80),Dm=p=>1.2*(p/101.3)*v.c+v.l;let lo=0,hi=79;for(let i=0;i<30;i++){const m=(lo+hi)/2;S(m)>Dm(m)?lo=m:hi=m}
+ const p=Math.min(v.s,lo);a.p=a.p==null?p:a.p+(p-a.p)*Math.min(1,dt*2);const T=60/v.c,Bp=(a.t%T)/T<v.r/100;a.ch=(a.ch||0)+((Bp?a.p:0)-(a.ch||0))*(1-Math.exp(-dt/(Bp?.08:.03)));
+ const rest=(1-v.r/100)*T*1000,pw=Dm(a.p)/60000*a.p*1000/.35,I=pw/(v.d*.75)+.8,rpm=2800*v.d/12;
+ return{p:a.p,ch:a.ch,B:Bp,y:a.ch,lo:0,hi:60,rows:[['Bucket vacuum',f(a.p,1)+' kPa'],['Pump capacity',f(S(a.p),0)+' L/min'],['Air demand',f(Dm(a.p),0)+' L/min'],['Reserve',f(S(a.p)-Dm(a.p),0)+' L/min'],['Motor speed',f(rpm,0)+' rpm'],['Motor current',f(I,1)+' A'],['Rest phase',f(rest,0)+' ms'],['Chamber vacuum',f(a.ch,1)+' kPa']],ok:a.p>=36&&a.p<=50&&lo>=v.s&&rest>=150,t:a.p<36?'LOW VACUUM':a.p>50?'HIGH VACUUM':lo<v.s?'PUMP CANNOT HOLD SETPOINT':rest<150?'LINER REST TOO SHORT':'VACUUM + PULSATION OK'}};
+const vacOld=ANIM.vac;ANIM.vac=(a,o,t)=>{vacOld(a,o,t);a.dia.position.y=.3+Math.sin(t*30)*.3};
+/* ---- Dugdha Kavach CIP unit with the 5-stage flow ---- */
+const STG=[['1 Pre-rinse','cold water',25,7,0x6fb4ff,0],['2 Alkali wash','2 % NaOH',65,12,0xf2a33a,2],['3 Rinse','hot water',50,7,0xe86a8a,0],['4 Acid wash','0.5 % HNO₃',55,12,0x4cc47a,.5],['5 Final rinse','clean water',25,7,0x6fb4ff,0]];
+DEV.cip={n:'Dugdha Kavach CIP unit',cam:[2,.5,0,.5,1.2,22],
+sl:[['s','Start at stage (1 to 5)',1,5,1,2],['P','Heater power (W)',100,1000,50,300],['V','Wash liquid (L)',2,10,1,5],['u','Pump duty (%)',20,100,5,80],['w','Time speed (×)',1,300,1,60]],
+eq:'<p><em>Heating:</em> m c dT/dt = P − hA (T − 25), with 4180 J/K per L and hA ≈ 3 W/K. On a 12 V battery the heater draws I = P/12: 300 W is 25 A.</p><p><em>Flow:</em> Q = Qmax · duty · (1 − ΔP/300 kPa), spray ball ΔP = 6.7 Q² kPa. Re = ρvD/μ in a 12 mm hose.</p><p><em>Cleaning force:</em> wall shear τw = f ρ v²/8, with f = 64/Re (laminar) or 0.316/Re^0.25 (turbulent). Re &gt; 4000 gives the strong scrubbing needed to lift fat and protein films.</p><p><em>Chemicals:</em> grams = conc% × 10 × litres. Stage time only counts while the tank is at temperature and the flow is turbulent.</p>',
+parts:{body:['Compact body','Rugged insulated shell around the electronics, battery and plumbing. Insulation keeps heat in the wash liquid, cutting the heater load.','Rotomoulded PE or sheet-metal shell, rubber feet, vent slots for the electronics.'],
+handle:['Portable handle','Lets one person carry the 6 to 8 kg unit to the shed or field.','Fixed handle through-bolted to the frame.'],
+panel:['Touch control panel','Start/stop and status. It runs the 5-stage program, switches the heater and pump, and shows the stage on screen.','Small capacitive touch screen behind a sealed window, driven by the ESP32.'],
+tank:['Stainless tank (5 to 10 L)','Holds the bucket-washing liquid. Food-grade steel resists NaOH and acid. Translucent here so the liquid and heater show.','SS304 or SS316 pot with a clamped lid and a drain tap.'],
+lid:['Lid + toggle clamps','Seals the tank so hot liquid cannot splash and keeps heat in.','Silicone gasket and two toggle clamps.'],
+sensor:['Sensor unit (temperature + pH)','Reads liquid temperature and pH through the lid. In the alkali stage it confirms pH is high, and after the final rinse it confirms pH is back to neutral.','LM35 and pH probe through a sanitary gland. Keep the glass bulb out of 65 °C NaOH, or use an isolation valve.'],
+heater:['Heater coil','Raises the liquid to the stage setpoint. The thermostat switches it on below setpoint and off above it. It glows when on.','SS316 immersion element with thermal cut-out above 80 °C.'],
+spray:['Spray ball','A ball with small holes that throws jets over the inner wall and lid so liquid wets every surface.','Static SS spray ball on a 12 mm tube.'],
+pump:['Diaphragm pump','Pushes liquid through the filters and hoses. Self-priming and able to run dry. Flow falls as pressure rises.','12 V diaphragm pump with EPDM or PTFE wetted parts.'],
+filter:['Pre/inline filters','Catch milkstone flakes so they do not block the spray ball.','200 µm SS mesh in clear housings.'],
+chem:['Chemical bottles (4 colours)','Reusable pre-measured chemicals: alkali, acid, sanitiser and water. Reusing them saves money and waste but needs strength checks.','Four labelled HDPE bottles with quick-connect fittings.'],
+outlet:['Outlet elbow','Clean milk or used wash liquid leaves here. Blue clamp marks the sanitary joint.','SS elbow with tri-clamp and silicone hose.']}};
+BUILD.cip=(P,a)=>{P('body',B(8.4,.6,5),0x2d3a3a,0,-2.7,0);P('body',B(3,5,5),0xe9dfc8,-2.8,-.1,0);P('body',B(8.4,.15,.1),0xe9dfc8,0,-1.2,2.5);
+ P('handle',B(4.4,.3,.6),0x1e5a50,-1.2,3.0,0);P('handle',B(.35,.7,.6),0x1e5a50,-3.2,2.7,0);P('handle',B(.35,.7,.6),0x1e5a50,.3,2.7,0);
+ P('panel',B(1.8,2.4,.1),0x10161a,-2.8,.6,2.55);P('panel',B(1,.08,.05),0x3cc46a,-2.8,1.3,2.62);P('panel',C(.32,.05),0x3cc46a,-2.8,.1,2.62,{r:[PI/2,0,0]});
+ P('tank',C(1.9,3.2),0xcfd4d8,2.2,.95,0,{t:.4});a.liq=P(null,C(1.75,2.5),0x6fb4ff,2.2,.6,0,{t:.7});P('lid',C(1.95,.2),STEEL,2.2,2.65,0);for(const s of[-1,1])P('lid',B(.2,.5,.3),STEEL,2.2+s*1.95,2.2,0);
+ P('sensor',C(.35,1.1),BLK,2.2,3.3,0);P(null,tb([[2.2,3.7,0],[2.8,4.3,0],[3.6,3.3,0]],.06),BLK,0,0,0);
+ a.coil=[];for(let i=0;i<4;i++)a.coil.push(P('heater',To(.9,.07),RED,2.2,-.3+i*.25,0,{r:[PI/2,0,0]}));
+ P('spray',Sp(.35),STEEL,2.2,2.1,0);a.jets=[];for(let i=0;i<8;i++){const j=P('spray',C(.03,1.4),0x9fd3ff,2.2+Math.cos(i*.785)*.9,2.0,Math.sin(i*.785)*.9,{t:.5});j.rotation.z=Math.cos(i*.785)*1.2;j.rotation.x=-Math.sin(i*.785)*1.2;a.jets.push(j)}
+ P('pump',B(1.4,1,1),BLK,-.4,-1.9,.6);P('pump',B(.5,.3,.5),0x1b7a45,.6,-2.3,.7);
+ P('filter',C(.32,1),GLS,1.6,-1.7,.7,{t:.4});P('filter',C(.32,1),GLS,2.6,-1.7,.7,{t:.4});
+ P(null,tb([[.3,-1.7,.6],[1,-1.2,.7],[1.6,-1.2,.7]],.1),0xf2a33a,0,0,0);P(null,tb([[2.6,-1.2,.7],[3.4,-1.4,.5],[3.9,-1.9,.3]],.1),0x2a5ea8,0,0,0);
+ P('outlet',C(.25,1.1),STEEL,4.6,-1.8,0,{r:[0,0,PI/2]});P('outlet',C(.25,.8),STEEL,5.1,-2.2,0);P('outlet',To(.3,.08),0x2a5ea8,4.1,-1.8,0,{r:[0,PI/2,0]});
+ P(null,B(3.6,.3,1.6),0x2d3a3a,7.6,-2.6,0);[0x2a8fe0,0xf2a33a,0xe86a8a,0x4cc47a].forEach((c,i)=>P('chem',C(.38,1.5),c,6.4+i*.8,-1.7,0,{t:.8}))};
+PHYS.cip=(v,a,dt)=>{dt*=v.w;if(a.sv!==v.s){a.sv=v.s;a.st=v.s-1;a.el=0;a.done=0;a.E=0;if(a.T==null)a.T=25}
+ const S=STG[a.st],Ts=S[2];if(a.T<Ts-1)a.on=1;if(a.T>=Ts)a.on=0;const hp=a.on?v.P:0,Qm=4*v.u/100;let Q=Qm;for(let i=0;i<60;i++)Q=.5*Q+.5*Qm*(1-6.67*Q*Q/300);
+ const dP=6.67*Q*Q,loss=3*(a.T-25);a.T+=(hp+Q/60000*dP*1000/.4-loss)/(v.V*4180)*dt;a.E+=hp*dt/3600;
+ const mu=2.414e-5*Math.pow(10,247.8/(a.T+273.15-140)),rho=1000-.35*(a.T-20),vel=Q/60000/(PI*.006*.006),Re=rho*vel*.012/mu,fr=Re>4000?.316*Math.pow(Re,-.25):64/Math.max(Re,1),tw=fr*rho*vel*vel/8;
+ const eff=a.T>=Ts-3&&Re>4000&&!a.done;if(eff)a.el+=dt/60;if(a.el>=S[3]){if(a.st<4){a.st++;a.el=0}else a.done=1}
+ const net=v.P-3*(Ts-25)/2,tt=net>0?v.V*4180*(Ts-25)/net/60:Infinity;
+ return{T:a.T,on:a.on,Q,col:STG[a.st][4],y:a.T,lo:20,hi:70,rows:[['Stage',STG[a.st][0]],['Chemical',STG[a.st][1]+(S[5]?' · '+f(S[5]*10*v.V,0)+' g':'')],['Stage clock',f(a.el,1)+' / '+S[3]+' min'],['Tank temp',f(a.T,1)+' / '+Ts+' °C'],['Heater',a.on?'ON · '+f(v.P/12,0)+' A @12 V':'OFF'],['Pump flow',f(Q,2)+' L/min'],['Reynolds',f(Re,0)+(Re>4000?' turb.':' trans.')],['Wall shear',f(tw,1)+' Pa'],['Heat-up to 65 °C',isFinite(tt)?f(tt,0)+' min':'never'],['Energy',f(a.E,0)+' Wh ('+f(a.E/12,1)+' Ah)']],ok:eff||a.done,t:a.done?'CIP CYCLE COMPLETE':a.T<Ts-3?'HEATING FOR '+STG[a.st][0].toUpperCase():Re<4000?'LOW TURBULENCE':'WASHING: '+STG[a.st][0].toUpperCase()}};
+ANIM.cip=(a,o)=>{a.coil.forEach(c=>{c.material.emissive.setRGB(o.on?1:0,o.on?.2:0,0);c.material.emissiveIntensity=o.on?.9:0});a.liq.material.color.setHex(o.col);a.jets.forEach(j=>j.visible=o.Q>.3)};
+/* ---- NEW: controller pod (ESP32-S3 + OLED + RFID + buck) ---- */
+DEV.ctl={n:'Controller pod (ESP32-S3)',cam:[0,0,0,.5,1.15,14],
+sl:[['V','Battery voltage (V)',9,14.4,.1,12.6],['w','Wi-Fi uploads per min',0,12,1,2],['b','OLED brightness (%)',0,100,5,60],['o','Optical reads per min',0,30,1,6]],
+eq:'<p><em>Rail:</em> 3.3 V load = 40 mA ESP32 base + Wi-Fi bursts (180 mA for 1.2 s each) + OLED (3 + 17 × brightness mA) + AS7265x LED pulses (0.4 s at 60 mA). HX711 adds 1.5 mA at 5 V.</p><p><em>Buck:</em> input power = output power / 0.85, so battery current I = Pin / V. Runtime = 7 Ah / I.</p><p><em>ADC:</em> ESP32 12 bit at 3.3 V gives 0.81 mV per count. Below about 9.5 V the buck input sags toward brown-out.</p>',
+parts:{case:['IP65 aluminium case','Sealed dry box. The metal shields the radio-sensitive analog parts from pump noise and keeps splash out.','Cast or folded aluminium box, silicone gasket, glands for probe cables.'],
+esp:['ESP32-S3 module','Dual-core microcontroller with Wi-Fi and Bluetooth. It reads the HX711, ADCs and spectral sensor, runs the milk-quality logic and uploads results.','ESP32-S3-WROOM on a dev board, antenna kept away from metal walls.'],
+oled:['OLED status screen','Self-lit display; each pixel draws current, so brightness changes consumption. It shows weight, temperature, EC, pH and the verdict.','0.96 to 1.5 inch I²C OLED behind a polycarbonate window.'],
+rfid:['RFID reader coil','Reads a cow tag at 125 kHz or 13.56 MHz so each milking is logged to the right animal.','MFRC522 or EM4100 reader on the side facing the animal.'],
+buck:['Buck regulator','Steps 12 V battery down to 5 V and 3.3 V efficiently (about 85 %). A linear regulator would burn the difference as heat.','Fixed 5 V buck module with reverse-polarity diode and 3.3 V LDO after it.'],
+gland:['Cable glands','Seal each cable entry so washdown water cannot get inside.','PG7 nylon glands with strain relief, one per cable.']}};
+BUILD.ctl=(P,a)=>{P('case',B(6,3.4,3.2),0x9aa1a8,0,0,0,{t:.22});P('esp',B(2,.14,1.2),0x14161c,-.9,-.9,0);P('esp',B(1,.1,.8),0xc8ccd2,-1.2,-.8,0);P('esp',B(.5,.06,.2),0xd7a63a,.1,-.8,.2);
+ a.scr=P('oled',B(2.2,1.2,.1),0x03130f,.9,.5,1.62);P('oled',B(2.4,1.4,.06),0x101114,.9,.5,1.55);
+ P('rfid',To(.6,.07),0xd7a63a,-1.6,.6,1.55);P('rfid',To(.4,.06),0xd7a63a,-1.6,.6,1.55);P('buck',B(1.3,.2,.9),0x1b7a45,1.7,-1,0);P('buck',C(.3,.5),0x2f353c,2.1,-.7,0);
+ for(const x of[-2,0,2])P('gland',C(.22,.6),STEEL,x,-1.9,0);a.wl=P(null,Sp(.1),0x333333,2.4,.1,1.6);a.wl.material=new THREE.MeshBasicMaterial({color:0x333333});
+ P(null,tb([[-2,-2.2,0],[-2.4,-3,.3],[-3.4,-3.4,.2]],.12),BLK,0,0,0);P(null,tb([[0,-2.2,0],[.4,-3,.2],[1.4,-3.6,0]],.12),BLK,0,0,0)};
+PHYS.ctl=(v,a,dt)=>{a.t=(a.t||0)+dt;const P0=60/Math.max(1,v.w),bur=v.w>0&&(a.t%P0)<1.2,wifi=v.w*1.2/60*180,oled=3+17*v.b/100,opt=v.o*.4/60*60,Iavg=40+wifi+oled+opt,Iinst=40+(bur?180:0)+oled+(v.o>0&&(a.t%(60/Math.max(1,v.o)))<.4?60:0);
+ const Pout=3.3*Iavg/1000+5*1.5/1000,Pin=Pout/.85,I12=Pin/v.V,hrs=7/I12,sag=v.V<9.5;a.I=a.I==null?Iinst:a.I+(Iinst-a.I)*Math.min(1,dt*10);
+ return{wl:bur,b:v.b,y:a.I,lo:0,hi:320,rows:[['Rail current (avg)',f(Iavg,0)+' mA'],['Rail current now',f(a.I,0)+' mA'],['Wi-Fi share',f(wifi,0)+' mA'],['OLED share',f(oled,0)+' mA'],['Battery power',f(Pin*1000,0)+' mW'],['Battery current',f(I12*1000,0)+' mA'],['Runtime (7 Ah)',f(hrs,0)+' h'],['ADC step','0.81 mV']],ok:!sag&&hrs>=24,t:sag?'BROWN-OUT RISK: CHARGE BATTERY':hrs<24?'BATTERY UNDER 1 DAY':'POWER BUDGET OK'}};
+ANIM.ctl=(a,o)=>{a.scr.material.color.setRGB(.02,.08+o.b/100*.5,.06+o.b/100*.4);a.wl.material.color.setHex(o.wl?0x44aaff:0x333333)};
+
+const grp={},ST={},SS={},PICK={},tags={},anc={};let ren,scn,cam,stage,inited=false,key='load',v={},selK=null,selBox=null,spin=false,tagsOn=true,hist=[],clock=0,tm=0,last=performance.now();
+const cs={t:new V3(),th:.5,ph:1.2,d:15},gl={t:new V3(),th:.5,ph:1.2,d:15};
+function init(){inited=true;stage=$('dls');ren=new THREE.WebGLRenderer({antialias:true,alpha:true});ren.setPixelRatio(Math.min(devicePixelRatio||1,2));stage.appendChild(ren.domElement);ren.domElement.style.cssText='display:block;width:100%;height:100%';
+ scn=new THREE.Scene();cam=new THREE.PerspectiveCamera(36,1,.1,200);scn.add(new THREE.HemisphereLight(0xfff1dc,0x4a3a2a,1));const d1=new THREE.DirectionalLight(0xffffff,1.1);d1.position.set(6,10,12);scn.add(d1);const d2=new THREE.DirectionalLight(0x9fd8ff,.5);d2.position.set(-8,2,-6);scn.add(d2);
+ const lb=document.createElement('div');stage.appendChild(lb);
+ for(const k in DEV){const g=new THREE.Group();scn.add(g);grp[k]=g;ST[k]={};SS[k]={};PICK[k]=[];tags[k]={};anc[k]={};
+  const P=(pk,geo,c,x,y,z,o)=>{o=o||{};const m=new THREE.Mesh(geo,mat(c,o.t?{transparent:true,opacity:o.t,depthWrite:false}:null));m.position.set(x,y,z);if(o.r)m.rotation.set(...o.r);g.add(m);if(pk){m.userData.k=pk;PICK[k].push(m)}return m};
+  BUILD[k](P,ST[k]);const bx={};PICK[k].forEach(m=>{const kk=m.userData.k;bx[kk]=bx[kk]||new THREE.Box3();m.updateWorldMatrix(true,false);bx[kk].expandByObject(m)});
+  for(const pk in DEV[k].parts){anc[k][pk]=bx[pk].getCenter(new V3());const b=document.createElement('button');b.className='tag';b.innerHTML='<i></i>'+DEV[k].parts[pk][0];b.onclick=e=>{e.stopPropagation();select(pk)};lb.appendChild(b);tags[k][pk]=b}}
+ const ptr=new Map(),rc=new THREE.Raycaster();let mv=0;
+ stage.addEventListener('pointerdown',e=>{if(e.target.closest('.tag'))return;ptr.set(e.pointerId,e);stage.setPointerCapture(e.pointerId);mv=0});
+ stage.addEventListener('pointermove',e=>{const o=ptr.get(e.pointerId);if(!o)return;mv+=Math.abs(e.clientX-o.clientX)+Math.abs(e.clientY-o.clientY);gl.th-=(e.clientX-o.clientX)*.008;gl.ph=Math.min(2.6,Math.max(.1,gl.ph-(e.clientY-o.clientY)*.008));ptr.set(e.pointerId,e)});
+ stage.addEventListener('pointerup',e=>{ptr.delete(e.pointerId);if(mv>5)return;const r=stage.getBoundingClientRect();rc.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),cam);const h=rc.intersectObjects(PICK[key],false);if(h[0])select(h[0].object.userData.k)});
+ stage.addEventListener('pointercancel',e=>ptr.delete(e.pointerId));stage.addEventListener('wheel',e=>{e.preventDefault();gl.d=Math.min(45,Math.max(4,gl.d*(1+e.deltaY*.001)))},{passive:false});
+ new ResizeObserver(resize).observe(stage);requestAnimationFrame(frame)}
+function resize(){if(!stage)return;const w=stage.clientWidth,h=stage.clientHeight;if(!w||!h)return;ren.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+const pbox=pk=>{const b=new THREE.Box3();PICK[key].forEach(m=>{if(m.userData.k===pk){m.updateWorldMatrix(true,false);b.expandByObject(m)}});return b};
+function select(pk){selK=pk;const p=DEV[key].parts[pk];for(const j in tags[key])tags[key][j].classList.toggle('sel',j===pk);
+ $('dlinfo').innerHTML='<b>'+p[0]+'</b><p><em>How it works:</em> '+p[1]+'</p><p><em>Real build:</em> '+p[2]+'</p>';
+ if(selBox)scn.remove(selBox);const b=pbox(pk);selBox=new THREE.Box3Helper(b,0xf2b134);scn.add(selBox);const c=b.getCenter(new V3());gl.t.set(c.x*.6,c.y*.6,c.z*.6)}
+function view(){const c=DEV[key].cam;gl.t.set(c[0],c[1],c[2]);gl.th=c[3];gl.ph=c[4];gl.d=c[5]}
+function setDev(k){key=k;const D=DEV[k];for(const g in grp)grp[g].visible=g===k;[...$('dlsw').children].forEach(b=>b.classList.toggle('on',b.dataset.k===k));v={};hist=[];SS[k]={};
+ $('dlsl').innerHTML=D.sl.map(s=>{v[s[0]]=s[5];return '<label class="sl">'+s[1]+' <span class="mono" id="dv_'+s[0]+'">'+s[5]+'</span></label><input type="range" id="di_'+s[0]+'" min="'+s[2]+'" max="'+s[3]+'" step="'+s[4]+'" value="'+s[5]+'">'}).join('');
+ D.sl.forEach(s=>$('di_'+s[0]).oninput=e=>{v[s[0]]=+e.target.value;$('dv_'+s[0]).textContent=e.target.value;hist=[]});
+ $('dleq').innerHTML=D.eq;$('dltl').textContent=D.n+' trace';selK=null;if(selBox){scn.remove(selBox);selBox=null}
+ $('dlinfo').innerHTML='<b>Click any part or tag</b><p>Each element explains how it works and how to build it.</p>';for(const j in tags[k])tags[k][j].classList.remove('sel');view()}
+function trace(o){const c=$('dltr'),r=devicePixelRatio||1,w=c.clientWidth,h=c.clientHeight;if(!w)return;c.width=w*r;c.height=h*r;const x=c.getContext('2d');x.scale(r,r);x.strokeStyle='#f2b134';x.lineWidth=1.5;x.beginPath();
+ hist.forEach((q,i)=>{const px=i/119*w,py=h-(q-o.lo)/(o.hi-o.lo)*(h-6)-3;i?x.lineTo(px,py):x.moveTo(px,py)});x.stroke()}
+function frame(now){requestAnimationFrame(frame);if(!dl.classList.contains('on'))return;const dt=Math.min(.05,(now-last)/1000);last=now;clock+=dt;
+ if(spin)gl.th+=dt*.3;cs.t.lerp(gl.t,.1);cs.th+=(gl.th-cs.th)*.1;cs.ph+=(gl.ph-cs.ph)*.1;cs.d+=(gl.d-cs.d)*.1;
+ cam.position.set(cs.t.x+cs.d*Math.sin(cs.ph)*Math.sin(cs.th),cs.t.y+cs.d*Math.cos(cs.ph),cs.t.z+cs.d*Math.sin(cs.ph)*Math.cos(cs.th));cam.lookAt(cs.t);
+ const o=PHYS[key](v,SS[key],dt);ANIM[key](ST[key],o,clock);
+ tm+=dt;if(tm>.12){tm=0;hist.push(o.y);if(hist.length>120)hist.shift();$('dlrows').innerHTML=o.rows.map(r=>'<div class="kv"><small>'+r[0]+'</small><strong class="mono" style="font-size:15px">'+r[1]+'</strong></div>').join('');
+  const s=$('dlst');s.textContent=o.t;s.style.color=o.ok?'var(--good)':'var(--bad)';s.style.borderColor=o.ok?'var(--good)':'var(--bad)';trace(o)}
+ if(selBox&&selK)selBox.box.copy(pbox(selK));
+ const w=stage.clientWidth,h=stage.clientHeight,tp=new V3();for(const k in tags)for(const pk in tags[k]){const b=tags[k][pk];if(k!==key||!tagsOn){b.style.transform='translate(-999px,-999px)';continue}tp.copy(anc[k][pk]).project(cam);b.style.transform=tp.z<1?'translate('+((tp.x*.5+.5)*w+8)+'px,'+((-tp.y*.5+.5)*h-10)+'px)':'translate(-999px,-999px)'}
+ ren.render(scn,cam)}
+$('dlsw').innerHTML=Object.keys(DEV).map(k=>'<button data-k="'+k+'">'+DEV[k].n+'</button>').join('');
+$('dlsw').onclick=e=>{const k=e.target.dataset.k;if(k&&inited)setDev(k)};
+$('dltg').onclick=e=>{tagsOn=!tagsOn;e.target.classList.toggle('on',tagsOn)};$('dlsp').onclick=e=>{spin=!spin;e.target.classList.toggle('on',spin)};$('dlrs').onclick=view;
+window.dlOpen=k=>{dl.classList.add('on');if(!inited)init();resize();last=performance.now();setDev(k||key)};
+$('dlX').onclick=()=>dl.classList.remove('on');$('dlOpen').onclick=()=>window.dlOpen('load');
+})();
+</script>
+
+<script>document.getElementById("helpBtn").onclick=function(){document.getElementById("help").showModal()};document.getElementById("helpX").onclick=function(){document.getElementById("help").close()};</script>
+</body>
+</html>
